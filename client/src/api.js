@@ -34,3 +34,19 @@ export function updateNotes(url, notes) {
 export function runScrape() {
     return request('/api/scrape');
 }
+
+export function fetchSettings() {
+    return request('/api/settings');
+}
+
+export function saveSettings(payload) {
+    return request('/api/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+    });
+}
+
+export function syncDatabases() {
+    return request('/api/sync', { method: 'POST' });
+}

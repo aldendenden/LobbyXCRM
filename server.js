@@ -5,6 +5,7 @@ const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
 const db = require('./db');
+const settings = require('./settings');
 
 const app = express();
 app.use(express.json());
@@ -12,8 +13,18 @@ app.use(express.json());
 const LOG_PATH = path.join(__dirname, 'debug.log');
 const CLIENT_DIST = path.join(__dirname, 'client', 'dist');
 
-// Міграція старого db.json -> SQLite (одноразово, зі збереженням статусів)
-db.migrateLegacyDB();
+// Ініціалізація БД: створює локальні файли або підключається до Turso
+const ready = (async () => {
+    try {
+        await db.init();
+        console.log(`База даних: ${settings.getSettings().mode === 'turso' ? 'Turso (хмарна)' : 'SQLite (локальна)'}`);
+        await db.migrateLegacyDB();
+    } catch (e) {
+        console.error('Помилка ініціалізації бази даних:', e.message);
+        console.log('Перевірте налаштування в settings.json або видаліть його для скидання на локальну SQLite.');
+        process.exit(1);
+    }
+})();
 
 // Функція запису повідомлень у лог-файл
 function logToFile(message) {
@@ -22,33 +33,77 @@ function logToFile(message) {
 }
 
 // АРІ для фронтенду
-app.get('/api/vacancies', (req, res) => {
-    res.json(db.getVacancies());
+app.get('/api/vacancies', async (req, res) => {
+    try {
+        res.json(await db.getVacancies());
+    } catch (e) {
+        res.status(500).json({ error: e.message });
+    }
+});
+
+// Налаштування програми (режим БД + доступ до Turso)
+app.get('/api/settings', (req, res) => {
+    res.json(settings.getSettings());
+});
+
+app.post('/api/settings', async (req, res) => {
+    const body = req.body || {};
+    const mode = body.mode === 'turso' ? 'turso' : 'local';
+    const turso = {
+        url: String(body.turso?.url || '').trim(),
+        authToken: String(body.turso?.authToken || '').trim(),
+    };
+
+    // Спершу тестуємо підключення, щоб не зламати поточний режим
+    try {
+        await db.testConnection(mode, turso);
+    } catch (e) {
+        return res.status(400).json({ error: 'Не вдалося підключитись до хмарної БД: ' + e.message });
+    }
+
+    settings.saveSettings({ mode, turso });
+
+    try {
+        await db.switchBackend();
+        res.json({ success: true, settings: settings.getSettings() });
+    } catch (e) {
+        res.status(500).json({ error: 'Налаштування збережено, але не вдалося переключити БД: ' + e.message });
+    }
+});
+
+// Двостороння синхронізація локальної та хмарної БД
+app.post('/api/sync', async (req, res) => {
+    try {
+        const result = await db.syncDatabases();
+        res.json({ success: true, ...result });
+    } catch (e) {
+        res.status(400).json({ error: e.message });
+    }
 });
 
 // Статус — це дані користувача, зберігаються окремо від даних парсера
 // і не можуть бути затерті при оновленні вакансій.
-app.post('/api/vacancies/status', (req, res) => {
+app.post('/api/vacancies/status', async (req, res) => {
     const { url, status } = req.body;
     if (!url || !['new', 'interested', 'applied', 'feedback', 'ignored'].includes(status)) {
         return res.status(400).json({ error: 'Некоректний запит' });
     }
-    if (!db.hasVacancy(url)) {
+    if (!(await db.hasVacancy(url))) {
         return res.status(404).json({ error: "Вакансію не знайдено" });
     }
-    db.setStatus(url, status);
+    await db.setStatus(url, status);
     res.json({ success: true });
 });
 
-app.post('/api/vacancies/notes', (req, res) => {
+app.post('/api/vacancies/notes', async (req, res) => {
     const { url, notes } = req.body;
     if (!url || typeof notes !== 'string') {
         return res.status(400).json({ error: 'Некоректний запит' });
     }
-    if (!db.hasVacancy(url)) {
+    if (!(await db.hasVacancy(url))) {
         return res.status(404).json({ error: "Вакансію не знайдено" });
     }
-    db.setNotes(url, notes);
+    await db.setNotes(url, notes);
     res.json({ success: true });
 });
 
@@ -58,9 +113,9 @@ app.get('/api/scrape', async (req, res) => {
     fs.writeFileSync(LOG_PATH, '', 'utf8');
     logToFile('=== ЗАПУСК НОВОГО АНАЛІЗУ АРІ ===');
 
-    // Бекап SQLite перед змінами
+    // Бекап SQLite перед змінами (лише для локального режиму)
     try {
-        db.backup();
+        await db.backup();
         logToFile('Створено резервну копію бази даних');
     } catch (e) {
         logToFile(`Помилка створення резервної копії: ${e.message}`);
@@ -182,7 +237,7 @@ app.get('/api/scrape', async (req, res) => {
         let addedCount = 0;
 
         for (const url of allScrapedUrls) {
-            if (db.hasVacancy(url)) continue;
+            if (await db.hasVacancy(url)) continue;
 
             try {
                 logToFile(`Перехід на внутрішню сторінку: ${url}`);
@@ -236,7 +291,7 @@ app.get('/api/scrape', async (req, res) => {
                 if (details.title && details.title.length > 2) {
                     // Upsert: додає нову вакансію або оновлює title/unit.
                     // Статус та нотатки у таблиці vacancy_meta не чіпаються.
-                    db.upsertVacancy(url, details.title, unit);
+                    await db.upsertVacancy(url, details.title, unit);
                     addedCount++;
                     console.log(`[ДОДАНО] ${unit} -> ${details.title}`);
                     logToFile(`Base updated: ${unit} -> ${details.title}`);
@@ -266,4 +321,7 @@ app.get('/api/scrape', async (req, res) => {
 app.use(express.static(CLIENT_DIST));
 app.get('/', (req, res) => res.sendFile(path.join(CLIENT_DIST, 'index.html')));
 
-app.listen(3000, () => console.log('Сервер працює: http://localhost:3000'));
+// Сервер стартує лише після успішної ініціалізації БД
+ready.then(() => {
+    app.listen(3000, () => console.log('Сервер працює: http://localhost:3000'));
+});

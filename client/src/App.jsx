@@ -3,7 +3,8 @@ import { fetchVacancies, runScrape } from './api.js';
 import StatsBar from './components/StatsBar.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import VacancyTable from './components/VacancyTable.jsx';
-import { MedalIcon, RefreshIcon, WarningIcon } from './components/Icons.jsx';
+import SettingsModal from './components/SettingsModal.jsx';
+import { MedalIcon, RefreshIcon, SettingsIcon, WarningIcon } from './components/Icons.jsx';
 
 export default function App() {
     const [vacancies, setVacancies] = useState([]);
@@ -12,6 +13,7 @@ export default function App() {
     const [isScraping, setIsScraping] = useState(false);
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(true);
+    const [settingsOpen, setSettingsOpen] = useState(false);
 
     const loadVacancies = useCallback(async () => {
         try {
@@ -82,15 +84,25 @@ export default function App() {
                         onChange={setSearchQuery}
                     />
                 </div>
-                <button
-                    id="scrapeBtn"
-                    onClick={onScrape}
-                    disabled={isScraping}
-                    className="btn"
-                >
-                    <RefreshIcon className={`icon${isScraping ? ' spin' : ''}`} />
-                    {isScraping ? ' Сканю Lobby X...' : ' Оновити з сайту'}
-                </button>
+                <div className="header-actions">
+                    <button
+                        id="scrapeBtn"
+                        onClick={onScrape}
+                        disabled={isScraping}
+                        className="btn"
+                    >
+                        <RefreshIcon className={`icon${isScraping ? ' spin' : ''}`} />
+                        {isScraping ? ' Сканю Lobby X...' : ' Оновити з сайту'}
+                    </button>
+                    <button
+                        id="settingsBtn"
+                        onClick={() => setSettingsOpen(true)}
+                        className="icon-btn"
+                        title="Налаштування"
+                    >
+                        <SettingsIcon className="icon" />
+                    </button>
+                </div>
             </header>
 
             {error && (
@@ -116,6 +128,15 @@ export default function App() {
                 loading={loading}
                 searchQuery={searchQuery}
                 updateVacancy={updateVacancy}
+            />
+
+            <SettingsModal
+                open={settingsOpen}
+                onClose={() => setSettingsOpen(false)}
+                onSaved={() => {
+                    setSettingsOpen(false);
+                    loadVacancies();
+                }}
             />
         </div>
     );
