@@ -198,21 +198,21 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 14px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
     margin-bottom: 24px;
 }
 
 .card {
     position: relative;
-    padding: 16px 14px;
+    padding: 12px 8px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
     text-align: center;
     cursor: pointer;
     font-weight: 600;
     background: rgba(255, 255, 255, 0.04);
-    font-size: 13px;
+    font-size: 12px;
     color: var(--text-muted);
     overflow: hidden;
     transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
@@ -224,6 +224,7 @@ h1 {
 .card:nth-child(3) { animation-delay: 0.19s; }
 .card:nth-child(4) { animation-delay: 0.26s; }
 .card:nth-child(5) { animation-delay: 0.33s; }
+.card:nth-child(6) { animation-delay: 0.4s; }
 
 .card::before {
     content: '';
@@ -253,10 +254,10 @@ h1 {
 
 .card-icon {
     display: block;
-    width: 1.6em;
-    height: 1.6em;
+    width: 1.4em;
+    height: 1.4em;
     color: var(--text);
-    margin: 0 auto 8px;
+    margin: 0 auto 6px;
     transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s ease;
 }
 
@@ -265,9 +266,9 @@ h1 {
 .card-label { font-weight: 700; }
 
 .card-num {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
-    margin-top: 6px;
+    margin-top: 4px;
     color: var(--text);
     transition: transform 0.2s ease;
 }
