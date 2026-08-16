@@ -626,3 +626,477 @@
 [2026-08-16T09:58:36.290Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-analityk-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
 [2026-08-16T09:58:38.245Z] Base updated: Сили Оборони України -> ДАТА-АНАЛІТИК
 [2026-08-16T09:58:39.049Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-suprovodzhennia-it-produktiv-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:43.528Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ ІЗ СУПРОВОДЖЕННЯ IT-ПРОДУКТІВ
+[2026-08-16T09:58:44.329Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-biznes-protsesiv-v-it-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:46.179Z] Base updated: Сили Оборони України -> АНАЛІТИК БІЗНЕС-ПРОЦЕСІВ В ІТ
+[2026-08-16T09:58:46.980Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-129-okrema-vazhka-mekhanizovana-bryhada/
+[2026-08-16T09:58:48.736Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:58:49.551Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-129-okrema-vazhka-mekhanizovana-bryhada/
+[2026-08-16T09:58:51.404Z] Base updated: Сили Оборони України -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:58:52.209Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-129-okrema-vazhka-mekhanizovana-bryhada/
+[2026-08-16T09:58:53.981Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:58:54.783Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-430-batalyon-bezpilotnykh-system/
+[2026-08-16T09:58:56.992Z] Base updated: 430 окремий полк безпілотних систем -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:58:57.795Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/cybersec-engineer-devsecops-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:59:00.006Z] Base updated: Сили Оборони України -> CYBERSEC ENGINEER/DEVSECOPS
+[2026-08-16T09:59:00.809Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-viddilu-tsyfrovoho-rozvytku-do-7-okremyy-rozviduvalnyy-batalyon/
+[2026-08-16T09:59:02.485Z] Base updated: Сили Оборони України -> ТЕХНІК ВІДДІЛУ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:59:03.288Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/information-security-officer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:59:05.335Z] Base updated: Сили Оборони України -> INFORMATION SECURITY OFFICER
+[2026-08-16T09:59:06.147Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-administrator-iam-engineer-sysadmin-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky/
+[2026-08-16T09:59:08.342Z] Base updated: Окремого спеціального центру електронної підтримки -> IT ADMINISTRATOR/IAM ENGINEER/SYSADMIN
+[2026-08-16T09:59:09.144Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/infrastructure-engineer-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky/
+[2026-08-16T09:59:10.867Z] Base updated: Окремого спеціального центру електронної підтримки -> INFRASTRUCTURE ENGINEER
+[2026-08-16T09:59:11.669Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-sluzhby-zakhystu-informatsii-do-419-okremyy-batalyon-bezpilotnykh-system/
+[2026-08-16T09:59:13.210Z] Base updated: захисту інформації -> СПЕЦІАЛІСТ СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:59:14.011Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/dilovod-sluzhby-zakhystu-informatsii-do-419-okremyy-batalyon-bezpilotnykh-system/
+[2026-08-16T09:59:15.564Z] Base updated: діловода служби захисту інформації -> ДІЛОВОД СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:59:16.370Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-danykh-do-striletskyy-batalyon-babay-29-ovmbr/
+[2026-08-16T09:59:18.266Z] Base updated: Сили Оборони України -> АНАЛІТИК ДАНИХ
+[2026-08-16T09:59:19.070Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-tekhnichnoho-zakhystu-informatsii-do-syly-spetsialnykh-operatsiy/
+[2026-08-16T09:59:21.102Z] Base updated: одному з підрозділів Сил спеціальних операцій Збройних Сил України -> ФАХІВЕЦЬ З ТЕХНІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:59:21.905Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-7-okremyy-rozviduvalnyy-batalyon/
+[2026-08-16T09:59:25.819Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:59:26.634Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-rehionalne-upravlinnia-skhid-derzhavnoi-spetsialnoi-sluzhby-transportu/
+[2026-08-16T09:59:28.425Z] Base updated: військовій частині регіонального управління «Схід» Державної спеціальної служби транспорту в м -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T09:59:29.233Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/prohramist-do-41-polk-bezpilotnykh-system-pilum/
+[2026-08-16T09:59:30.698Z] Base updated: Сили Оборони України -> ПРОГРАМІСТ
+[2026-08-16T09:59:31.502Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-seo-geo-spetsialist-do-3-armiyskyy-korpus/
+[2026-08-16T09:59:33.340Z] Base updated: Сили Оборони України -> SENIOR SEO/GEO-СПЕЦІАЛІСТ
+[2026-08-16T09:59:34.148Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-pidtrymky-sap-l2-do-syly-oborony/
+[2026-08-16T09:59:35.582Z] Base updated: спеціальному IT-підрозділі Міністерства Оборони України -> СПЕЦІАЛІСТ З ПІДТРИМКИ SAP (L2)
+[2026-08-16T09:59:36.389Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ai-llm-inzhener-do-tsentr-masshtabuvannia-tekhnolohichnykh-rishen/
+[2026-08-16T09:59:38.320Z] Base updated: Сили Оборони України -> AI/LLM ІНЖЕНЕР
+[2026-08-16T09:59:39.134Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-762-okrema-bryhada-okhorony-dsst/
+[2026-08-16T09:59:41.296Z] Base updated: транспорту займається охороною обʼєктів транспортної інфраструктури -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:59:42.109Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-engineer-do-411-okrema-bryhada-bezpilotnykh-system-yastruby/
+[2026-08-16T09:59:44.502Z] Base updated: Сили Оборони України -> DEVOPS ENGINEER
+[2026-08-16T09:59:45.317Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-prohramnoho-zabezpechennia-do-411-okrema-bryhada-bezpilotnykh-system-yastruby/
+[2026-08-16T09:59:47.739Z] Base updated: Сили Оборони України -> РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ
+[2026-08-16T09:59:48.541Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberbezpeky-do-411-okrema-bryhada-bezpilotnykh-system-yastruby/
+[2026-08-16T09:59:50.583Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З КІБЕРБЕЗПЕКИ
+[2026-08-16T09:59:51.397Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-fakhivets-do-428-okremyy-batalyon-bezpilotnykh-system-tin/
+[2026-08-16T09:59:52.855Z] Base updated: 428-го окремого батальйону безпілотних систем «Тінь» 12-го армійського корпусу Сухопутних Військ ЗСУ -> IT-ФАХІВЕЦЬ
+[2026-08-16T09:59:53.661Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-428-okremyy-batalyon-bezpilotnykh-system-tin/
+[2026-08-16T09:59:55.629Z] Base updated: 428-го окремого батальйону безпілотних систем «Тінь» 12-го армійського корпусу Сухопутних Військ ЗСУ -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:59:56.435Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-1-okremyy-shturmovyy-polk/
+[2026-08-16T09:59:58.299Z] Base updated: Сили Оборони України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:59:59.111Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-viyskovo-morski-syly/
+[2026-08-16T10:00:00.608Z] Base updated: підрозділі Військово-Морських Сил Збройних Сил України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:00:01.418Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-30-okrema-mekhanizovana-bryhada-imeni-kniazia-kostiantyna-ostrozkoho/
+[2026-08-16T10:00:02.965Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:00:03.766Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-administrator-do-rehionalne-upravlinnia-skhid-derzhavnoi-spetsialnoi-sluzhby-transportu/
+[2026-08-16T10:00:07.467Z] Base updated: військових частинах регіонального управління “Схід” Державної спеціальної служби транспорту в м -> МЕРЕЖЕВИЙ АДМІНІСТРАТОР
+[2026-08-16T10:00:08.273Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-rehionalne-upravlinnia-skhid-derzhavnoi-spetsialnoi-sluzhby-transportu/
+[2026-08-16T10:00:10.216Z] Base updated: військових частинах регіонального управління “Схід” Державної спеціальної служби транспорту в м -> ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:00:11.034Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-hrupy-kryptohrafichnoho-zakhystu-informatsii-do-61-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:00:14.411Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ГРУПИ КРИПТОГРАФІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:00:15.215Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-3-katehorii-hrupy-tsyfrovoho-rozvytku-do-97-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:00:18.153Z] Base updated: 97 окремий батальйон підтримки -> ШТАБ-СЕРЖАНТ 3 КАТЕГОРІЇ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:00:18.968Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-odeskyy-zonalnyy-viddil-vsp/
+[2026-08-16T10:00:20.918Z] Base updated: Одеського зонального відділу Військової служби правопорядку -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:00:21.728Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-odeskyy-zonalnyy-viddil-vsp/
+[2026-08-16T10:00:23.730Z] Base updated: Одеського зонального відділу Військової служби правопорядку -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:00:24.547Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-danykh-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T10:00:26.006Z] Base updated: Сили Оборони України -> АНАЛІТИК ДАНИХ
+[2026-08-16T10:00:26.810Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/cloud-security-specialist-do-tsentr-kiberzakhystu-ministerstva-oborony-ukrainy/
+[2026-08-16T10:00:28.081Z] Base updated: Сили Оборони України -> CLOUD SECURITY SPECIALIST
+[2026-08-16T10:00:28.884Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-engineer-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T10:00:30.782Z] Base updated: Сили Оборони України -> DEVOPS ENGINEER
+[2026-08-16T10:00:31.597Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-v-avtomatyzovanykh-systemakh-do-37-tsentr-zabezpechennia-okhorony-derzhavnoi-taiemnytsi/
+[2026-08-16T10:00:33.827Z] Base updated: 37-го центру забезпечення охорони державної таємниці Сил Територіальної Оборони Збройних Сил України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ В АВТОМАТИЗОВАНИХ СИСТЕМАХ
+[2026-08-16T10:00:34.630Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-tsyfrovykh-transformatsiy-do-225-okremyy-batalyon-materialnoho-zabezpechennia/
+[2026-08-16T10:00:38.791Z] Base updated: 225 окремий батальйон матеріального забезпечення -> ТЕХНІК ЦИФРОВИХ ТРАНСФОРМАЦІЙ
+[2026-08-16T10:00:39.599Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-danykh-kiberrozvidky-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T10:00:41.245Z] Base updated: Сили Оборони України -> АНАЛІТИК ДАНИХ КІБЕРРОЗВІДКИ
+[2026-08-16T10:00:42.061Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-researcher-do-syly-oborony/
+[2026-08-16T10:00:43.376Z] Base updated: одному з підрозділів Сил Оборони України -> OSINT RESEARCHER
+[2026-08-16T10:00:44.178Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-40-okrema-artyleriyska-bryhada/
+[2026-08-16T10:00:45.717Z] Base updated: 40-ої окремої артилерійської бригади імені Великого князя Вітовта Сухопутних військ Збройних Сил України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:00:46.524Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-40-okrema-artyleriyska-bryhada/
+[2026-08-16T10:00:48.441Z] Base updated: 40-ої окремої артилерійської бригади імені Великого князя Вітовта Сухопутних військ Збройних Сил України -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:00:49.247Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-308-dystsyplinarnyy-batalyon-vsp/
+[2026-08-16T10:00:55.300Z] Base updated: 308 дисциплінарний батальйон ВСП -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:00:56.117Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-tsyfrovoho-rozvytku-do-28-okremyy-inzhenerno-aerodromnyy-batalyon/
+[2026-08-16T10:00:57.892Z] Base updated: 28 окремий інженерно-аеродромний батальйон -> НАЧАЛЬНИК ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:00:58.703Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-tekhnichnoi-pidtrymky-do-41-polk-bezpilotnykh-system-pilum/
+[2026-08-16T10:01:00.818Z] Base updated: 41-го полку безпілотних систем «Пілум» 1-го корпусу НГУ «Азов» -> ФАХІВЕЦЬ З ТЕХНІЧНОЇ ПІДТРИМКИ
+[2026-08-16T10:01:01.626Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/cybersecurity-specialist-do-2-korpus-natsionalnoi-hvardii-ukrainy-khartiia/
+[2026-08-16T10:01:03.263Z] Base updated: Сили Оборони України -> CYBERSECURITY SPECIALIST
+[2026-08-16T10:01:04.070Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/business-analyst-product-owner-do-2-korpus-natsionalnoi-hvardii-ukrainy-khartiia-2/
+[2026-08-16T10:01:05.475Z] Base updated: Сили Оборони України -> BUSINESS ANALYST / PRODUCT OWNER
+[2026-08-16T10:01:06.280Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovizatsii-do-32-okrema-artyleriyska-bryhada/
+[2026-08-16T10:01:08.189Z] Base updated: 32-ої окремої артилерійської бригади морської піхоти Військово-морських сил Збройних Сил України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВІЗАЦІЇ
+[2026-08-16T10:01:08.998Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/proiektnyy-menedzher-hrupy-tsyfrovizatsii-do-1-okremyy-medychnyy-batalyon/
+[2026-08-16T10:01:10.899Z] Base updated: 1-го Інтернаціонального легіону -> ПРОЄКТНИЙ МЕНЕДЖЕР ГРУПИ ЦИФРОВІЗАЦІЇ
+[2026-08-16T10:01:11.701Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-516-okremyy-remontno-vidnovliuvalnyy-batalyon/
+[2026-08-16T10:01:13.641Z] Base updated: 516-го окремого ремонтно-відновлювального батальйону Сухопутних військ Збройних Сил України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:01:14.457Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-sluzhby-pidtrymky-do-syly-oborony/
+[2026-08-16T10:01:16.317Z] Base updated: команди фахівців з кібербезпеки -> СПЕЦІАЛІСТ СЛУЖБИ ПІДТРИМКИ
+[2026-08-16T10:01:17.122Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/embedded-rozrobnyk-do-syly-bezpilotnykh-system/
+[2026-08-16T10:01:18.809Z] Base updated: одному з підрозділів -> EMBEDDED-РОЗРОБНИК
+[2026-08-16T10:01:19.616Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ui-ux-dyzayner-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:21.994Z] Base updated: Сили Оборони України -> UI/UX ДИЗАЙНЕР
+[2026-08-16T10:01:22.799Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/wordpress-rozrobnyk-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:24.315Z] Base updated: Сили Оборони України -> WORDPRESS-РОЗРОБНИК
+[2026-08-16T10:01:25.120Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fullstack-rozrobnyk-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:27.662Z] Base updated: Сили Оборони України -> FULLSTACK-РОЗРОБНИК
+[2026-08-16T10:01:28.471Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/backend-rozrobnyk-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:29.842Z] Base updated: Сили Оборони України -> BACKEND-РОЗРОБНИК
+[2026-08-16T10:01:30.645Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-26-okrema-dniprovska-shliakho-vidnovliuvalna-bryhada/
+[2026-08-16T10:01:35.390Z] Base updated: 26 ОШВБр на посаді штаб-сержанта 3 категорії групи цифрового розвитку -> ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:01:36.198Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/vebdyzayner-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:37.590Z] Base updated: Сили Оборони України -> ВЕБДИЗАЙНЕР
+[2026-08-16T10:01:38.395Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:39.781Z] Base updated: Сили Оборони України -> РОЗРОБНИК ЧАТ-БОТІВ
+[2026-08-16T10:01:40.601Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-rozrobnyk-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:01:42.546Z] Base updated: Сили Оборони України -> FRONTEND-РОЗРОБНИК
+[2026-08-16T10:01:43.355Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-516-okremyy-remontno-vidnovliuvalnyy-batalyon/
+[2026-08-16T10:01:45.154Z] Base updated: 516-го окремого ремонтно-відновлювального батальйону Сухопутних військ Збройних Сил України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:01:45.961Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/atlassian-platform-lead-do-ministerstvo-oborony/
+[2026-08-16T10:01:47.917Z] Base updated: сфері адміністрування -> ATLASSIAN PLATFORM LEAD
+[2026-08-16T10:01:48.732Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-dokumentalnoho-treku-do-ministerstvo-oborony/
+[2026-08-16T10:01:50.103Z] Base updated: одного з підрозділів Міністерства Оборони України -> СПЕЦІАЛІСТ З ДОКУМЕНТАЛЬНОГО ТРЕКУ
+[2026-08-16T10:01:50.907Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systems-software-engineer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T10:01:52.466Z] Base updated: Сили Оборони України -> SYSTEMS SOFTWARE ENGINEER
+[2026-08-16T10:01:53.268Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/backend-developer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T10:01:55.155Z] Base updated: Сили Оборони України -> BACKEND DEVELOPER
+[2026-08-16T10:01:55.965Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-developer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T10:01:57.400Z] Base updated: Сили Оборони України -> FRONTEND DEVELOPER
+[2026-08-16T10:01:58.207Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-prohramnoho-zabezpechennia-android-ios-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T10:01:59.578Z] Base updated: Сили Оборони України -> РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ (ANDROID/IOS)
+[2026-08-16T10:02:00.381Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-administrator-do-414-okrema-bryhada-udarnykh-bezpilotnykh-aviatsiynykh-system-ptakhy-madiara/
+[2026-08-16T10:02:01.775Z] Base updated: Сили Оборони України -> МЕРЕЖЕВИЙ АДМІНІСТРАТОР
+[2026-08-16T10:02:02.586Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-tekhnichnoho-zakhystu-informatsii-do-20-bryhada-operatyvnoho-pryznachennia-liubart/
+[2026-08-16T10:02:04.597Z] Base updated: 20-ої бригади оперативного призначення «Любарт» Національної гвардії України -> ТЕХНІК СЛУЖБИ ТЕХНІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:02:05.417Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-tsyfrovoho-rozvytku-do-394-okremyy-batalyon-okhorony-ta-obsluhovuvannia/
+[2026-08-16T10:02:07.759Z] Base updated: 394 окремий батальйон охорони та обслуговування -> НАЧАЛЬНИК ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:02:08.561Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/cherhovyy-it-inzhener-do-syly-oborony/
+[2026-08-16T10:02:10.063Z] Base updated: команди фахівців з кібербезпеки -> ЧЕРГОВИЙ IT-ІНЖЕНЕР
+[2026-08-16T10:02:10.864Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/threat-hunter-reverse-engineer-do-syly-oborony/
+[2026-08-16T10:02:17.706Z] Base updated: команди фахівців з кібербезпеки -> THREAT HUNTER/REVERSE ENGINEER
+[2026-08-16T10:02:18.517Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/l2-soc-analityk-do-syly-oborony/
+[2026-08-16T10:02:20.911Z] Base updated: команди фахівців з кібербезпеки -> L2 SOC АНАЛІТИК
+[2026-08-16T10:02:21.715Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/pomichnyk-nachalnyka-zviazku-ta-kiberbezpeky-do-106-okrema-bryhada-terytorialnoi-oborony/
+[2026-08-16T10:02:23.721Z] Base updated: Сили Оборони України -> ПОМІЧНИК НАЧАЛЬНИКА ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T10:02:24.536Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-napriamu-tsyfrovizatsii-do-holovne-upravlinnia-syl-bezpilotnykh-system-hsh/
+[2026-08-16T10:02:26.550Z] Base updated: Сили Оборони України -> ОФІЦЕР НАПРЯМУ ЦИФРОВІЗАЦІЇ
+[2026-08-16T10:02:27.361Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/backend-rozrobnyk-do-8-artyleriyska-bryhada-harmash/
+[2026-08-16T10:02:28.771Z] Base updated: Сили Оборони України -> BACKEND-РОЗРОБНИК
+[2026-08-16T10:02:29.576Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-rozrobnyk-do-8-artyleriyska-bryhada-harmash/
+[2026-08-16T10:02:30.981Z] Base updated: Сили Оборони України -> FRONTEND-РОЗРОБНИК
+[2026-08-16T10:02:31.787Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/cv-ml-research-engineer-do-8-artyleriyska-bryhada-harmash/
+[2026-08-16T10:02:33.930Z] Base updated: Сили Оборони України -> CV/ML RESEARCH ENGINEER
+[2026-08-16T10:02:34.741Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-tsyfrovoho-rozvytku-zastupnyk-nachalnyka-shtabu-do-531-okremyy-batalyon-okhorony-ta-obsluhovuvannia/
+[2026-08-16T10:02:36.732Z] Base updated: 531 окремий батальйон охорони та обслуговування -> НАЧАЛЬНИК ГРУПИ ЦИФРОВОГО РОЗВИТКУ-ЗАСТУПНИК НАЧАЛЬНИКА ШТАБУ
+[2026-08-16T10:02:37.539Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-spetsialist-do-1225-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:02:39.526Z] Base updated: Сили Оборони України -> IT-СПЕЦІАЛІСТ
+[2026-08-16T10:02:40.340Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/zastupnyk-nachalnyka-shtabu-z-tsyfrovoho-rozvytku-do-1225-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:02:42.625Z] Base updated: Сили Оборони України -> ЗАСТУПНИК НАЧАЛЬНИКА ШТАБУ З ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:02:43.427Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-1226-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:02:44.937Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:02:45.738Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-513-okremyy-remontno-vidnovliuvalnyy-batalyon/
+[2026-08-16T10:02:51.082Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:02:51.896Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nlp-engineer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/
+[2026-08-16T10:02:53.290Z] Base updated: Центрі інновацій та розвитку оборонних технологій МОУ -> NLP ENGINEER
+[2026-08-16T10:02:54.095Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tech-lead-solutions-architect-do-13-bryhada-operatyvnoho-pryznachennia-khartiia/
+[2026-08-16T10:02:55.546Z] Base updated: Сили Оборони України -> TECH LEAD/SOLUTIONS ARCHITECT
+[2026-08-16T10:02:56.359Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-konstruktor-solidworks-do-3-armiyskyy-korpus/
+[2026-08-16T10:02:58.440Z] Base updated: Сили Оборони України -> ІНЖЕНЕР-КОНСТРУКТОР SOLIDWORKS
+[2026-08-16T10:02:59.244Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-pidtrymky-korystuvachiv-do-viyska-zv-iazku/
+[2026-08-16T10:03:00.841Z] Base updated: одній з військових частин -> ФАХІВЕЦЬ ІЗ ПІДТРИМКИ КОРИСТУВАЧІВ
+[2026-08-16T10:03:01.654Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/starshyy-fakhivets-iz-pidtrymky-korystuvachiv-do-viyska-zv-iazku/
+[2026-08-16T10:03:03.800Z] Base updated: одній з військових частин -> СТАРШИЙ ФАХІВЕЦЬ ІЗ ПІДТРИМКИ КОРИСТУВАЧІВ
+[2026-08-16T10:03:04.610Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-suprovodu-it-produktiv-do-67-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:03:06.488Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ ІЗ СУПРОВОДУ IT-ПРОДУКТІВ
+[2026-08-16T10:03:07.291Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-11-okrema-bryhada-armiyskoi-aviatsii/
+[2026-08-16T10:03:09.257Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:03:10.059Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-fakhivets-do-93-okremyy-protytankovyy-batalyon/
+[2026-08-16T10:03:11.951Z] Base updated: Сили Оборони України -> ІТ-ФАХІВЕЦЬ
+[2026-08-16T10:03:12.752Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-administruvannia-oblikovykh-zapysiv-korystuvachiv-do-syly-oborony/
+[2026-08-16T10:03:14.426Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ З АДМІНІСТРУВАННЯ ОБЛІКОВИХ ЗАПИСІВ КОРИСТУВАЧІВ
+[2026-08-16T10:03:15.239Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-tekhnichnoho-zakhystu-informatsii-do-ukrainskyy-naukovo-doslidnyy-instytut-spetsialnoi-tekhniky-ta-sudovykh-ekspertyz-sbu/
+[2026-08-16T10:03:17.249Z] Base updated: безпеки України є державною спеціалізованою експертною науково-дослідною установою -> ФАХІВЕЦЬ З ТЕХНІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:03:18.051Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberbezpeky-do-6-batalyon-414-obrbps-ptakhy-madiara/
+[2026-08-16T10:03:20.137Z] Base updated: 6 батальйон 414 ОБрБпС «Птахи Мадяра» -> СПЕЦІАЛІСТ З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:03:20.949Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-tsentr-rekrutynhu-dshv/
+[2026-08-16T10:03:23.107Z] Base updated: різних бригадах і на різних посадах -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:03:23.908Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberbezpeky-do-156-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:03:25.782Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:03:26.584Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-374-informatsiyno-komunikatsiynyy-vuzol/
+[2026-08-16T10:03:35.608Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:03:36.413Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-inzhener-systemnyy-administrator-do-informatsiyne-ahentstvo-mou/
+[2026-08-16T10:03:38.457Z] Base updated: Сили Оборони України -> МЕРЕЖЕВИЙ ІНЖЕНЕР/СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:03:39.259Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-inzhener-z-dosvidom-ai-do-syly-oborony/
+[2026-08-16T10:03:41.738Z] Base updated: Сили Оборони України -> ДАТА-ІНЖЕНЕР З ДОСВІДОМ AI
+[2026-08-16T10:03:42.549Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-do-syly-oborony-3/
+[2026-08-16T10:03:44.452Z] Base updated: Сили Оборони України -> АНАЛІТИК
+[2026-08-16T10:03:45.255Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/l1-soc-analityk-do-syly-oborony/
+[2026-08-16T10:03:46.798Z] Base updated: команди фахівців з кібербезпеки -> L1 SOC АНАЛІТИК
+[2026-08-16T10:03:47.604Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-513-okremyy-remontno-vidnovliuvalnyy-batalyon/
+[2026-08-16T10:03:49.439Z] Base updated: Сили Оборони України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:03:50.248Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-513-okremyy-remontno-vidnovliuvalnyy-batalyon/
+[2026-08-16T10:03:52.029Z] Base updated: Сили Оборони України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:03:52.843Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-cv-ml-research-engineer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/
+[2026-08-16T10:03:54.759Z] Base updated: Центрі інновацій та розвитку оборонних технологій МОУ -> SENIOR CV/ML RESEARCH ENGINEER
+[2026-08-16T10:03:55.560Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-spetsialist-do-rota-nazemnykh-robotyzovanykh-kompleksiv-nova-3-oshbr/
+[2026-08-16T10:03:57.886Z] Base updated: Сили Оборони України -> ІТ-СПЕЦІАЛІСТ
+[2026-08-16T10:03:58.700Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-viyskovo-morski-syly/
+[2026-08-16T10:04:00.707Z] Base updated: одному з підрозділів Військово-Морських Сил Збройних Сил України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:04:01.516Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/manual-qa-engineer-tester-do-batalyon-bezpilotnykh-system-tsukrarnia-ptakhiv-madiara/
+[2026-08-16T10:04:02.890Z] Base updated: Сили Оборони України -> MANUAL QA ENGINEER (TESTER)
+[2026-08-16T10:04:03.711Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/sdr-inzhener-do-412-okrema-bryhada-bezpilotnykh-system-nemesis/
+[2026-08-16T10:04:05.832Z] Base updated: Сили Оборони України -> SDR-ІНЖЕНЕР
+[2026-08-16T10:04:06.668Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/radioinzhener-rf-inzhener-do-412-okrema-bryhada-bezpilotnykh-system-nemesis/
+[2026-08-16T10:04:09.937Z] Base updated: Сили Оборони України -> РАДІОІНЖЕНЕР/RF-ІНЖЕНЕР
+[2026-08-16T10:04:10.742Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-25-bryhada-transportnoi-aviatsii/
+[2026-08-16T10:04:13.522Z] Base updated: 25 бригади транспортної авіації Повітряних сил Збройних Сил України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:04:14.332Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-95-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:04:16.299Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T10:04:17.107Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-704-okrema-bryhada-rkhbz/
+[2026-08-16T10:04:19.042Z] Base updated: 704 окремої бригади РХБЗ Сил підтримки Збройних Сил України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:04:19.850Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-analityk-do-komanduvannia-ob-iednanykh-syl/
+[2026-08-16T10:04:22.123Z] Base updated: Управлінні комунікацій Командування обʼєднаних сил -> OSINT-АНАЛІТИК
+[2026-08-16T10:04:22.924Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/prohramist-do-samokhidnyy-artyleriyskyy-dyvizion-hrim-stepiv-158-ombr/
+[2026-08-16T10:04:26.434Z] Base updated: Самохідний артилерійський дивізіон «Грім Степів» 158 ОМБр -> ПРОГРАМІСТ
+[2026-08-16T10:04:27.250Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-samokhidnyy-artyleriyskyy-dyvizion-hrim-stepiv-158-ombr/
+[2026-08-16T10:04:29.117Z] Base updated: Самохідний артилерійський дивізіон «Грім Степів» 158 ОМБр -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:04:29.932Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-zi-zv-iazku-ta-kiberbezpeky-do-batalyon-kayros-414-obrbps-ptakhy-madiara/
+[2026-08-16T10:04:31.981Z] Base updated: Батальйон «Кайрос» 414 ОБрБпС «Птахи Мадяра» -> ФАХІВЕЦЬ ЗІ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T10:04:32.788Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-engineer-do-batalyon-kayros-414-obrbps-ptakhy-madiara/
+[2026-08-16T10:04:34.443Z] Base updated: Батальйон «Кайрос» 414 ОБрБпС «Птахи Мадяра» -> DEVOPS ENGINEER
+[2026-08-16T10:04:35.250Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-4-okremyy-medychnyy-batalyon-3-armiyskoho-korpusu/
+[2026-08-16T10:04:36.864Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:04:37.673Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-tekhnichnoi-pidtrymky-do-13-bryhada-operatyvnoho-pryznachennia-khartiia/
+[2026-08-16T10:04:39.061Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ТЕХНІЧНОЇ ПІДТРИМКИ
+[2026-08-16T10:04:39.866Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-mikroelektroniky-do-7-korpus-shvydkoho-reahuvannia-desantno-shturmovykh-viysk/
+[2026-08-16T10:04:41.692Z] Base updated: 7-го корпусу швидкого реагування Десантно-штурмових військ -> РОЗРОБНИК МІКРОЕЛЕКТРОНІКИ
+[2026-08-16T10:04:42.495Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/prohramist-elektronnyk-do-7-korpus-shvydkoho-reahuvannia-desantno-shturmovykh-viysk/
+[2026-08-16T10:04:44.374Z] Base updated: 7-го корпусу швидкого реагування Десантно-штурмових військ -> ПРОГРАМІСТ-ЕЛЕКТРОННИК
+[2026-08-16T10:04:45.183Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/serzhant-menedzher-viddilennia-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-114-okrema-bryhada-terytorialnoi-oborony/
+[2026-08-16T10:04:48.361Z] Base updated: Сили Оборони України -> СЕРЖАНТ-МЕНЕДЖЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:04:49.172Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-engineer-do-viyska-zv-iazku/
+[2026-08-16T10:04:51.013Z] Base updated: спеціалізованому підрозділі Військ зв'язку та кібербезпеки -> DEVOPS ENGINEER
+[2026-08-16T10:04:51.818Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-batalyon-bezpilotnykh-system-118-ombr/
+[2026-08-16T10:04:53.861Z] Base updated: батальйону безпілотних систем 118-ої окремої механізованої бригади -> ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T10:04:54.664Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-analityk-do-holovne-upravlinnia-zakhystu-prav-viyskovosluzhbovtsiv/
+[2026-08-16T10:04:56.595Z] Base updated: Сили Оборони України -> OSINT-АНАЛІТИК
+[2026-08-16T10:04:57.408Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-iz-systemnoho-administruvannia-do-167-okremyy-batalyon-zviazku/
+[2026-08-16T10:04:59.603Z] Base updated: 167 окремий батальйон зв’язку -> ТЕХНІК ІЗ СИСТЕМНОГО АДМІНІСТРУВАННЯ
+[2026-08-16T10:05:00.416Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/operator-pk-do-167-okremyy-batalyon-zviazku/
+[2026-08-16T10:05:07.449Z] Base updated: 167 окремий батальйон зв’язку -> ОПЕРАТОР ПК
+[2026-08-16T10:05:08.265Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-zv-iazkivets-do-batalyon-bezpilotnykh-system-110-ombr/
+[2026-08-16T10:05:10.399Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР/ЗВ’ЯЗКІВЕЦЬ
+[2026-08-16T10:05:11.214Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilennia-obsluhovuvannia-kintsevykh-prystroiv-do-348-informatsiyno-komunikatsiynyy-vuzol/
+[2026-08-16T10:05:14.013Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ВІДДІЛЕННЯ ОБСЛУГОВУВАННЯ КІНЦЕВИХ ПРИСТРОЇВ
+[2026-08-16T10:05:14.819Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-144-okremyy-batalyon-materialnoho-zabezpechennia/
+[2026-08-16T10:05:17.525Z] Base updated: 144 окремий батальйон матеріального забезпечення -> ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:05:18.391Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-kompleksnykh-kompiuternykh-trenazheriv-litakiv-do-kharkivskyy-natsionalnyy-universytet-povitrianykh-syl-imeni-ivana-kozheduba/
+[2026-08-16T10:05:20.636Z] Base updated: підрозділах навчального закладу -> НАЧАЛЬНИК ГРУПИ КОМПЛЕКСНИХ КОМП’ЮТЕРНИХ ТРЕНАЖЕРІВ ЛІТАКІВ
+[2026-08-16T10:05:21.455Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-95-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:05:23.478Z] Base updated: Сили Оборони України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:05:24.293Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-95-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:05:26.969Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:05:27.779Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-zakhystu-merezh-system-do-okremyy-polk-zv-iazku-sso/
+[2026-08-16T10:05:30.104Z] Base updated: підрозділу Сил спеціальних операцій Збройних Сил України -> ФАХІВЕЦЬ ІЗ ЗАХИСТУ МЕРЕЖ/СИСТЕМ
+[2026-08-16T10:05:30.912Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-prohramno-matematychnoho-zabezpechennia-do-kharkivskyy-natsionalnyy-universytet-povitrianykh-syl-imeni-ivana-kozheduba/
+[2026-08-16T10:05:32.779Z] Base updated: підрозділах навчального закладу -> ОФІЦЕР ВІДДІЛЕННЯ ПРОГРАМНО-МАТЕМАТИЧНОГО ЗАБЕЗПЕЧЕННЯ
+[2026-08-16T10:05:33.588Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-okremyy-polk-zv-iazku-sso/
+[2026-08-16T10:05:35.892Z] Base updated: підрозділу Сил спеціальних операцій Збройних Сил України -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:05:36.703Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-kiberzahroz-do-okremyy-polk-zv-iazku-sso/
+[2026-08-16T10:05:38.897Z] Base updated: підрозділу Сил спеціальних операцій Збройних Сил України -> АНАЛІТИК КІБЕРЗАГРОЗ
+[2026-08-16T10:05:39.699Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-spetsialist-digital-marketing-do-pidrozdil-orion-bryhady-hvardii-nastupu-pomsta/
+[2026-08-16T10:05:41.783Z] Base updated: підрозділі «ОРІОН» бригади гвардії наступу «Помста» Державної прикордонної служби України -> ІТ-СПЕЦІАЛІСТ/DIGITAL MARKETING
+[2026-08-16T10:05:42.599Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-avtomatyzator-fakhivets-z-rozsliduvannia-kiberintsydentiv-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/
+[2026-08-16T10:05:44.834Z] Base updated: Сили Оборони України -> ІТ‑АВТОМАТИЗАТОР/ФАХІВЕЦЬ З РОЗСЛІДУВАННЯ КІБЕРІНЦИДЕНТІВ
+[2026-08-16T10:05:45.646Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-z-kiberbezpeky-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/
+[2026-08-16T10:05:47.662Z] Base updated: Сили Оборони України -> ІНЖЕНЕР З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:05:48.469Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-z-kiberbezpeky-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/
+[2026-08-16T10:05:52.485Z] Base updated: Сили Оборони України -> АНАЛІТИК З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:05:53.302Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/starshyy-inzhener-rozrobnyk-java-do-tsentr-masshtabuvannia-tekhnolohichnykh-rishen/
+[2026-08-16T10:05:56.777Z] Base updated: Сили Оборони України -> СТАРШИЙ ІНЖЕНЕР-РОЗРОБНИК JAVA
+[2026-08-16T10:05:57.587Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-vnutrishnoi-sluzhby-bezpeky-do-429-okremyy-polk-bezpilotnykh-system-akhilles/
+[2026-08-16T10:06:05.607Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ВНУТРІШНЬОЇ СЛУЖБИ БЕЗПЕКИ/ДИСТАНЦІЙНОГО СКРИНІНГУ
+[2026-08-16T10:06:06.419Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-mashynnoho-bachennia-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/
+[2026-08-16T10:06:08.186Z] Base updated: Сили Оборони України -> ІНЖЕНЕР МАШИННОГО БАЧЕННЯ
+[2026-08-16T10:06:08.994Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-vprovadzhennia-informatsiynykh-system-tsyfrovizatsiia-do-637-okremyy-zenitnyy-kulemetnyy-batalyon/
+[2026-08-16T10:06:13.963Z] Base updated: 637 окремий зенітний кулеметний батальйон -> ФАХІВЕЦЬ ІЗ ВПРОВАДЖЕННЯ ІНФОРМАЦІЙНИХ СИСТЕМ
+[2026-08-16T10:06:14.772Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-visualization-engineer-do-ministerstvo-oborony/
+[2026-08-16T10:06:22.868Z] Base updated: core-команди -> DATA VISUALIZATION ENGINEER
+[2026-08-16T10:06:23.678Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-engineer-dwh-do-ministerstvo-oborony/
+[2026-08-16T10:06:26.347Z] Base updated: core-команди -> DATA ENGINEER (DWH)
+[2026-08-16T10:06:27.152Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/business-process-analyst-do-ministerstvo-oborony-2/
+[2026-08-16T10:06:30.126Z] Base updated: core-команди -> BUSINESS PROCESS ANALYST
+[2026-08-16T10:06:30.941Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/bi-engineer-do-ministerstvo-oborony/
+[2026-08-16T10:06:33.231Z] Base updated: core-команди -> BI ENGINEER
+[2026-08-16T10:06:34.035Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/qa-automation-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:36.302Z] Base updated: Сили Оборони України -> QA AUTOMATION
+[2026-08-16T10:06:37.103Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/information-security-technician-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:40.038Z] Base updated: Сили Оборони України -> INFORMATION SECURITY TECHNICIAN
+[2026-08-16T10:06:40.842Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/network-engineer-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:44.246Z] Base updated: Сили Оборони України -> NETWORK ENGINEER
+[2026-08-16T10:06:45.048Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/technical-support-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:48.449Z] Base updated: Сили Оборони України -> TECHNICAL SUPPORT
+[2026-08-16T10:06:49.252Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/software-engineer-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:51.446Z] Base updated: Сили Оборони України -> SOFTWARE ENGINEER
+[2026-08-16T10:06:52.248Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-linux-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:55.711Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР LINUX
+[2026-08-16T10:06:56.516Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/vebinzhener-do-3-armiyskyy-korpus/
+[2026-08-16T10:06:59.772Z] Base updated: Сили Оборони України -> ВЕБІНЖЕНЕР
+[2026-08-16T10:07:00.577Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-z-avtomatyzatsii-z-dosvidom-ai-do-3-armiyskyy-korpus/
+[2026-08-16T10:07:30.634Z] Помилка парсингу URL https://lobbyx.army/tor/inzhener-z-avtomatyzatsii-z-dosvidom-ai-do-3-armiyskyy-korpus/: Navigation timeout of 30000 ms exceeded
+[2026-08-16T10:07:30.643Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-engineer-do-3-armiyskyy-korpus/
+[2026-08-16T10:07:46.734Z] Base updated: Сили Оборони України -> DATA ENGINEER
+[2026-08-16T10:07:47.541Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-do-3-armiyskyy-korpus/
+[2026-08-16T10:07:53.897Z] Base updated: Сили Оборони України -> АНАЛІТИК
+[2026-08-16T10:07:54.712Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-474-okremyy-batalyon-okhorony-ta-obsluhovuvannia/
+[2026-08-16T10:07:59.198Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:08:00.000Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-431-okremyy-batalyon-bezpilotnykh-system-brodiahy/
+[2026-08-16T10:08:03.673Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:08:04.483Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-sluzhby-zakhystu-informatsii-do-431-okremyy-batalyon-bezpilotnykh-system-brodiahy/
+[2026-08-16T10:08:07.777Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:08:08.595Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/java-rozrobnyk-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T10:08:11.294Z] Base updated: Сили Оборони України -> JAVA-РОЗРОБНИК
+[2026-08-16T10:08:12.105Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilu-tekhnichnoi-pidtrymky-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T10:08:20.223Z] Base updated: Сили Оборони України -> ОФІЦЕР ВІДДІЛУ ТЕХНІЧНОЇ ПІДТРИМКИ
+[2026-08-16T10:08:21.036Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ruby-on-rails-developer-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T10:08:25.181Z] Base updated: Сили Оборони України -> RUBY ON RAILS DEVELOPER
+[2026-08-16T10:08:25.991Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-viyskova-chastyna-a2678-syl-lohistyky/
+[2026-08-16T10:08:39.360Z] Base updated: військової частини А2678 Командування Сил Логістики -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T10:08:40.591Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilu-systemnoho-administruvannia-do-ministerstvo-oborony/
+[2026-08-16T10:08:46.639Z] Base updated: одній з команд Міністерства Оборони України -> НАЧАЛЬНИК ВІДДІЛУ СИСТЕМНОГО АДМІНІСТРУВАННЯ
+[2026-08-16T10:08:47.444Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/dyrektor-dyrektoratu-tsyfrovoi-transformatsii-u-sferi-oborony-do-ministerstvo-oborony/
+[2026-08-16T10:08:56.582Z] Base updated: Сили Оборони України -> ДИРЕКТОР ДИРЕКТОРАТУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ У СФЕРІ ОБОРОНИ
+[2026-08-16T10:08:57.394Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-product-designer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/
+[2026-08-16T10:08:59.737Z] Base updated: Центрі інновацій та розвитку оборонних технологій МОУ -> PRODUCT DESIGNER
+[2026-08-16T10:09:00.540Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/business-analyst-do-3-armiyskyy-korpus/
+[2026-08-16T10:09:03.266Z] Base updated: Сили Оборони України -> BUSINESS ANALYST
+[2026-08-16T10:09:04.067Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-20-armiyskyy-korpus/
+[2026-08-16T10:09:06.181Z] Base updated: одного з підрозділів 20 Армійського корпусу Сухопутних військ Збройних Сил України у відділенні цифрового розвитку -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:09:06.986Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-20-armiyskyy-korpus/
+[2026-08-16T10:09:09.312Z] Base updated: одного з підрозділів 20 Армійського корпусу Сухопутних військ Збройних Сил України у відділенні цифрового розвитку -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:09:10.128Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-20-armiyskyy-korpus/
+[2026-08-16T10:09:16.369Z] Base updated: одного з підрозділів 20 Армійського корпусу Сухопутних військ Збройних Сил України у відділенні цифрового розвитку -> НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:09:17.181Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-iz-vprovadzhennia-prohramnoho-produktu-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/
+[2026-08-16T10:09:18.788Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ІЗ ВПРОВАДЖЕННЯ ПРОГРАМНОГО ПРОДУКТУ
+[2026-08-16T10:09:19.602Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-delivery-project-manager-do-ministerstvo-oborony/
+[2026-08-16T10:09:21.550Z] Base updated: сфері обслуговування ІТ-інфраструктури та надання консультативних послуг щодо роботи в системах та програмних комплексах -> SENIOR DELIVERY/PROJECT MANAGER
+[2026-08-16T10:09:22.352Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/full-stack-developer-do-3-armiyskyy-korpus/
+[2026-08-16T10:09:24.203Z] Base updated: Сили Оборони України -> FULL STACK DEVELOPER
+[2026-08-16T10:09:25.015Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-21-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:09:26.793Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:09:27.611Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-21-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:09:29.773Z] Base updated: Сили Оборони України -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T10:09:30.578Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ai-security-application-security-engineer-do-ministerstvo-oborony/
+[2026-08-16T10:09:32.491Z] Base updated: сфері обслуговування ІТ інфраструктури та надання консультативних послуг щодо роботи в системах та програмних комплексах -> AI SECURITY/APPLICATION SECURITY ENGINEER
+[2026-08-16T10:09:33.300Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/full-stack-ai-engineer-do-ministerstvo-oborony/
+[2026-08-16T10:09:35.194Z] Base updated: одному зі структурних підрозділів Міністерства оборони України -> FULL STACK AI ENGINEER
+[2026-08-16T10:09:36.002Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/mlops-engineer-do-ministerstvo-oborony/
+[2026-08-16T10:09:38.377Z] Base updated: одному зі структурних підрозділів Міністерства Оборони України -> MLOPS ENGINEER
+[2026-08-16T10:09:39.187Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/secops-engineer-do-ministerstvo-oborony/
+[2026-08-16T10:09:47.011Z] Base updated: сфері обслуговування ІТ інфраструктури та надання консультативних послуг щодо роботи в системах та програмних комплексах -> SECOPS ENGINEER
+[2026-08-16T10:09:47.821Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-ta-tsyfrovizatsii-do-1-okremyy-shturmovyy-polk/
+[2026-08-16T10:09:49.427Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ ТА ЦИФРОВІЗАЦІЇ
+[2026-08-16T10:09:50.242Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ml-nlp-ir-engineer-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky/
+[2026-08-16T10:09:52.309Z] Base updated: Окремого спеціального центру електронної підтримки -> ML/NLP/IR ENGINEER
+[2026-08-16T10:09:53.120Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/backend-engineer-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky/
+[2026-08-16T10:09:55.180Z] Base updated: Окремого спеціального центру електронної підтримки -> BACKEND ENGINEER
+[2026-08-16T10:09:55.983Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/menedzher-konfihuratsiy-ta-servisiv-do-ministerstvo-oborony/
+[2026-08-16T10:09:57.901Z] Base updated: одному зі структурних підрозділів Міністерства оборони України -> МЕНЕДЖЕР КОНФІГУРАЦІЙ ТА СЕРВІСІВ
+[2026-08-16T10:09:58.709Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-atlassian-platform-manager-do-ministerstvo-oborony/
+[2026-08-16T10:10:00.668Z] Base updated: Сили Оборони України -> SENIOR ATLASSIAN PLATFORM MANAGER
+[2026-08-16T10:10:01.473Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-tekhnichnoi-pidtrymky-do-ministerstvo-oborony/
+[2026-08-16T10:10:03.126Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ТЕХНІЧНОЇ ПІДТРИМКИ
+[2026-08-16T10:10:03.941Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-z-rezervnoho-kopiiuvannia-commvault-do-ministerstvo-oborony/
+[2026-08-16T10:10:06.976Z] Base updated: одній з команд Міністерства Оборони України -> ІНЖЕНЕР З РЕЗЕРВНОГО КОПІЮВАННЯ (COMMVAULT)
+[2026-08-16T10:10:07.783Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ekspert-iz-vprovadzhennia-system-do-ministerstvo-oborony/
+[2026-08-16T10:10:10.530Z] Base updated: Сили Оборони України -> ЕКСПЕРТ ІЗ ВПРОВАДЖЕННЯ СИСТЕМ
+[2026-08-16T10:10:11.344Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-tsentru-obrobky-danykh-do-ministerstvo-oborony/
+[2026-08-16T10:10:14.429Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР ЦЕНТРУ ОБРОБКИ ДАНИХ
+[2026-08-16T10:10:15.243Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-biznes-protsesiv-do-ministerstvo-oborony/
+[2026-08-16T10:10:16.893Z] Base updated: однієї з команд Міністерства Оборони України на посаді аналітика бізнес-процесів -> АНАЛІТИК БІЗНЕС-ПРОЦЕСІВ
+[2026-08-16T10:10:17.698Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-viddilu-pidtrymky-korystuvachiv-do-ministerstvo-oborony/
+[2026-08-16T10:10:19.701Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ ВІДДІЛУ ПІДТРИМКИ КОРИСТУВАЧІВ
+[2026-08-16T10:10:20.507Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-danykh-do-ministerstvo-oborony-2/
+[2026-08-16T10:10:22.541Z] Base updated: підрозділі Міністерства оборони України -> АНАЛІТИК ДАНИХ
+[2026-08-16T10:10:23.352Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-viddilu-dokumentalnoho-suprovodzhennia-do-ministerstvo-oborony/
+[2026-08-16T10:10:25.279Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ВІДДІЛУ ДОКУМЕНТАЛЬНОГО СУПРОВОДЖЕННЯ
+[2026-08-16T10:10:26.086Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-viddilu-vprovadzhennia-iks-do-ministerstvo-oborony/
+[2026-08-16T10:10:28.373Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ВІДДІЛУ ВПРОВАДЖЕННЯ ІКС
+[2026-08-16T10:10:29.178Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-zakhystu-informatsii-ta-kiberbezpeky-do-32-okrema-artyleriyska-bryhada/
+[2026-08-16T10:10:35.406Z] Base updated: 32-ої окремої артилерійської бригади морської піхоти Військово-морських сил Збройних Сил України -> ОФІЦЕР ЗАХИСТУ ІНФОРМАЦІЇ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T10:10:36.215Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/starshyy-analityk-do-ministerstvo-oborony/
+[2026-08-16T10:10:38.101Z] Base updated: Управлінні міжнародних проєктів Міністерства оборони України -> ДАТА-АНАЛІТИК
+[2026-08-16T10:10:38.911Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-analityk-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:10:41.210Z] Base updated: Сили Оборони України -> OSINT-АНАЛІТИК
+[2026-08-16T10:10:42.014Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:10:44.238Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:10:45.039Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-servernoho-sehmenta-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:10:47.161Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР СЕРВЕРНОГО СЕГМЕНТА
+[2026-08-16T10:10:47.970Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-developer-javascript-react-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:10:49.422Z] Base updated: Головному відділі безпілотних авіаційних систем «Фенікс» ДПСУ -> FRONTEND DEVELOPER (JAVASCRIPT/REACT)
+[2026-08-16T10:10:50.229Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-spetsialist-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:10:51.813Z] Base updated: Головному відділі безпілотних авіаційних систем «Фенікс» ДПСУ -> ІТ-СПЕЦІАЛІСТ
+[2026-08-16T10:10:52.614Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/back-end-developer-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:10:54.557Z] Base updated: Головному відділі безпілотних авіаційних систем «Фенікс» ДПСУ -> BACK-END DEVELOPER
+[2026-08-16T10:10:55.370Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:10:57.328Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:10:58.137Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhrayter-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:11:00.068Z] Base updated: Сили Оборони України -> ТЕХРАЙТЕР
+[2026-08-16T10:11:00.869Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-z-vprovadzhennia-it-system-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:11:04.337Z] Base updated: Сили Оборони України -> ІНЖЕНЕР З ВПРОВАДЖЕННЯ ІТ-СИСТЕМ
+[2026-08-16T10:11:05.140Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-danykh-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:11:07.122Z] Base updated: Сили Оборони України -> АНАЛІТИК ДАНИХ
+[2026-08-16T10:11:07.924Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/biznes-analityk-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:11:09.939Z] Base updated: Сили Оборони України -> БІЗНЕС-АНАЛІТИК
+[2026-08-16T10:11:10.744Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/menedzher-it-proiektiv-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:11:12.792Z] Base updated: Сили Оборони України -> МЕНЕДЖЕР ІТ-ПРОЄКТІВ
+[2026-08-16T10:11:13.597Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/kerivnyk-napriamu-tsyfrovoi-transformatsii-do-151-okrema-mekhanizovana-bryhada/
+[2026-08-16T10:11:15.726Z] Base updated: Сили Оборони України -> КЕРІВНИК НАПРЯМУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ
+[2026-08-16T10:11:16.527Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-3-armiyskyy-korpus/
+[2026-08-16T10:11:18.716Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:11:19.524Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-khmar-do-ministerstvo-oborony/
+[2026-08-16T10:11:26.415Z] Base updated: одному зі структурних підрозділів Міністерства Оборони України -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ ХМАР
+[2026-08-16T10:11:27.225Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-ministerstvo-oborony-2/
+[2026-08-16T10:11:29.207Z] Base updated: одному зі структурних підрозділів Міністерства Оборони України -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T10:11:30.017Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-analizu-zakhyshchenosti-do-ministerstvo-oborony/
+[2026-08-16T10:11:31.876Z] Base updated: одному зі структурних підрозділів Міністерства Оборони України -> СПЕЦІАЛІСТ З АНАЛІЗУ ЗАХИЩЕНОСТІ
+[2026-08-16T10:11:32.686Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/audytor-kiberbezpeky-do-ministerstvo-oborony/
+[2026-08-16T10:11:34.713Z] Base updated: одному зі структурних підрозділів Міністерства Оборони України -> АУДИТОР КІБЕРБЕЗПЕКИ
+[2026-08-16T10:11:35.516Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-kiberzakhystu-do-fakultet-viyskovoi-pidhotovky-derzhspetstranssluzhby-udunt/
+[2026-08-16T10:11:37.481Z] Base updated: факультету військової підготовки Держспецтрансслужби УДУНТ -> НАЧАЛЬНИК ГРУПИ КІБЕРЗАХИСТУ
+[2026-08-16T10:11:38.296Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:11:40.198Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T10:11:41.000Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-prohramist-bpla-do-3-mekhanizovanyy-batalyon-42-ombr/
+[2026-08-16T10:11:42.856Z] Base updated: Сили Оборони України -> ІНЖЕНЕР-ПРОГРАМІСТ БПЛА
+[2026-08-16T10:11:43.669Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rnd-menedzher-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/
+[2026-08-16T10:11:45.578Z] Base updated: Сили Оборони України -> R&D-МЕНЕДЖЕР
+[2026-08-16T10:11:46.384Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-wordpress-do-tsentr-rekrutynhu-dshv/
+[2026-08-16T10:11:49.612Z] Base updated: різних бригадах і на різних посадах — вони знають систему зсередини й готові поділитися цим досвідом -> РОЗРОБНИК WORDPRESS
+[2026-08-16T10:11:50.417Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-zastupnyk-nachalnyka-shtabu-do-38-okrema-bryhada-morskoi-pikhoty/
+[2026-08-16T10:11:52.741Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ-ЗАСТУПНИК НАЧАЛЬНИКА ШТАБУ
+[2026-08-16T10:11:53.544Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-software-engineer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy-4/
+[2026-08-16T10:11:55.581Z] Base updated: Центрі інновацій та розвитку оборонних технологій МОУ -> SENIOR SOFTWARE ENGINEER
+[2026-08-16T10:11:56.390Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/middle-data-analyst-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/
+[2026-08-16T10:11:58.451Z] Base updated: Сили Оборони України -> MIDDLE DATA ANALYST
+[2026-08-16T10:11:59.252Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/automation-qa-engineer-do-13-bryhada-operatyvnoho-pryznachennia-khartiia/
+[2026-08-16T10:12:01.188Z] Base updated: Сили Оборони України -> AUTOMATION QA ENGINEER
+[2026-08-16T10:12:01.999Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devsecops-do-3-armiyskyy-korpus/
+[2026-08-16T10:12:04.052Z] Base updated: Сили Оборони України -> DEVSECOPS
+[2026-08-16T10:12:04.867Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-z-osint-ta-kiberrozvidky-do-3-armiyskyy-korpus/
+[2026-08-16T10:12:06.777Z] Base updated: Сили Оборони України -> АНАЛІТИК З OSINT ТА КІБЕРРОЗВІДКИ
+[2026-08-16T10:12:07.578Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/penetration-tester-python-go-do-syl-oborony-spetspidrozdil-sk/
+[2026-08-16T10:12:09.163Z] Base updated: одному зі спецпідрозділів Служби безпеки України -> PENETRATION TESTER/ RED TEAM OPERATOR/PENTEST
+[2026-08-16T10:12:09.980Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/embedded-software-engineer-do-batalyon-bezpilotnykh-system-110-ombr/
+[2026-08-16T10:12:12.550Z] Base updated: батальйону безпілотних систем 110 ОМБр -> EMBEDDED SOFTWARE ENGINEER
+[2026-08-16T10:12:13.363Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/prohramist-do-60-okrema-mekhanizovana-inhuletska-bryhada/
+[2026-08-16T10:12:20.157Z] Base updated: Сили Оборони України -> ПРОГРАМІСТ
+[2026-08-16T10:12:20.968Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-1225-okremyy-batalyon-pidtrymky/
+[2026-08-16T10:12:22.892Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T10:12:23.696Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/instruktor-z-viyskovykh-tekhnolohichnykh-system-do-syly-oborony/
+[2026-08-16T10:12:25.167Z] Base updated: одного з технологічних підрозділів МОУ -> ІНСТРУКТОР З ВІЙСЬКОВИХ ТЕХНОЛОГІЧНИХ СИСТЕМ
+[2026-08-16T10:12:25.981Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/operator-tekhnichnoi-pidtrymky-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy-3/
+[2026-08-16T10:12:27.388Z] Base updated: Центрі інновацій та розвитку оборонних технологій МОУ -> ОПЕРАТОР ТЕХНІЧНОЇ ПІДТРИМКИ
+[2026-08-16T10:12:28.189Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/operator-viddilu-reiestratsii-ta-veryfikatsii-korystuvachiv-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/
+[2026-08-16T10:12:29.565Z] Base updated: Центрі інновацій та розвитку оборонних технологій МОУ -> ОПЕРАТОР ВІДДІЛУ РЕЄСТРАЦІЇ ТА ВЕРИФІКАЦІЇ КОРИСТУВАЧІВ
+[2026-08-16T10:12:30.373Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/administrator-merezhevoho-obladnannia-do-okremyy-polk-zv-iazku/

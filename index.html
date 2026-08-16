@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Lobby X IT CRM</title>
+    <title>Alenev Lobby X IT CRM</title>
     <style>
         body { font-family: system-ui, sans-serif; background-color: #f8fafc; color: #1e293b; padding: 24px; margin: 0; }
         .container { max-width: 1100px; margin: 0 auto; background: white; padding: 24px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
@@ -32,9 +32,17 @@
         .sel-applied { background: #eff6ff; color: #1e40af; }
         .sel-ignored { background: #fffbeb; color: #92400e; }
         .empty-row { padding: 32px; text-align: center; color: #94a3b8; font-weight: 500; }
+        .header-left { display: flex; align-items: center; gap: 20px; flex: 1; min-width: 0; }
+        .search-box { position: relative; flex: 1; max-width: 420px; }
+        #searchInput { width: 100%; box-sizing: border-box; padding: 9px 36px 9px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 14px; outline: none; }
+        #searchInput:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
+        #searchClear { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); border: none; background: #e2e8f0; color: #475569; width: 22px; height: 22px; border-radius: 50%; font-size: 13px; line-height: 1; cursor: pointer; display: none; align-items: center; justify-content: center; padding: 0; }
+        #searchClear:hover { background: #cbd5e1; color: #1e293b; }
+        #searchClear.visible { display: inline-flex; }
+        .results-info { margin-bottom: 12px; font-size: 13px; color: #64748b; font-weight: 600; }
     </style>
     <script>
-        window.appState = { vacancies: [], filterStatus: 'all', isScraping: false };
+        window.appState = { vacancies: [], filterStatus: 'all', searchQuery: '', isScraping: false };
 
         function updateStats() {
             const list = window.appState.vacancies;
@@ -51,6 +59,30 @@
             renderTable();
         }
 
+        function matchesSearch(vac) {
+            const q = window.appState.searchQuery.trim().toLowerCase();
+            if (!q) return true;
+            const haystack = ((vac.title || '') + ' ' + (vac.unit || '')).toLowerCase();
+            return q.split(/\s+/).every(word => haystack.includes(word));
+        }
+
+        function onSearchInput() {
+            window.appState.searchQuery = document.getElementById('searchInput').value;
+            const clearBtn = document.getElementById('searchClear');
+            if (clearBtn) clearBtn.classList.toggle('visible', window.appState.searchQuery.trim().length > 0);
+            renderTable();
+        }
+
+        function clearSearch() {
+            const input = document.getElementById('searchInput');
+            if (input) input.value = '';
+            window.appState.searchQuery = '';
+            const clearBtn = document.getElementById('searchClear');
+            if (clearBtn) clearBtn.classList.remove('visible');
+            renderTable();
+            if (input) input.focus();
+        }
+
         function renderTable() {
             const tbody = document.getElementById('vacTableBody');
             tbody.innerHTML = '';
@@ -59,9 +91,25 @@
             if (window.appState.filterStatus !== 'all') {
                 list = list.filter(v => v.status === window.appState.filterStatus);
             }
+            list = list.filter(matchesSearch);
+
+            const info = document.getElementById('resultsInfo');
+            const query = window.appState.searchQuery.trim();
+            if (info) {
+                info.style.display = query ? '' : 'none';
+                if (query) info.textContent = `Знайдено: ${list.length} / ${window.appState.vacancies.length}`;
+            }
 
             if (list.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="3" class="empty-row">Вакансій не знайдено.</td></tr>`;
+                const tr = document.createElement('tr');
+                const td = document.createElement('td');
+                td.colSpan = 3;
+                td.className = 'empty-row';
+                td.textContent = query
+                    ? `Нічого не знайдено за запитом «${query}». Спробуйте інші ключові слова або скиньте пошук.`
+                    : 'Вакансій не знайдено.';
+                tr.appendChild(td);
+                tbody.appendChild(tr);
                 return;
             }
 
@@ -158,6 +206,19 @@
         }
 
         window.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('input', onSearchInput);
+                searchInput.addEventListener('keydown', e => {
+                    if (e.key === 'Escape') {
+                        e.preventDefault();
+                        clearSearch();
+                    }
+                });
+            }
+            const searchClear = document.getElementById('searchClear');
+            if (searchClear) searchClear.addEventListener('click', clearSearch);
+
             fetch('/api/vacancies')
                 .then(res => res.json())
                 .then(data => {
@@ -172,8 +233,12 @@
 
     <div class="container">
         <header>
-            <div>
-                <h1>🎖️ Lobby X CRM</h1>
+            <div class="header-left">
+                <h1>🎖️ Alenev Lobby X CRM</h1>
+                <div class="search-box">
+                    <input id="searchInput" type="text" placeholder="Пошук за посадою чи підрозділом..." autocomplete="off">
+                    <button id="searchClear" title="Скинути пошук">✕</button>
+                </div>
             </div>
             <button id="scrapeBtn" onclick="runScraper()" class="btn">
                 🔄 Оновити з сайту
@@ -198,6 +263,8 @@
                 <div id="count-ignored" class="card-num">0</div>
             </div>
         </div>
+
+        <div id="resultsInfo" class="results-info" style="display: none;"></div>
 
         <div style="overflow-x: auto;">
             <table>
