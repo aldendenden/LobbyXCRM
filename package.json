@@ -1,4 +1,13 @@
 {
+  "name": "lobbyx-ui",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install",
+    "build": "cd client && npm run build",
+    "start": "node server.js",
+    "dev": "cd client && npm run dev"
+  },
   "dependencies": {
     "cheerio": "^1.2.0",
     "express": "^5.2.1",

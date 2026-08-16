@@ -21,15 +21,38 @@ if errorlevel 1 (
 )
 
 if not exist "node_modules\" (
-    echo [ІНФО] Перший запуск програми. Встановлюю необхідні компоненти...
+    echo [ІНФО] Перший запуск програми. Встановлюю серверні компоненти...
     call npm install express puppeteer cheerio
     if errorlevel 1 (
         echo [ПОМИЛКА] Не вдалося встановити модулі.
         pause
         exit
     )
-    echo [УСПІХ] Всі компоненти успішно встановлено!
+    echo [УСПІХ] Серверні компоненти успішно встановлено!
 )
+
+if not exist "client\node_modules\" (
+    echo [ІНФО] Встановлюю React-компоненти фронтенду...
+    cd client
+    call npm install
+    if errorlevel 1 (
+        echo [ПОМИЛКА] Не вдалося встановити React-модулі.
+        pause
+        exit
+    )
+    cd ..
+    echo [УСПІХ] React-компоненти успішно встановлено!
+)
+
+echo [ІНФО] Збираю React-фронтенд (client\dist)...
+cd client
+call npm run build
+if errorlevel 1 (
+    echo [ПОМИЛКА] Помилка збірки React-фронтенду.
+    pause
+    exit
+)
+cd ..
 
 echo [ІНФО] Запускаю локальний сервер Node.js...
 :: Запускаємо сервер в окремому вікні

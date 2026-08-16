@@ -1,1 +1,8 @@
 /node_modules
+/client/node_modules
+/client/dist
+/lobbyx.db
+/lobbyx_backup.db
+/lobbyx.db-journal
+/lobbyx.db-wal
+/lobbyx.db-shm

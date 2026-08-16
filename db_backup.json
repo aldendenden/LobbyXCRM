@@ -2381,6 +2381,1314 @@
       "title": "ОПЕРАТОР ТЕХНІЧНОЇ ПІДТРИМКИ",
       "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
       "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/operator-viddilu-reiestratsii-ta-veryfikatsii-korystuvachiv-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "ОПЕРАТОР ВІДДІЛУ РЕЄСТРАЦІЇ ТА ВЕРИФІКАЦІЇ КОРИСТУВАЧІВ",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-merezhevoho-obladnannia-do-okremyy-polk-zv-iazku/",
+      "title": "АДМІНІСТРАТОР МЕРЕЖЕВОГО ОБЛАДНАННЯ",
+      "unit": "Окремого полку зв’язку Сил спеціальних операцій Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-linux-do-okremyy-polk-zv-iazku/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР LINUX",
+      "unit": "Окремого полку зв’язку Сил спеціальних операцій Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-windows-do-okremyy-polk-zv-iazku/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР WINDOWS",
+      "unit": "Окремого полку зв’язку Сил спеціальних операцій Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/automation-qa-engineer-do-3-armiyskyy-korpus/",
+      "title": "AUTOMATION QA ENGINEER",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/offensive-security-engineer-red-team-do-syly-oborony/",
+      "title": "OFFENSIVE SECURITY ENGINEER (RED TEAM)",
+      "unit": "сфері обслуговування ІТ інфраструктури та надання консультативних послуг щодо роботи в системах та програмних комплексах",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/spetsialist-hrupy-kryptohrafichnoho-zakhystu-informatsii-do-49-okremyy-zahin-spetsialnoho-pryznachennia/",
+      "title": "СПЕЦІАЛІСТ ГРУПИ КРИПТОГРАФІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-operatyvnoho-viddilu-kiberzakhystu-do-syly-oborony/",
+      "title": "ОФІЦЕР ОПЕРАТИВНОГО ВІДДІЛУ КІБЕРЗАХИСТУ",
+      "unit": "одному з підрозділів Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-mizhnarodnyy-lehion-hur-mo-ukrainy/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-427-okrema-bryhada-bezpilotnykh-system-raroh/",
+      "title": "ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/pomichnyk-nachalnyka-zviazku-ta-kiberbezpeky-do-427-okrema-bryhada-bezpilotnykh-system-raroh/",
+      "title": "ПОМІЧНИК НАЧАЛЬНИКА ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-pidrozdil-kryla-holovnoho-upravlinnia-rozvidky-mou/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-1-okrema-vazhka-mekhanizovana-bryhada/",
+      "title": "ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-7-artyleriyska-bryhada-hrehit/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-1225-okremyy-batalyon-pidtrymky/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "1225-го окремого батальйону підтримки Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/junior-project-manager-do-operatyvne-komanduvannia-zakhid/",
+      "title": "JUNIOR PROJECT MANAGER",
+      "unit": "військової частини оперативного командування «Захід» Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/junior-product-support-do-operatyvne-komanduvannia-zakhid/",
+      "title": "JUNIOR PRODUCT SUPPORT",
+      "unit": "військової частини оперативного командування «Захід» Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/junior-business-analyst-do-operatyvne-komanduvannia-zakhid/",
+      "title": "JUNIOR BUSINESS ANALYST",
+      "unit": "військової частини оперативного командування «Захід» Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/junior-technical-writer-do-operatyvne-komanduvannia-zakhid/",
+      "title": "JUNIOR TECHNICAL WRITER",
+      "unit": "військової частини оперативного командування «Захід» Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-taktychnoho-rivnia-do-operatyvne-komanduvannia-zakhid/",
+      "title": "JUNIOR DATA ANALYST",
+      "unit": "військової частини оперативного командування «Захід» Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-operatyvne-komanduvannia-zakhid/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "підрозділу оперативного командування «Захід«» Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-viddilu-tsyfrovoi-transformatsii-do-93-okrema-mekhanizovana-bryhada-kholodnyy-yar/",
+      "title": "ТЕХНІК ВІДДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-tsentr-upravlinnia-rozvidkoiu-komanduvannia-ob-iednanykh-syl/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-159-okrema-mekhanizovana-bryhada/",
+      "title": "ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-159-okrema-mekhanizovana-bryhada/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-26-okrema-artyleriyska-bryhada-imeni-heneral-khorunzhoho-romana-dashkevycha/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/devsecops-do-tsentr-innovatsiy-i-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "DEVSECOPS",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/application-security-engineer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "APPLICATION SECURITY ENGINEER",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/senior-python-developer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "SENIOR PYTHON DEVELOPER",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/engineering-manager-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "ENGINEERING MANAGER",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-68-okrema-artyleriyska-bryhada/",
+      "title": "ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-81-okremyy-batalyon-zv-iazku/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "81-му окремому батальйоні зв'язку",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/it-fakhivets-do-1201-okremyy-zenitnyy-raketnyy-dyvizion/",
+      "title": "ІТ-ФАХІВЕЦЬ",
+      "unit": "1201-го окремого зенітного ракетного дивізіону Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-hrupy-zviazku-ta-kiberbezpeky-do-43-okrema-mekhanizovana-bryhada/",
+      "title": "НАЧАЛЬНИК ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/rozrobnyk-prohramnoho-zabezpechennia-do-18-slov-ianska-bryhada/",
+      "title": "РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnichnyy-pysmennyk-do-tsentr-masshtabuvannia-tekhnolohichnykh-rishen-2/",
+      "title": "ТЕХНІЧНИЙ ПИСЬМЕННИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-rehionalne-upravlinnia-zakhid-dsst/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-152-okrema-ieherska-bryhada/",
+      "title": "ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-152-okrema-ieherska-bryhada/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-152-okrema-ieherska-bryhada/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-z-nalashtuvannia-merezhevoho-obladnannia-do-viyska-zv-iazku-2/",
+      "title": "ІНЖЕНЕР З НАЛАШТУВАННЯ МЕРЕЖЕВОГО ОБЛАДНАННЯ",
+      "unit": "одній з військових частин",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-9-okrema-bryhada-bezpilotnykh-system/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/incident-response-analyst-do-viyska-zv-iazku/",
+      "title": "INCIDENT RESPONSE ANALYST",
+      "unit": "одній з військових частин",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-zviazku-ta-kiberbezpeky-do-pivdenne-terytorialne-upravlinnia-vsp/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "Південного територіального управління ВСП",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-viyska-zv-iazku/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/osint-analityk-do-syly-spetsialnykh-operatsiy/",
+      "title": "OSINT-АНАЛІТИК",
+      "unit": "одному зі спецпідрозділів Сил Спеціальних Операцій",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/naukovyy-spivrobitnyk-viddilu-suprovodzhennia-system-zakhystu-informatsii-do-viyskovyy-instytut-telekomunikatsiy-ta-informatyzatsii/",
+      "title": "НАУКОВИЙ СПІВРОБІТНИК ВІДДІЛУ СУПРОВОДЖЕННЯ СИСТЕМ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/devops-engineer-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/",
+      "title": "DEVOPS ENGINEER",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-hrupy-zviazku-ta-kiberbezpeky-do-1172-okremyy-zenitnyy-raketnyy-dyvizion/",
+      "title": "НАЧАЛЬНИК ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "1172 окремий зенітний ракетний дивізіон",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-9-okrema-bryhada-bezpilotnykh-system/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/frontend-rozrobnyk-do-17-poltavska-bryhada-reyd/",
+      "title": "FRONTEND-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/embedded-developer-intehrator-do-17-poltavska-bryhada-reyd/",
+      "title": "EMBEDDED DEVELOPER/ІНТЕГРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/backend-rozrobnyk-do-17-poltavska-bryhada-reyd/",
+      "title": "BACKEND-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-intehrator-do-17-poltavska-bryhada-reyd/",
+      "title": "ІНЖЕНЕР-ІНТЕГРАТОР (МАШИННИЙ ЗІР ДЛЯ БПЛА)",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-shtabu-do-8-okremyy-hirsko-shturmovyy-batalyon-10-ohshbr/",
+      "title": "ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ ШТАБУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/fakhivets-iz-zakhystu-informatsii-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/",
+      "title": "ФАХІВЕЦЬ ІЗ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/proiektnyy-menedzher-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/",
+      "title": "ПРОЄКТНИЙ МЕНЕДЖЕР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/senior-devops-engineer-do-viyska-zv-iazku/",
+      "title": "SENIOR DEVOPS ENGINEER",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ios-developer-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "IOS DEVELOPER",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/devops-linux-inzhener-do-ministerstvo-oborony-ukrainy/",
+      "title": "DEVOPS/LINUX ІНЖЕНЕР",
+      "unit": "одному зі структурних підрозділів Міністерство оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-it-infrastruktury-do-viyska-zv-iazku/",
+      "title": "ІНЖЕНЕР ІТ-ІНФРАСТРУКТУРИ",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/backend-rozrobnyk-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/",
+      "title": "BACKEND-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/frontend-rozrobnyk-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/",
+      "title": "FRONTEND-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/it-spetsialist-do-237-okremyy-batalyon-bezpilotnykh-system/",
+      "title": "ІТ-СПЕЦІАЛІСТ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-rozrobnyk-net-do-tsentr-masshtabuvannia-tekhnolohichnykh-rishen/",
+      "title": "ІНЖЕНЕР-РОЗРОБНИК .NET",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-do-143-okrema-mekhanizovana-bryhada/",
+      "title": "ТЕХНІК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-hrupy-zv-iazku-ta-kiberbezpeky-shtabu-do-6-polk-rangers/",
+      "title": "ТЕХНІК ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ ШТАБУ",
+      "unit": "6-го полку Сил спеціальних операцій Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/it-fakhivets-do-13-bryhada-operatyvnoho-pryznachennia-khartiia/",
+      "title": "IT-ФАХІВЕЦЬ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-9-okremyy-rozviduvalnyy-batalyon/",
+      "title": "ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "9-го окремого розвідувального батальйону Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-hrupy-zviazku-ta-kiberbezpeky-do-9-okremyy-rozviduvalnyy-batalyon/",
+      "title": "ОФІЦЕР ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "9-го окремого розвідувального батальйону Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-640-okremyy-zenitnyy-kulemetnyy-batalyon/",
+      "title": "ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "640 окремий зенітний кулеметний батальйон",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-batalyon-bezpilotnykh-system-pathfinder/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/project-manager-viddilu-tsyfrovizatsii-do-116-okrema-mekhanizovana-bryhada/",
+      "title": "PROJECT MANAGER ВІДДІЛУ ЦИФРОВІЗАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-640-okremyy-zenitnyy-kulemetnyy-batalyon/",
+      "title": "НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "640 окремий зенітний кулеметний батальйон",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/data-analyst-qa-analityka-danykh-kontrol-iakosti-do-2-korpus-natsionalnoi-hvardii-ukrainy-khartiia/",
+      "title": "DATA ANALYST",
+      "unit": "ефективного та сучасного військового підрозділу з якісним навчанням",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ml-ai-engineer-do-429-okremyy-polk-bezpilotnykh-system-akhilles/",
+      "title": "ML/AI ENGINEER",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilu-baz-danykh-do-viyska-zv-iazku/",
+      "title": "ОФІЦЕР ВІДДІЛУ БАЗ ДАНИХ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-operatyvnoho-viddilu-kiberzakhystu-do-viyska-zv-iazku/",
+      "title": "ОФІЦЕР ОПЕРАТИВНОГО ВІДДІЛУ КІБЕРЗАХИСТУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-117-okrema-vazhka-mekhanizovana-bryhada/",
+      "title": "ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "117-ої окремої важкої механізованої бригади на посаді штаб-сержанта 3 категорії відділення цифрового розвитку",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-117-okrema-vazhka-mekhanizovana-bryhada/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "117-ої окремої важкої механізованої бригади на посаді офіцера відділення цифрового розвитку",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-zviazkivets-do-92-okrema-shturmova-bryhada/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР-ЗВ’ЯЗКІВЕЦЬ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/zv-iazkivets-systemnyy-administrator-do-225-oshb/",
+      "title": "ЗВ’ЯЗКІВЕЦЬ/СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-zviazkivets-do-sukhoputni-viyska/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР/ЗВ’ЯЗКІВЕЦЬ",
+      "unit": "121 окремий розвідувальний батальйон",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilu-tekhnichnoi-pidtrymky-do-viyska-zv-iazku/",
+      "title": "ОФІЦЕР ВІДДІЛУ ТЕХНІЧНОЇ ПІДТРИМКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/radnyk-dsst-z-tsyfrovoi-transformatsii-ta-analityky-protsesiv-do-derzhavna-spetsialna-sluzhba-transportu/",
+      "title": "РАДНИК З ЦИФРОВОЇ ТРАНСФОРМАЦІЇ ТА АНАЛІТИКИ ПРОЦЕСІВ",
+      "unit": "більш ефективною та зрозумілою",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/osint-analityk-do-holovne-upravlinnia-rozvidky/",
+      "title": "OSINT-АНАЛІТИК",
+      "unit": "Головному управлінні розвідки Міністерства оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-127-okremyy-batalyon-zv-iazku/",
+      "title": "ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "127-го окремого батальйону зв'язку Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-hrupy-tsyfrovoho-rozvytku-do-127-okremyy-batalyon-zv-iazku/",
+      "title": "НАЧАЛЬНИК ГРУПИ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "127-го окремого батальйону зв'язку Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilu-protydii-kiberzahrozam-atestatsii-ta-ekspertyzy-do-viyska-zv-iazku/",
+      "title": "ОФІЦЕР ВІДДІЛУ ПРОТИДІЇ КІБЕРЗАГРОЗАМ, АТЕСТАЦІЇ ТА ЕКСПЕРТИЗИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-spetsialnoho-zv-iazku-ta-kiberbezpeky-do-viyska-zv-iazku/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ СПЕЦІАЛЬНОГО ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-hrupy-tsyfrovoho-rozvytku-holovnoho-upravlinnia-lohistyky-do-ministerstvo-oborony/",
+      "title": "НАЧАЛЬНИК ГРУПИ ЦИФРОВОГО РОЗВИТКУ ГОЛОВНОГО УПРАВЛІННЯ ЛОГІСТИКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/biznes-analityk-napriam-antykoruptsiynoi-diialnosti-do-ministerstvo-oborony/",
+      "title": "БІЗНЕС-АНАЛІТИК (НАПРЯМ АНТИКОРУПЦІЙНОЇ ДІЯЛЬНОСТІ)",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/python-engineer-do-12-okremyy-tsentr-spetsialnoho-pryznachennia/",
+      "title": "PYTHON ENGINEER",
+      "unit": "12-го окремого центру спеціального призначення",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/embedded-rozrobnyk-do-17-poltavska-bryhada-reyd/",
+      "title": "EMBEDDED-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/frontend-rozrobnyk-do-syly-bezpilotnykh-system/",
+      "title": "FRONTEND-РОЗРОБНИК",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/backend-rozrobnyk-do-syly-bezpilotnykh-system/",
+      "title": "BACKEND-РОЗРОБНИК",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/rozrobnyk-android-ios-do-syly-bezpilotnykh-system/",
+      "title": "РОЗРОБНИК ANDROID/IOS",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/rozrobnyk-systemnoho-prohramnoho-zabezpechennia-do-syly-bezpilotnykh-system/",
+      "title": "РОЗРОБНИК СИСТЕМНОГО ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-syly-bezpilotnykh-system-2/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-baz-danykh-do-syly-bezpilotnykh-system/",
+      "title": "АДМІНІСТРАТОР БАЗ ДАНИХ",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/dyzayner-ui-ux-do-syly-bezpilotnykh-system/",
+      "title": "ДИЗАЙНЕР UI/UX",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-avtomatyzatsii-protsesiv-rozrobky-prohramnoho-zabezpechennia-do-syly-bezpilotnykh-system/",
+      "title": "ІНЖЕНЕР АВТОМАТИЗАЦІЇ ПРОЦЕСІВ РОЗРОБКИ ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/merezhevyy-inzhener-do-syly-bezpilotnykh-system/",
+      "title": "МЕРЕЖЕВИЙ ІНЖЕНЕР",
+      "unit": "одному з підрозділів",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/prohramist-do-92-okrema-shturmova-bryhada/",
+      "title": "ПРОГРАМІСТ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/merezhevyy-inzhener-do-17-poltavska-bryhada-reyd/",
+      "title": "МЕРЕЖЕВИЙ ІНЖЕНЕР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-prohramist-do-17-poltavska-bryhada-reyd/",
+      "title": "ІНЖЕНЕР-ПРОГРАМІСТ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/operator-pidtrymky-do-17-poltavska-bryhada-reyd/",
+      "title": "ОПЕРАТОР ПІДТРИМКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-shturmovykh-viysk-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ ШТУРМОВИХ ВІЙСЬК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-syl-tro-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ СИЛ ТРО",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-sso-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ ССО",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-syl-pidtrymky-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ СИЛ ПІДТРИМКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-povitrianykh-syl-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ ПОВІТРЯНИХ СИЛ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-syl-lohistyky-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ СИЛ ЛОГІСТИКИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-pidrozdilu-tsyfrovoi-transformatsii-komanduvannia-sukhoputnykh-viysk-do-struktura-tsyfrovoi-transformatsii/",
+      "title": "КЕРІВНИК ПІДРОЗДІЛУ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ КОМАНДУВАННЯ СУХОПУТНИХ ВІЙСЬК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/project-manager-viddilu-tsyfrovizatsii-do-115-okrema-mekhanizovana-bryhada/",
+      "title": "PROJECT MANAGER ВІДДІЛУ ЦИФРОВІЗАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/project-manager-viddilennia-tsyfrovizatsii-do-batalyon-bezpilotnykh-system-pathfinder/",
+      "title": "PROJECT MANAGER ВІДДІЛЕННЯ ЦИФРОВІЗАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-do-24-okrema-mekhanizovana-bryhada-imeni-korolia-danyla/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/qa-automation-engineer-do-viyska-zv-iazku/",
+      "title": "QA AUTOMATION ENGINEER",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoho-rozvytku-zastupnyk-nachalnyka-shtabu-do-306-okremyy-polk-reb/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ-ЗАСТУПНИК НАЧАЛЬНИКА ШТАБУ",
+      "unit": "306-го окремого полку радіоелектронної боротьби Сухопутних військ Збройних Сил України на посаді начальника відділення цифрового розвитку",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/biznes-analityk-protsesiv-tsyfrovoi-transformatsii-do-ministerstvo-oborony/",
+      "title": "БІЗНЕС-АНАЛІТИК ПРОЦЕСІВ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ",
+      "unit": "однієї з команд Міністерства оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/proiektnyy-menedzher-tsyfrovoi-transformatsii-do-ministerstvo-oborony/",
+      "title": "ПРОЄКТНИЙ МЕНЕДЖЕР ЦИФРОВОЇ ТРАНСФОРМАЦІЇ",
+      "unit": "однієї з команд Міністерства оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/cyber-security-engineer-soc-analyst-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky/",
+      "title": "CYBER SECURITY ENGINEER/SOC ANALYST",
+      "unit": "Окремого спеціального центру електронної підтримки",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/data-engineer-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky/",
+      "title": "DATA ENGINEER",
+      "unit": "Окремого спеціального центру електронної підтримки",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/pomichnyk-nachalnyka-zviazku-ta-kiberbezpeky-shtabu-do-306-okremyy-polk-reb/",
+      "title": "ПОМІЧНИК НАЧАЛЬНИКА ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ ШТАБУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilu-tsyfrovizatsii-do-4-tsentr-rekrutynhu-tro/",
+      "title": "ОФІЦЕР ВІДДІЛУ ЦИФРОВІЗАЦІЇ",
+      "unit": "Сил ТрО ЗСУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/analityk-do-okremyy-zahin-bezpilotnykh-system-tayfun/",
+      "title": "АНАЛІТИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/fakhivets-z-pidhotovky-dovidnykovykh-danykh-do-syly-oborony/",
+      "title": "ФАХІВЕЦЬ З ПІДГОТОВКИ ДОВІДНИКОВИХ ДАНИХ",
+      "unit": "підрозділу забезпечення Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-devops-do-225-okremyy-shturmovyy-polk/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР/DEVOPS",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-3-armiyskyy-korpus/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-active-directory-do-3-armiyskyy-korpus/",
+      "title": "АДМІНІСТРАТОР ACTIVE DIRECTORY",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/operator-tekhnichnoi-pidtrymky-do-viyska-zv-iazku/",
+      "title": "ОПЕРАТОР ТЕХНІЧНОЇ ПІДТРИМКИ",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-roboty-z-danymy-do-tsentralnyy-naukovo-doslidnyy-instytut/",
+      "title": "ІНЖЕНЕР РОБОТИ З ДАНИМИ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/rozrobnyk-prohramnoho-zabezpechennia-do-tsentralnyy-naukovo-doslidnyy-instytut/",
+      "title": "РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/spetsialist-z-testuvannia-ta-zabezpechennia-iakosti-do-tsentralnyy-naukovo-doslidnyy-instytut/",
+      "title": "СПЕЦІАЛІСТ З ТЕСТУВАННЯ ТА ЗАБЕЗПЕЧЕННЯ ЯКОСТІ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-proiektu-biznes-analityk-do-tsentralnyy-naukovo-doslidnyy-instytut/",
+      "title": "КЕРІВНИК ПРОЄКТУ/БІЗНЕС-АНАЛІТИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/spetsialist-zi-shtuchnoho-intelektu-ta-mashynnoho-navchannia-do-tsentralnyy-naukovo-doslidnyy-instytut/",
+      "title": "СПЕЦІАЛІСТ ЗІ ШТУЧНОГО ІНТЕЛЕКТУ ТА МАШИННОГО НАВЧАННЯ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/devops-do-3-armiyskyy-korpus/",
+      "title": "DEVOPS",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovizatsii-do-33-okremyy-shturmovyy-polk/",
+      "title": "ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВІЗАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovizatsii-do-33-okremyy-shturmovyy-polk/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВІЗАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/it-spetsialist-do-batalyon-flying-skull/",
+      "title": "IT-СПЕЦІАЛІСТ",
+      "unit": "батальйоні «Flying Skull»",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-iz-systemnoho-administruvannia-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/",
+      "title": "ТЕХНІК ІЗ СИСТЕМНОГО АДМІНІСТРУВАННЯ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-z-informatsiynoi-bezpeky-do-viyska-zv-iazku/",
+      "title": "АДМІНІСТРАТОР З ІНФОРМАЦІЙНОЇ БЕЗПЕКИ",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-domennykh-sluzhb-do-viyska-zv-iazku/",
+      "title": "АДМІНІСТРАТОР ДОМЕННИХ СЛУЖБ",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-z-nalashtuvannia-merezhevoho-obladnannia-do-viyska-zv-iazku/",
+      "title": "ІНЖЕНЕР З НАЛАШТУВАННЯ МЕРЕЖЕВОГО ОБЛАДНАННЯ",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-bazovykh-ta-funktsionalnykh-servisiv-do-viyska-zv-iazku/",
+      "title": "ІНЖЕНЕР БАЗОВИХ ТА ФУНКЦІОНАЛЬНИХ СЕРВІСІВ",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/analityk-do-syly-oborony-4/",
+      "title": "АНАЛІТИК",
+      "unit": "аналітичному відділі Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-225-okremyy-batalyon-materialnoho-zabezpechennia/",
+      "title": "ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "225 окремий батальйон матеріального забезпечення",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-225-okremyy-batalyon-materialnoho-zabezpechennia/",
+      "title": "ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "225 окремий батальйон матеріального забезпечення",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ui-ux-dyzayner-do-viyska-zv-iazku/",
+      "title": "UI/UX ДИЗАЙНЕР",
+      "unit": "військової частини Військ зв'язку та кібербезпеки Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-sluzhby-zakhystu-informatsii-do-viyskova-chastyna-a2788-syl-lohistyky/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "військової частини А2788",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/moderator-saytu-spetsialist-tekhnichnoi-pidtrymky-do-natsionalna-hvardiia-ukrainy/",
+      "title": "МОДЕРАТОР САЙТУ/СПЕЦІАЛІСТ ТЕХНІЧНОЇ ПІДТРИМКИ",
+      "unit": "однієї з військових частин Національної гвардії України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-127-okremyy-batalyon-zv-iazku/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "127-го окремого батальйону зв'язку Сухопутних військ Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-77-okrema-aeromobilna-naddniprianska-bryhada/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/serzhant-viddilennia-tsyfrovoho-rozvytku-do-260-okrema-bryhada-terytorialnoi-oborony-khortytsia/",
+      "title": "СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/qa-engineer-do-421-okremyy-batalyon-bezpilotnykh-system-sapsan/",
+      "title": "QA ENGINEER",
+      "unit": "патріотично налаштованих",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/spetsialist-viddilennia-tsyfrovoho-rozvytku-ta-tsyfrovizatsii-do-427-okrema-bryhada-bezpilotnykh-system-raroh/",
+      "title": "СПЕЦІАЛІСТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ ТА ЦИФРОВІЗАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-syly-spetsialnykh-operatsiy/",
+      "title": "ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ",
+      "unit": "одному зі спецпідрозділів Сил Спеціальних Операцій",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-5-okrema-shturmova-kyivska-bryhada/",
+      "title": "ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/android-rozrobnyk-do-holovne-upravlinnia-rozvidky/",
+      "title": "ANDROID-РОЗРОБНИК",
+      "unit": "Головному управлінні розвідки Міністерства оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/analityk-z-monitorynhu-ta-vyiavlennia-anomaliy-do-12-okremyy-tsentr-spetsialnoho-pryznachennia/",
+      "title": "АНАЛІТИК З МОНІТОРИНГУ ТА ВИЯВЛЕННЯ АНОМАЛІЙ",
+      "unit": "12-го окремого центру спеціального призначення",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/uiux-designer-figma-do-12-okremyy-tsentr-spetsialnoho-pryznachennia/",
+      "title": "UIUX DESIGNER",
+      "unit": "12-го окремого центру спеціального призначення",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/java-developer-do-12-okremyy-tsentr-spetsialnoho-pryznachennia/",
+      "title": "JAVA DEVELOPER",
+      "unit": "12-го окремого центру спеціального призначення",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovizatsii-zastupnyk-nachalnyka-shtabu-do-11-armiyskyy-korpus/",
+      "title": "НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВІЗАЦІЇ-ЗАСТУПНИК НАЧАЛЬНИКА ШТАБУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-36-okrema-bryhada-morskoi-pikhoty-imeni-kontradmirala-mykhayla-bilynskoho/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/operator-punktu-upravlinnia-ppo-do-42-okrema-mekhanizovana-bryhada/",
+      "title": "ОПЕРАТОР ВІДДІЛЕННЯ УПРАВЛІННЯ ППО",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-viddilennia-zviazku-do-1-okremyy-shturmovyy-polk/",
+      "title": "ТЕХНІК ВІДДІЛЕННЯ ЗВ’ЯЗКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/analityk-do-60-okrema-mekhanizovana-inhuletska-bryhada/",
+      "title": "АНАЛІТИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-khmelnytskyy-viyskovyy-hospital/",
+      "title": "НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Хмельницького військового госпіталю Медичних сил Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/starshyy-testuvalnyk-prohramnoho-zabezpechennia-do-syly-oborony/",
+      "title": "СТАРШИЙ ТЕСТУВАЛЬНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ",
+      "unit": "спеціальному IT-підрозділі Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-it-fakhivets-do-60-okrema-mekhanizovana-inhuletska-bryhada/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР/ІТ-ФАХІВЕЦЬ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-tsyfrovoi-transformatsii-operatyvnoho-rivnia-do-ministerstvo-oborony/",
+      "title": "КЕРІВНИК ЦИФРОВОЇ ТРАНСФОРМАЦІЇ ОПЕРАТИВНОГО РІВНЯ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-syly-oborony/",
+      "title": "ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ",
+      "unit": "одному зі спецпідрозділів Сил Оборони",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/python-rozrobnyk-do-batalyon-bezpilotnykh-system-tsukrarnia-ptakhiv-madiara/",
+      "title": "PYTHON-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/serzhant-viddilennia-tsyfrovoi-transformatsii-do-475-okremyy-shturmovyy-polk-code-9-2/",
+      "title": "СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tsyfrovyy-ofitser-do-475-okremyy-shturmovyy-polk-code-9-2/",
+      "title": "ЦИФРОВИЙ ОФІЦЕР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/osint-analityk-do-syly-oborony-6/",
+      "title": "OSINT-АНАЛІТИК",
+      "unit": "аналітичному відділі Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/humint-analityk-do-syly-oborony-3/",
+      "title": "HUMINT-АНАЛІТИК",
+      "unit": "аналітичному відділі Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/analityk-power-bi-do-syly-oborony/",
+      "title": "АНАЛІТИК POWER BI",
+      "unit": "аналітичному відділі Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/spetsialist-kryptohrafichnoho-zakhystu-informatsii-do-427-okrema-bryhada-bezpilotnykh-system-raroh/",
+      "title": "СПЕЦІАЛІСТ КРИПТОГРАФІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-bezpeky-danykh-ta-povnovazhen-korystuvachiv-do-syly-oborony/",
+      "title": "SYSTEM ADMINISTRATOR (ACCESS MANAGEMENT/SECURITY)",
+      "unit": "одній з команд Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/project-manager-viddilu-analityky-do-syly-oborony/",
+      "title": "PROJECT MANAGER ВІДДІЛУ АНАЛІТИКИ",
+      "unit": "одній з команд Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/backend-java-rozrobnyk-do-batalyon-bezpilotnykh-system-tsukrarnia-ptakhiv-madiara/",
+      "title": "BACKEND JAVA-РОЗРОБНИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/senior-full-stack-developer-do-syly-oborony/",
+      "title": "SENIOR FULL-STACK DEVELOPER",
+      "unit": "спеціальному IT-підрозділі Сил Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-hrupy-zv-iazku-ta-kiberbezpeky-shtabu-do-viyskovyy-instytut-kyivskoho-natsionalnoho-universytetu-im-t-shevchenka/",
+      "title": "НАЧАЛЬНИК ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ ШТАБУ",
+      "unit": "військового інституту Київського національного університету ім",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/it-spetsialist-do-77-okrema-aeromobilna-naddniprianska-bryhada/",
+      "title": "ІТ-СПЕЦІАЛІСТ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-1-batalyon-429-obr-bps-akhilles/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "1-го батальйону бригади",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/zviazkivets-it-napriam-do-1-batalyon-429-obr-bps-akhilles/",
+      "title": "ЗВ’ЯЗКІВЕЦЬ (IT-НАПРЯМ)",
+      "unit": "1-го батальйону бригади",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-37-okrema-bryhada-morskoi-pikhoty-2/",
+      "title": "ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "захисту інформації в автоматизованих системах",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/administrator-saytu-do-7-korpus-shvydkoho-reahuvannia-desantno-shturmovykh-viysk/",
+      "title": "АДМІНІСТРАТОР САЙТУ",
+      "unit": "7-го корпусу швидкого реагування Десантно-штурмових військ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/penetration-tester-do-okremyy-zahin-spetsialnoho-pryznachennia/",
+      "title": "PENETRATION TESTER",
+      "unit": "Окремого центру спеціального призначення Сил Територіальної Оборони Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-225-okremyy-shturmovyy-polk/",
+      "title": "ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/backend-developer-python-odoo-do-batalyon-bezpilotnykh-system-158-ombr/",
+      "title": "BACKEND DEVELOPER (PYTHON/ODOO)",
+      "unit": "батальйону безпілотних систем 158 ОМБр «TENRAI»",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/rekruter-it-spetsialist-do-2-mekhanizovanyy-batalyon-54-ombr/",
+      "title": "РЕКРУТЕР/IT-СПЕЦІАЛІСТ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/security-engineer-penetration-tester-do-holovne-upravlinnia-rozvidky/",
+      "title": "SECURITY ENGINEER/PENETRATION TESTER",
+      "unit": "одному з підрозділів Головного управління розвідки МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-309-dystsyplinarnyy-batalyon-vsp/",
+      "title": "НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "309-го дисциплінарного батальйону Західного територіального управління Військової служби правопорядку",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-do-228-okremyy-batalyon-materialnoho-zabezpechennia/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/inzhener-z-avtomatyzovanoho-testuvannia-pz-do-tsentr-masshtabuvannia-tekhnolohichnykh-rishen/",
+      "title": "ІНЖЕНЕР З АВТОМАТИЗОВАНОГО ТЕСТУВАННЯ ПЗ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/zviazkivets-it-fakhivets-do-151-navchalnyy-tsentr/",
+      "title": "ЗВ’ЯЗКІВЕЦЬ/ІТ-ФАХІВЕЦЬ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/software-engineer-do-24-okrema-mekhanizovana-bryhada-imeni-korolia-danyla/",
+      "title": "SOFTWARE ENGINEER",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/embedded-hardware-developer-do-syly-oborony/",
+      "title": "EMBEDDED/HARDWARE DEVELOPER",
+      "unit": "технічно-експериментальному підрозділі Сил Оборони",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/systemnyy-administrator-hrupy-zviazku-do-413-okremyy-polk-bezpilotnykh-system-raid/",
+      "title": "СИСТЕМНИЙ АДМІНІСТРАТОР ГРУПИ ЗВ’ЯЗКУ",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-napriamu-upravlinnia-servisamy-ta-dostupamy-do-ministerstvo-oborony/",
+      "title": "КЕРІВНИК НАПРЯМУ УПРАВЛІННЯ СЕРВІСАМИ ТА ДОСТУПАМИ",
+      "unit": "сфері обслуговування ІТ-інфраструктури та надання консультативних послуг щодо роботи в інформаційних системах і програмних комплексах",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/kerivnyk-z-polityk-ta-standartiv-informatsiynoi-bezpeky-do-ministerstvo-oborony/",
+      "title": "КЕРІВНИК З ПОЛІТИК ТА СТАНДАРТІВ ІНФОРМАЦІЙНОЇ БЕЗПЕКИ",
+      "unit": "сфері обслуговування ІТ-інфраструктури та надання консультативних послуг щодо роботи в інформаційних системах і програмних комплексах",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-syly-oborony/",
+      "title": "ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ",
+      "unit": "одній з військових частин Збройних Сил України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/data-analityk-tsyfrovoi-transformatsii-do-ministerstvo-oborony/",
+      "title": "ДАТА-АНАЛІТИК ЦИФРОВОЇ ТРАНСФОРМАЦІЇ (НАПРЯМ СЛУЖБИ ПЕРСОНАЛУ)",
+      "unit": "Міноборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/biznes-analityk-protsesiv-kadrovoi-polityky-do-ministerstvo-oborony/",
+      "title": "БІЗНЕС-АНАЛІТИК (НАПРЯМ СЛУЖБИ ПЕРСОНАЛУ)",
+      "unit": "одному з підрозділів Міноборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-1-okremyy-shturmovyy-polk/",
+      "title": "ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ",
+      "unit": "розвідувальному батальйоні",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/merezhevyy-administrator-do-429-okrema-bryhada-bezpilotnykh-system-akhilles/",
+      "title": "МЕРЕЖЕВИЙ АДМІНІСТРАТОР",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/zviazkivets-it-napriam-do-prykordonnyy-pidrozdil-bezpilotnykh-aviatsiynykh-system-feniks/",
+      "title": "ЗВ’ЯЗКІВЕЦЬ (IT НАПРЯМ)",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/humint-sotsialnyy-inzhener-do-holovne-upravlinnia-rozvidky/",
+      "title": "HUMINT/СОЦІАЛЬНИЙ ІНЖЕНЕР",
+      "unit": "одному з підрозділів Головного управління розвідки МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/osint-analityk-do-412-okrema-bryhada-bezpilotnykh-system-nemesis/",
+      "title": "OSINT-АНАЛІТИК",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/prohramist-napriam-bpla-do-1-mekhanizovanyy-batalyon-54-ombr/",
+      "title": "ПРОГРАМІСТ (НАПРЯМ БПЛА)",
+      "unit": "1-го механізованого батальйону 54 ОМБр",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/media-engineer-c-do-tsentr-innovatsiy-ta-rozvytku-oboronnykh-tekhnolohiy/",
+      "title": "MEDIA ENGINEER (C++)",
+      "unit": "Центрі інновацій та розвитку оборонних технологій МОУ",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/product-owner-napriam-sotsialnoho-zabezpechennia-do-ministerstvo-oborony/",
+      "title": "PRODUCT OWNER (НАПРЯМ СОЦІАЛЬНОГО ЗАБЕЗПЕЧЕННЯ)",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/biznes-analityk-napriam-sotsialnoho-zabezpechennia-do-ministerstvo-oborony/",
+      "title": "БІЗНЕС-АНАЛІТИК (НАПРЯМ СОЦІАЛЬНОГО ЗАБЕЗПЕЧЕННЯ)",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/data-analityk-tsyfrovoi-transformatsii-napriam-sotsialnoho-zabezpechennia-do-ministerstvo-oborony/",
+      "title": "ДАТА-АНАЛІТИК ЦИФРОВОЇ ТРАНСФОРМАЦІЇ (НАПРЯМ СОЦІАЛЬНОГО ЗАБЕЗПЕЧЕННЯ)",
+      "unit": "Сили Оборони України",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/cloud-operations-engineer-cloudops-engineer-do-12-okremyy-tsentr-spetsialnoho-pryznachennia/",
+      "title": "CLOUD OPERATIONS ENGINEER/CLOUDOPS ENGINEER",
+      "unit": "12-го окремого центру спеціального призначення (Б12)",
+      "status": "new"
+    },
+    {
+      "url": "https://lobbyx.army/tor/r-developer-do-12-okremyy-tsentr-spetsialnoho-pryznachennia/",
+      "title": "R DEVELOPER",
+      "unit": "12-го окремого центру спеціального призначення (Б12)",
+      "status": "new"
     }
   ]
 }
