@@ -1,17 +1,36 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const multer = require('multer');
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
 const db = require('./db');
 const settings = require('./settings');
+const autofill = require('./autofill');
 
 const app = express();
 app.use(express.json());
 
 const LOG_PATH = path.join(__dirname, 'debug.log');
 const CLIENT_DIST = path.join(__dirname, 'client', 'dist');
+const AUTOFILL_FILES_DIR = path.join(__dirname, 'autofill_files');
+
+if (!fs.existsSync(AUTOFILL_FILES_DIR)) {
+    fs.mkdirSync(AUTOFILL_FILES_DIR, { recursive: true });
+}
+
+const autofillStorage = multer.diskStorage({
+    destination: (req, file, cb) => cb(null, AUTOFILL_FILES_DIR),
+    filename: (req, file, cb) => {
+        const clean = String(file.originalname || 'file').replace(/[^\w.\-]+/g, '_');
+        cb(null, Date.now() + '-' + clean);
+    },
+});
+const autofillUpload = multer({
+    storage: autofillStorage,
+    limits: { fileSize: 10 * 1024 * 1024 },
+});
 
 // Ініціалізація БД: створює локальні файли або підключається до Turso
 const ready = (async () => {
@@ -61,13 +80,45 @@ app.post('/api/settings', async (req, res) => {
         return res.status(400).json({ error: 'Не вдалося підключитись до хмарної БД: ' + e.message });
     }
 
-    settings.saveSettings({ mode, turso });
+    settings.saveSettings({ mode, turso, autofill: body.autofill });
 
     try {
         await db.switchBackend();
         res.json({ success: true, settings: settings.getSettings() });
     } catch (e) {
         res.status(500).json({ error: 'Налаштування збережено, але не вдалося переключити БД: ' + e.message });
+    }
+});
+
+// Збереження лише даних автозаявки (без зайвого підключення до хмари)
+app.post('/api/settings/autofill', (req, res) => {
+    const data = (req.body || {}).autofill;
+    if (!data || typeof data !== 'object' || Array.isArray(data)) {
+        return res.status(400).json({ error: 'Некоректні дані автозаявки' });
+    }
+    settings.saveSettings({ ...settings.getSettings(), autofill: data });
+    res.json({ success: true, settings: settings.getSettings() });
+});
+
+// Завантаження файлу для автозаявки (CV / додатковий файл)
+app.post('/api/autofill/files', autofillUpload.single('file'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).json({ error: 'Файл не отримано' });
+    }
+    res.json({ success: true, fileName: req.file.filename, originalName: req.file.originalname });
+});
+
+// Автозаявка: відкриває вікно Chrome, відкриває форму та заповнює її даними з налаштувань
+app.post('/api/autofill', async (req, res) => {
+    const { url } = req.body || {};
+    if (!url || typeof url !== 'string') {
+        return res.status(400).json({ error: 'Не вказано адресу вакансії' });
+    }
+    try {
+        const result = await autofill.runAutofill({ url });
+        res.json({ success: true, ...result });
+    } catch (e) {
+        res.status(500).json({ error: 'Автозаявку не вдалося створити: ' + e.message });
     }
 });
 

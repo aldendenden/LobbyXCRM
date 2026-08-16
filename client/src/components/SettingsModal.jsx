@@ -1,9 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { fetchSettings, saveSettings, syncDatabases } from '../api.js';
+import AutofillTab from './AutofillTab.jsx';
 import { RefreshIcon, XIcon } from './Icons.jsx';
 
 export default function SettingsModal({ open, onClose, onSaved }) {
+    const [activeTab, setActiveTab] = useState('db');
     const [mode, setMode] = useState('local');
     const [url, setUrl] = useState('');
     const [authToken, setAuthToken] = useState('');
@@ -89,6 +91,26 @@ export default function SettingsModal({ open, onClose, onSaved }) {
                     </button>
                 </div>
 
+                <div className="settings-tabs">
+                    <button
+                        type="button"
+                        className={`settings-tab${activeTab === 'db' ? ' active' : ''}`}
+                        onClick={() => setActiveTab('db')}
+                    >
+                        База даних
+                    </button>
+                    <button
+                        type="button"
+                        className={`settings-tab${activeTab === 'autofill' ? ' active' : ''}`}
+                        onClick={() => setActiveTab('autofill')}
+                    >
+                        Дані автозаявки
+                    </button>
+                </div>
+
+                {activeTab === 'autofill' ? (
+                    <AutofillTab open={open} onSaved={() => setSuccess(true)} />
+                ) : (
                 <div className="modal-body">
                     <div className="field-label">База даних</div>
                     <div className="mode-cards">
@@ -165,14 +187,17 @@ export default function SettingsModal({ open, onClose, onSaved }) {
                     {syncError && <div className="error-banner modal-error">⚠️ {syncError}</div>}
                     {syncResult && <div className="modal-success">✓ {syncResult}</div>}
                 </div>
+                )}
 
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" onClick={onClose}>
                         Скасувати
                     </button>
-                    <button type="button" className="btn" onClick={handleSave} disabled={saving}>
-                        {saving ? 'Збереження...' : 'Зберегти'}
-                    </button>
+                    {activeTab === 'db' && (
+                        <button type="button" className="btn" onClick={handleSave} disabled={saving}>
+                            {saving ? 'Збереження...' : 'Зберегти'}
+                        </button>
+                    )}
                 </div>
             </div>
         </div>,

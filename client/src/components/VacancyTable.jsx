@@ -42,10 +42,11 @@ export default function VacancyTable({ vacancies, loading, searchQuery, updateVa
             <table>
                 <thead>
                     <tr>
-                        <th style={{ width: '12%' }}>Підрозділ</th>
-                        <th style={{ width: '40%' }}>Посада (Посилання)</th>
-                        <th style={{ width: '29%' }}>Нотатки</th>
-                        <th style={{ width: '19%', textAlign: 'center' }}>Статус</th>
+                        <th style={{ width: '10%' }}>Підрозділ</th>
+                        <th style={{ width: '33%' }}>Посада (Посилання)</th>
+                        <th style={{ width: '24%' }}>Нотатки</th>
+                        <th style={{ width: '15%', textAlign: 'center' }}>Статус</th>
+                        <th style={{ width: '18%', textAlign: 'center' }}>Автозаявка</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -924,6 +924,230 @@ tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
     box-shadow: none;
 }
 
+.settings-modal {
+    max-width: 680px;
+}
+
+.settings-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 14px 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.settings-tab {
+    padding: 9px 16px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.settings-tab:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.settings-tab.active {
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--border);
+    position: relative;
+}
+
+.settings-tab.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    background: var(--accent);
+}
+
+.autofill-tab {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.autofill-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.autofill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.settings-field select,
+.settings-field textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border-input);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text);
+    font-size: 13px;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.settings-field select:focus,
+.settings-field textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.settings-field select option {
+    color: #000;
+    background: #fff;
+}
+
+.settings-field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.settings-field input[type="file"] {
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.autofill-radio-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.autofill-radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border-input);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.autofill-radio:hover {
+    border-color: var(--border-strong);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.autofill-radio.selected {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    box-shadow: 0 0 14px var(--accent-glow);
+}
+
+.autofill-radio input {
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+.autofill-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.autofill-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text);
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.autofill-check input {
+    accent-color: var(--accent);
+    margin-top: 2px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.autofill-file-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.autofill-file-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.autofill-file-name {
+    color: #4ade80;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 260px;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 9px;
+}
+
+.btn-auto {
+    padding: 7px 12px;
+    font-size: 12px;
+    border-radius: 9px;
+    white-space: nowrap;
+}
+
+.btn-auto.disabled {
+    background: rgba(255, 138, 61, 0.35);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.auto-msg {
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #4ade80;
+    animation: fadeIn 0.25s ease both;
+}
+
+.auto-error {
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fca5a5;
+    line-height: 1.4;
+    animation: fadeIn 0.25s ease both;
+}
+
 @media (max-width: 768px) {
     .grid { grid-template-columns: repeat(2, 1fr); }
     .header-left { flex-direction: column; align-items: stretch; gap: 12px; }
@@ -931,4 +1155,5 @@ tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
     body { padding: 14px; }
     .container { padding: 18px; }
     .mode-cards { grid-template-columns: 1fr; }
+    .autofill-grid { grid-template-columns: 1fr; }
 }

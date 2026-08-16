@@ -47,6 +47,31 @@ export function saveSettings(payload) {
     });
 }
 
+export function saveAutofillSettings(autofill) {
+    return request('/api/settings/autofill', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ autofill }),
+    });
+}
+
+export function uploadAutofillFile(file) {
+    const fd = new FormData();
+    fd.append('file', file);
+    return request('/api/autofill/files', {
+        method: 'POST',
+        body: fd,
+    });
+}
+
+export function runAutofill(url) {
+    return request('/api/autofill', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url }),
+    });
+}
+
 export function syncDatabases() {
     return request('/api/sync', { method: 'POST' });
 }

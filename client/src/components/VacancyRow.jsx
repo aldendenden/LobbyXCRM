@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import StatusSelect from './StatusSelect.jsx';
-import { ExternalIcon } from './Icons.jsx';
-import { updateNotes, updateStatus } from '../api.js';
+import { ExternalIcon, ZapIcon } from './Icons.jsx';
+import { updateNotes, updateStatus, runAutofill } from '../api.js';
 
 export default function VacancyRow({ vac, updateVacancy }) {
     const [notesDraft, setNotesDraft] = useState(vac.notes || '');
     const [saved, setSaved] = useState(false);
+    const [autoBusy, setAutoBusy] = useState(false);
+    const [autoMsg, setAutoMsg] = useState('');
+    const [autoError, setAutoError] = useState('');
     const isIgnored = vac.status === 'ignored';
 
     const handleStatus = async (status) => {
@@ -27,6 +30,23 @@ export default function VacancyRow({ vac, updateVacancy }) {
             setTimeout(() => setSaved(false), 1500);
         } catch (e) {
             console.error(e);
+        }
+    };
+
+    const handleAutofill = async () => {
+        if (autoBusy) return;
+        setAutoBusy(true);
+        setAutoMsg('');
+        setAutoError('');
+        try {
+            await runAutofill(vac.url);
+            setAutoMsg('Форма відкрита та заповнена');
+            setTimeout(() => setAutoMsg(''), 4000);
+        } catch (e) {
+            setAutoError(e.message || 'Помилка автозаявки');
+            setTimeout(() => setAutoError(''), 6000);
+        } finally {
+            setAutoBusy(false);
         }
     };
 
@@ -67,6 +87,20 @@ export default function VacancyRow({ vac, updateVacancy }) {
                     value={vac.status}
                     onChange={handleStatus}
                 />
+            </td>
+            <td style={{ textAlign: 'center' }}>
+                <button
+                    type="button"
+                    className={`btn btn-auto${autoBusy ? ' disabled' : ''}`}
+                    onClick={handleAutofill}
+                    disabled={autoBusy}
+                    title="Відкрити форму заявки та заповнити даними автозаявки"
+                >
+                    <ZapIcon className={`icon${autoBusy ? ' spin' : ''}`} />
+                    {autoBusy ? ' Відкриваю...' : ' Автозаявка'}
+                </button>
+                {autoMsg && <div className="auto-msg">{autoMsg}</div>}
+                {autoError && <div className="auto-error">{autoError}</div>}
             </td>
         </tr>
     );
