@@ -6,7 +6,9 @@ const cheerio = require('cheerio');
 
 const app = express();
 app.use(express.json());
-app.use(express.static(__dirname));
+
+// Віддаємо лише index.html, щоб db.json, debug.log, server.js тощо не були доступні ззовні
+app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 const DB_PATH = path.join(__dirname, 'db.json');
 const BACKUP_PATH = path.join(__dirname, 'db_backup.json');
@@ -114,39 +116,34 @@ app.get('/api/scrape', async (req, res) => {
             let rawContent = await page.evaluate(() => document.body.textContent || document.body.innerText);
             rawContent = rawContent.trim();
             
-            // Знімаємо екранування лапок, якщо браузер загорнув JSON у рядок
-            if (rawContent.startsWith('"') && rawContent.endsWith('"')) {
-                rawContent = rawContent.substring(1, rawContent.length - 1);
-            }
-            
             logToFile(`--- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА ${pageNum}) ---`);
             logToFile(rawContent.substring(0, 400));
             logToFile(`--- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ ${pageNum} ---`);
             
+            // АРІ повертає JSON-рядок з подвійним екрануванням: "{\"html\":\"\\r\\n <div ... \\\" ...\"}"
+            // Тому знімаємо екранування двома послідовними парсингами JSON
             let htmlContent = '';
             try {
-                const fixedJson = rawContent.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
-                const jsonResponse = JSON.parse(fixedJson);
-                htmlContent = jsonResponse.html || '';
+                const decoded = JSON.parse(rawContent);
+                htmlContent = JSON.parse(decoded).html || '';
             } catch (jsonErr) {
                 try {
-                    const jsonResponse = JSON.parse(rawContent);
-                    htmlContent = jsonResponse.html || '';
+                    htmlContent = JSON.parse(rawContent).html || '';
                 } catch (e) {
                     logToFile(`Помилка десеріалізації JSON на сторінці ${pageNum}: ${jsonErr.message}`);
                     htmlContent = rawContent;
                 }
             }
             
-            // Пошук посилань на вакансії за допомогою регулярного виразу
-            const urlRegex = /href=\\?"(https:\/\/lobbyx\.army\/vacancy\/[^"\s\\]+)\\?"/g;
+            // Усередині HTML посилання мають екрановані слеші (https:\/\/lobbyx.army\/tor\/...)
+            // та шлях /tor/ або /vacancy/. Чистимо URL від похилих рисок.
+            const urlRegex = /href="(https:[^"]+)"/g;
             let match;
             let pageLinks = [];
             
             while ((match = urlRegex.exec(htmlContent)) !== null) {
-                // ВИПРАВЛЕНО: Беремо саме рядок з першої кишені регулярки (match[1]) і чистимо від можливих похилих рисок
-                let cleanUrl = match[1].replace(/\\/g, ''); 
-                if (!pageLinks.includes(cleanUrl)) {
+                let cleanUrl = match[1].replace(/\\/g, '');
+                if (/^https:\/\/lobbyx\.army\/(tor|vacancy)\//.test(cleanUrl) && !pageLinks.includes(cleanUrl)) {
                     pageLinks.push(cleanUrl);
                 }
             }
@@ -200,30 +197,57 @@ app.get('/api/scrape', async (req, res) => {
                     const h1Element = document.querySelector('h1.vacancy-name') || document.querySelector('h1');
                     let title = h1Element ? h1Element.innerText.trim() : '';
                     
-                    const h4Elements = Array.from(document.querySelectorAll('h4'));
-                    let unit = 'Сили Оборони України';
-                    
-                    if (h4Elements.length > 0 && h4Elements[0]) {
-                        unit = h4Elements[0].innerText.trim();
+                    // Підрозділ: беремо лінк сторінки батальйону, якщо він є
+                    let unitUrl = '';
+                    const unitLink = document.querySelector('a.about__unit--button');
+                    if (unitLink) {
+                        unitUrl = unitLink.getAttribute('href') || '';
                     }
                     
-                    if (unit.toLowerCase().includes('обов') || unit.toLowerCase().includes('вимог') || unit.toLowerCase().includes('умов')) {
-                        unit = 'Військова частина / Підрозділ';
+                    // Запасний варіант: абзац «Огляд», перше речення після «службу …»
+                    let overview = '';
+                    const oglyad = Array.from(document.querySelectorAll('h2')).find(h => h.innerText.trim().toLowerCase().startsWith('огляд'));
+                    if (oglyad && oglyad.nextElementSibling) {
+                        overview = oglyad.nextElementSibling.innerText.trim();
                     }
-                    return { title, unit };
+                    
+                    return { title, unitUrl, overview };
                 });
+                
+                let unit = 'Сили Оборони України';
+                
+                // 1) Офіційна назва підрозділу зі сторінки батальйону
+                if (details.unitUrl && /lobbyx\.army\/battalions\//.test(details.unitUrl)) {
+                    try {
+                        const batResponse = await fetch(details.unitUrl);
+                        const batHtml = await batResponse.text();
+                        const batMatch = /<h1[^>]*>([\s\S]*?)<\/h1>/i.exec(batHtml);
+                        if (batMatch) {
+                            const batName = batMatch[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+                            if (batName) unit = batName;
+                        }
+                    } catch (batErr) {
+                        logToFile(`Помилка отримання назви підрозділу ${details.unitUrl}: ${batErr.message}`);
+                    }
+                }
+                
+                // 2) Запасний варіант: назва з абзацу «Огляд»
+                if (unit === 'Сили Оборони України' && details.overview) {
+                    const unitMatch = /(?:службу|служби)\s+(?:у складі\s+|у\s+|в\s+|до\s+)?([^.,!\n]{4,140}?)(?=\s+(?:Повітряного|у місті|у Києві|на території|у складі)|\s*[.,]|\s*$)/i.exec(details.overview);
+                    if (unitMatch) unit = unitMatch[1].trim();
+                }
                 
                 if (details.title && details.title.length > 2) {
                     db.vacancies.push({
                         url: url,
                         title: details.title,
-                        unit: details.unit,
+                        unit: unit,
                         status: 'new'
                     });
                     addedCount++;
                     writeDB(db);
-                    console.log(`[ДОДАНО] ${details.unit} -> ${details.title}`);
-                    logToFile(`Base updated: ${details.unit} -> ${details.title}`);
+                    console.log(`[ДОДАНО] ${unit} -> ${details.title}`);
+                    logToFile(`Base updated: ${unit} -> ${details.title}`);
                 }
                 
                 await new Promise(r => setTimeout(r, 800));

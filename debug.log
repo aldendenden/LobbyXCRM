@@ -1,8 +1,628 @@
-[2026-08-16T08:23:21.067Z] === ЗАПУСК НОВОГО АНАЛІЗУ АРІ ===
-[2026-08-16T08:23:22.886Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=0&page=1&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
-[2026-08-16T08:23:23.948Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 1) ---
-[2026-08-16T08:23:23.949Z] {\"html\":\"\\r\\n    <div id=\\\"post-210892\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-210892 tors type-tors status-publish hentry category-3-bazovyy category-it category-perevedennia category-povitrianisyly category-serzhantski category-chastkovaprydatnist units-648-okremyi-zenitnyi-kulemetnyi-batalion tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\\\"square
-[2026-08-16T08:23:23.950Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 1 ---
-[2026-08-16T08:23:23.952Z] Кількість виявлених лінків через Regex: 0
-[2026-08-16T08:23:23.955Z] Унікальних URL адрес у масиві для обходу: 0
-[2026-08-16T08:23:24.563Z] === РОБОТУ ЗАВЕРШЕНО. Успішно внесено позицій: 0 ===
+[2026-08-16T09:48:48.628Z] === ЗАПУСК НОВОГО АНАЛІЗУ АРІ ===
+[2026-08-16T09:48:52.053Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=0&page=1&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:48:53.536Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 1) ---
+[2026-08-16T09:48:53.536Z] "{\"html\":\"\\r\\n    <div id=\\\"post-210892\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-210892 tors type-tors status-publish hentry category-3-bazovyy category-it category-perevedennia category-povitrianisyly category-serzhantski category-chastkovaprydatnist units-648-okremyi-zenitnyi-kulemetnyi-batalion tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\\\"squar
+[2026-08-16T09:48:53.537Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 1 ---
+[2026-08-16T09:48:53.538Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:48:53.539Z] Додано унікальних посилань зі сторінки 1: 16
+[2026-08-16T09:48:54.147Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=16&page=2&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:48:55.770Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 2) ---
+[2026-08-16T09:48:55.771Z] "{\"html\":\"\\r\\n    <div id=\\\"post-191238\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-191238 tors type-tors status-publish hentry category-militari category-rank category-it category-ngu category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-1c-azov tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\
+[2026-08-16T09:48:55.772Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 2 ---
+[2026-08-16T09:48:55.773Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:48:55.774Z] Додано унікальних посилань зі сторінки 2: 16
+[2026-08-16T09:48:56.384Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=32&page=3&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:48:58.023Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 3) ---
+[2026-08-16T09:48:58.024Z] "{\"html\":\"\\r\\n    <div id=\\\"post-191271\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-191271 tors type-tors status-publish hentry category-militari category-rank category-it category-ngu category-ofitserski category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-12-okrema-bryhada-spetsialnoho-pryznachennia-azov-nh
+[2026-08-16T09:48:58.025Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 3 ---
+[2026-08-16T09:48:58.026Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:48:58.027Z] Додано унікальних посилань зі сторінки 3: 16
+[2026-08-16T09:48:58.638Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=48&page=4&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:00.310Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 4) ---
+[2026-08-16T09:49:00.310Z] "{\"html\":\"\\r\\n    <div id=\\\"post-180476\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-180476 tors type-tors status-publish hentry category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-komanduvannia-raketnykh-viisk-i-artylerii-zsu
+[2026-08-16T09:49:00.311Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 4 ---
+[2026-08-16T09:49:00.312Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:00.312Z] Додано унікальних посилань зі сторінки 4: 16
+[2026-08-16T09:49:00.915Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=64&page=5&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:02.505Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 5) ---
+[2026-08-16T09:49:02.506Z] "{\"html\":\"\\r\\n    <div id=\\\"post-209404\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-209404 tors type-tors status-publish hentry category-it category-ofitserski category-perevedennia category-riadovi category-serzhantski category-sukhoputka category-chastkovaprydatnist units-komanduvannia-raketnykh-viisk-i-artylerii-zsu tors-status-is-open\\\">\\r\\n        \\r\\n        <
+[2026-08-16T09:49:02.506Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 5 ---
+[2026-08-16T09:49:02.507Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:02.508Z] Додано унікальних посилань зі сторінки 5: 16
+[2026-08-16T09:49:03.124Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=80&page=6&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:04.756Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 6) ---
+[2026-08-16T09:49:04.756Z] "{\"html\":\"\\r\\n    <div id=\\\"post-208904\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-208904 tors type-tors status-publish hentry category-3-bazovyy category-militari category-dshv category-rank category-it category-contracts category-perevedennia category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-237-okremyi-batalion-bbs tors-status
+[2026-08-16T09:49:04.757Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 6 ---
+[2026-08-16T09:49:04.758Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:04.758Z] Додано унікальних посилань зі сторінки 6: 16
+[2026-08-16T09:49:05.361Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=96&page=7&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:07.015Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 7) ---
+[2026-08-16T09:49:07.016Z] "{\"html\":\"\\r\\n    <div id=\\\"post-164801\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-164801 tors type-tors status-publish hentry category-militari category-rank category-it category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-14ombr tors-status-is-open\\\">\\r\\n        \\r\\n
+[2026-08-16T09:49:07.016Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 7 ---
+[2026-08-16T09:49:07.017Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:07.018Z] Додано унікальних посилань зі сторінки 7: 16
+[2026-08-16T09:49:07.630Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=112&page=8&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:09.281Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 8) ---
+[2026-08-16T09:49:09.282Z] "{\"html\":\"\\r\\n    <div id=\\\"post-63973\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-63973 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-414-okrema-bryhada-udarnykh-bp
+[2026-08-16T09:49:09.282Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 8 ---
+[2026-08-16T09:49:09.283Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:09.284Z] Додано унікальних посилань зі сторінки 8: 16
+[2026-08-16T09:49:09.893Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=128&page=9&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:11.508Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 9) ---
+[2026-08-16T09:49:11.509Z] "{\"html\":\"\\r\\n    <div id=\\\"post-127829\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-127829 tors type-tors status-publish hentry category-militari category-rank category-it category-contracts category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-414-okrema-bryhada-udarnykh-
+[2026-08-16T09:49:11.509Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 9 ---
+[2026-08-16T09:49:11.510Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:11.511Z] Додано унікальних посилань зі сторінки 9: 16
+[2026-08-16T09:49:12.127Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=144&page=10&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:13.740Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 10) ---
+[2026-08-16T09:49:13.741Z] "{\"html\":\"\\r\\n    <div id=\\\"post-171526\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-171526 tors type-tors status-publish hentry category-militari category-rank category-it category-contracts category-ofitserski category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-414-okre
+[2026-08-16T09:49:13.742Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 10 ---
+[2026-08-16T09:49:13.743Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:13.743Z] Додано унікальних посилань зі сторінки 10: 16
+[2026-08-16T09:49:14.357Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=160&page=11&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:15.795Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 11) ---
+[2026-08-16T09:49:15.796Z] "{\"html\":\"\\r\\n    <div id=\\\"post-190473\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-190473 tors type-tors status-publish hentry category-militari category-rank category-it category-contracts category-ofitserski category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-414-okre
+[2026-08-16T09:49:15.797Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 11 ---
+[2026-08-16T09:49:15.797Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:15.798Z] Додано унікальних посилань зі сторінки 11: 16
+[2026-08-16T09:49:16.409Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=176&page=12&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:18.446Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 12) ---
+[2026-08-16T09:49:18.447Z] "{\"html\":\"\\r\\n    <div id=\\\"post-199791\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-199791 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-contracts category-ofitserski category-perevedennia category-spetsialnist category-sso units-syly-spetsialnykh-operatsiy tors-status-is-open\\\">\\r\\n        \\r\\n        <
+[2026-08-16T09:49:18.448Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 12 ---
+[2026-08-16T09:49:18.448Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:18.449Z] Додано унікальних посилань зі сторінки 12: 16
+[2026-08-16T09:49:19.063Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=192&page=13&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:20.773Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 13) ---
+[2026-08-16T09:49:20.774Z] "{\"html\":\"\\r\\n    <div id=\\\"post-207834\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-207834 tors type-tors status-publish hentry category-3-bazovyy category-militari category-dsst category-rank category-it category-contracts category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-skhid tors-status-is-open\\\">\\r
+[2026-08-16T09:49:20.774Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 13 ---
+[2026-08-16T09:49:20.775Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:20.776Z] Додано унікальних посилань зі сторінки 13: 16
+[2026-08-16T09:49:21.386Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=208&page=14&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:22.772Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 14) ---
+[2026-08-16T09:49:22.773Z] "{\"html\":\"\\r\\n    <div id=\\\"post-207204\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-207204 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-contracts category-ofitserski category-perevedennia category-povitrianisyly category-spetsialnist category-chastkovaprydatnist units-28-okremyi-inzhenerno-aerodromnyi-batalio
+[2026-08-16T09:49:22.774Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 14 ---
+[2026-08-16T09:49:22.775Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:22.775Z] Додано унікальних посилань зі сторінки 14: 16
+[2026-08-16T09:49:23.392Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=224&page=15&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:25.026Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 15) ---
+[2026-08-16T09:49:25.026Z] "{\"html\":\"\\r\\n    <div id=\\\"post-205856\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-205856 tors type-tors status-publish hentry category-militari category-rank category-it category-ngu category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-20brop tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\\
+[2026-08-16T09:49:25.027Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 15 ---
+[2026-08-16T09:49:25.028Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:25.028Z] Додано унікальних посилань зі сторінки 15: 16
+[2026-08-16T09:49:25.641Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=240&page=16&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:27.331Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 16) ---
+[2026-08-16T09:49:27.332Z] "{\"html\":\"\\r\\n    <div id=\\\"post-204707\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-204707 tors type-tors status-publish hentry category-militari category-rank category-it category-ngu category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-harmash tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\
+[2026-08-16T09:49:27.333Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 16 ---
+[2026-08-16T09:49:27.334Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:27.334Z] Додано унікальних посилань зі сторінки 16: 16
+[2026-08-16T09:49:27.949Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=256&page=17&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:29.847Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 17) ---
+[2026-08-16T09:49:29.847Z] "{\"html\":\"\\r\\n    <div id=\\\"post-147731\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-147731 tors type-tors status-publish hentry category-militari category-rank category-it category-mod category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-ministerstvo-oborony tors-status-is-open\\\">\\r\\n        \\r\\n       
+[2026-08-16T09:49:29.848Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 17 ---
+[2026-08-16T09:49:29.849Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:29.850Z] Додано унікальних посилань зі сторінки 17: 16
+[2026-08-16T09:49:30.461Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=272&page=18&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:32.072Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 18) ---
+[2026-08-16T09:49:32.073Z] "{\"html\":\"\\r\\n    <div id=\\\"post-202617\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-202617 tors type-tors status-publish hentry category-2-boyovyy category-militari category-rank category-it category-contracts category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-412-okrem
+[2026-08-16T09:49:32.074Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 18 ---
+[2026-08-16T09:49:32.075Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:32.075Z] Додано унікальних посилань зі сторінки 18: 16
+[2026-08-16T09:49:32.690Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=288&page=19&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:34.301Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 19) ---
+[2026-08-16T09:49:34.302Z] "{\"html\":\"\\r\\n    <div id=\\\"post-78895\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-78895 tors type-tors status-publish hentry category-militari category-zviazok category-rank category-it category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-sukhoputka units-118-okrema-mekhanizovana-bryhada tors-status-is-open\\\">\\r\\n        \\r\\n  
+[2026-08-16T09:49:34.303Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 19 ---
+[2026-08-16T09:49:34.304Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:34.305Z] Додано унікальних посилань зі сторінки 19: 16
+[2026-08-16T09:49:34.909Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=304&page=20&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:36.341Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 20) ---
+[2026-08-16T09:49:36.342Z] "{\"html\":\"\\r\\n    <div id=\\\"post-199574\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-199574 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-contracts category-ofitserski category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydat
+[2026-08-16T09:49:36.342Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 20 ---
+[2026-08-16T09:49:36.343Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:36.344Z] Додано унікальних посилань зі сторінки 20: 16
+[2026-08-16T09:49:36.948Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=320&page=21&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:38.622Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 21) ---
+[2026-08-16T09:49:38.623Z] "{\"html\":\"\\r\\n    <div id=\\\"post-186589\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-186589 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-ab3 tors-status-is-open\\\">\\r\
+[2026-08-16T09:49:38.623Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 21 ---
+[2026-08-16T09:49:38.624Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:38.625Z] Додано унікальних посилань зі сторінки 21: 16
+[2026-08-16T09:49:39.238Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=336&page=22&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:40.917Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 22) ---
+[2026-08-16T09:49:40.918Z] "{\"html\":\"\\r\\n    <div id=\\\"post-197391\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-197391 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-sukhoputka category-tsyfrovizatsiia category-chastkovaprydatnist units-20-armi
+[2026-08-16T09:49:40.918Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 22 ---
+[2026-08-16T09:49:40.919Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:40.920Z] Додано унікальних посилань зі сторінки 22: 16
+[2026-08-16T09:49:41.525Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=352&page=23&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:43.185Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 23) ---
+[2026-08-16T09:49:43.186Z] "{\"html\":\"\\r\\n    <div id=\\\"post-188410\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-188410 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-mod category-ofitserski category-perevedennia category-spetsialnist category-chastkovaprydatnist units-ministerstvo-oborony tors-status-is-open\\\">\\r\\n        \\r\\n      
+[2026-08-16T09:49:43.187Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 23 ---
+[2026-08-16T09:49:43.188Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:43.188Z] Додано унікальних посилань зі сторінки 23: 16
+[2026-08-16T09:49:43.803Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=368&page=24&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:45.475Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 24) ---
+[2026-08-16T09:49:45.475Z] "{\"html\":\"\\r\\n    <div id=\\\"post-152108\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-152108 tors type-tors status-publish hentry category-3-bazovyy category-militari category-bordercontrol category-rank category-it category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-prykordonnyi-pidrozdil-bezpil
+[2026-08-16T09:49:45.476Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 24 ---
+[2026-08-16T09:49:45.477Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:45.477Z] Додано унікальних посилань зі сторінки 24: 16
+[2026-08-16T09:49:46.091Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=384&page=25&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:47.511Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 25) ---
+[2026-08-16T09:49:47.512Z] "{\"html\":\"\\r\\n    <div id=\\\"post-105620\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-105620 tors type-tors status-publish hentry category-3-bazovyy category-militari category-bordercontrol category-rank category-it category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-prykordonnyi-pidrozdil-bezpil
+[2026-08-16T09:49:47.512Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 25 ---
+[2026-08-16T09:49:47.513Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:47.514Z] Додано унікальних посилань зі сторінки 25: 16
+[2026-08-16T09:49:48.116Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=400&page=26&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:49.757Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 26) ---
+[2026-08-16T09:49:49.758Z] "{\"html\":\"\\r\\n    <div id=\\\"post-194716\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-194716 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-sso category-chastkovaprydatnist units-okremyi-polk-zv-iazku-sso tors-st
+[2026-08-16T09:49:49.759Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 26 ---
+[2026-08-16T09:49:49.760Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:49.760Z] Додано унікальних посилань зі сторінки 26: 16
+[2026-08-16T09:49:50.362Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=416&page=27&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:51.506Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 27) ---
+[2026-08-16T09:49:51.506Z] "{\"html\":\"\\r\\n    <div id=\\\"post-193551\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-193551 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-operatyvne-komanduvannia-z
+[2026-08-16T09:49:51.507Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 27 ---
+[2026-08-16T09:49:51.508Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:51.509Z] Додано унікальних посилань зі сторінки 27: 16
+[2026-08-16T09:49:52.121Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=432&page=28&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:53.477Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 28) ---
+[2026-08-16T09:49:53.478Z] "{\"html\":\"\\r\\n    <div id=\\\"post-112136\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-112136 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ngu category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-18-ta-slov-ianska-bryhada-natsionalnoi-
+[2026-08-16T09:49:53.479Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 28 ---
+[2026-08-16T09:49:53.479Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:53.480Z] Додано унікальних посилань зі сторінки 28: 16
+[2026-08-16T09:49:54.095Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=448&page=29&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:55.505Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 29) ---
+[2026-08-16T09:49:55.506Z] "{\"html\":\"\\r\\n    <div id=\\\"post-171674\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-171674 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ngu category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-17-poltavska-bryhada-reid tors-status-i
+[2026-08-16T09:49:55.506Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 29 ---
+[2026-08-16T09:49:55.507Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:55.507Z] Додано унікальних посилань зі сторінки 29: 16
+[2026-08-16T09:49:56.109Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=464&page=30&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:57.532Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 30) ---
+[2026-08-16T09:49:57.532Z] "{\"html\":\"\\r\\n    <div id=\\\"post-187963\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-187963 tors type-tors status-publish hentry category-3-bazovyy category-militari category-zviazok category-rank category-it category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-sso units-6-polk-sso tors-status-is-open\\\">\\r\\n        \\r\\n        <d
+[2026-08-16T09:49:57.533Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 30 ---
+[2026-08-16T09:49:57.533Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:57.534Z] Додано унікальних посилань зі сторінки 30: 16
+[2026-08-16T09:49:58.137Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=480&page=31&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:49:59.561Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 31) ---
+[2026-08-16T09:49:59.562Z] "{\"html\":\"\\r\\n    <div id=\\\"post-104113\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-104113 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-riadovi category-serzhantski category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-sukhoputni-viiska tors-status-is-open\\\">\\r\\n        \\r\\n      
+[2026-08-16T09:49:59.562Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 31 ---
+[2026-08-16T09:49:59.563Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:49:59.563Z] Додано унікальних посилань зі сторінки 31: 16
+[2026-08-16T09:50:00.168Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=496&page=32&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:01.576Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 32) ---
+[2026-08-16T09:50:01.577Z] "{\"html\":\"\\r\\n    <div id=\\\"post-175976\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-175976 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-syly-bez
+[2026-08-16T09:50:01.578Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 32 ---
+[2026-08-16T09:50:01.579Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:01.580Z] Додано унікальних посилань зі сторінки 32: 16
+[2026-08-16T09:50:02.193Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=512&page=33&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:03.445Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 33) ---
+[2026-08-16T09:50:03.446Z] "{\"html\":\"\\r\\n    <div id=\\\"post-185719\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-185719 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-riadovi category-serzhantski category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-115-okrema-mekhanizovana-bryhada tors-status-is-open\\\">\\r\\n     
+[2026-08-16T09:50:03.446Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 33 ---
+[2026-08-16T09:50:03.448Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:03.449Z] Додано унікальних посилань зі сторінки 33: 16
+[2026-08-16T09:50:04.062Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=528&page=34&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:05.742Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 34) ---
+[2026-08-16T09:50:05.743Z] "{\"html\":\"\\r\\n    <div id=\\\"post-158475\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-158475 tors type-tors status-publish hentry category-3-bazovyy category-militari category-viyskazv-iazku category-rank category-it category-ofitserski category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-viyska-z
+[2026-08-16T09:50:05.743Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 34 ---
+[2026-08-16T09:50:05.744Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:05.745Z] Додано унікальних посилань зі сторінки 34: 16
+[2026-08-16T09:50:06.349Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=544&page=35&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:08.204Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 35) ---
+[2026-08-16T09:50:08.205Z] "{\"html\":\"\\r\\n    <div id=\\\"post-183098\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-183098 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-perevedennia category-riadovi category-serzhantski category-szch category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-33-okremyi-shturmovyi-polk tors-
+[2026-08-16T09:50:08.205Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 35 ---
+[2026-08-16T09:50:08.206Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:08.207Z] Додано унікальних посилань зі сторінки 35: 16
+[2026-08-16T09:50:08.822Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=560&page=36&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:10.544Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 36) ---
+[2026-08-16T09:50:10.545Z] "{\"html\":\"\\r\\n    <div id=\\\"post-180576\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-180576 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-perevedennia category-riadovi category-spetsialnist category-tro category-chastkovaprydatnist units-110-okrema-bryhada-terytorialnoi-oborony tors-status-is-open\\\">\\r\\n   
+[2026-08-16T09:50:10.545Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 36 ---
+[2026-08-16T09:50:10.546Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:10.547Z] Додано унікальних посилань зі сторінки 36: 16
+[2026-08-16T09:50:11.160Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=576&page=37&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:12.643Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 37) ---
+[2026-08-16T09:50:12.644Z] "{\"html\":\"\\r\\n    <div id=\\\"post-178033\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-178033 tors type-tors status-publish hentry category-militari category-rank category-it category-perevedennia category-fixing category-riadovi category-serzhantski category-szch category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-1-okremyy-shturmovyy-polk tors-stat
+[2026-08-16T09:50:12.644Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 37 ---
+[2026-08-16T09:50:12.645Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:12.646Z] Додано унікальних посилань зі сторінки 37: 16
+[2026-08-16T09:50:13.261Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=592&page=38&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:14.648Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 38) ---
+[2026-08-16T09:50:14.649Z] "{\"html\":\"\\r\\n    <div id=\\\"post-125362\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-125362 tors type-tors status-publish hentry category-militari category-rank category-it category-contracts category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-tsukrarnia-ptakhiv-madiara t
+[2026-08-16T09:50:14.649Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 38 ---
+[2026-08-16T09:50:14.650Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:14.651Z] Додано унікальних посилань зі сторінки 38: 16
+[2026-08-16T09:50:15.265Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=608&page=39&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:16.590Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 39) ---
+[2026-08-16T09:50:16.591Z] "{\"html\":\"\\r\\n    <div id=\\\"post-172359\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-172359 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ofitserski category-perevedennia category-spetsialnist category-sukhoputka category-chastkovaprydatnist units-309-dystsyplinarnyi-batalion-vsp tors-status-is-open\\\">\\r\\n 
+[2026-08-16T09:50:16.591Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 39 ---
+[2026-08-16T09:50:16.592Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:16.593Z] Додано унікальних посилань зі сторінки 39: 16
+[2026-08-16T09:50:17.209Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=624&page=40&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:19.190Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 40) ---
+[2026-08-16T09:50:19.191Z] "{\"html\":\"\\r\\n    <div id=\\\"post-168461\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-168461 tors type-tors status-publish hentry category-militari category-cio category-rank category-it category-ofitserski category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist category-shtab units-holovne-upravlinnia-rozvidky tors-status-is-open\\\">\\r\\n
+[2026-08-16T09:50:19.192Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 40 ---
+[2026-08-16T09:50:19.193Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:19.196Z] Додано унікальних посилань зі сторінки 40: 16
+[2026-08-16T09:50:19.806Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=640&page=41&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:21.419Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 41) ---
+[2026-08-16T09:50:21.420Z] "{\"html\":\"\\r\\n    <div id=\\\"post-166048\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-166048 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-morskisyly category-perevedennia category-riadovi category-szch category-spetsialnist units-38-okrema-bryhada-mp tors-status-is-open\\\">\\r\\n        \\r\\n        <div clas
+[2026-08-16T09:50:21.421Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 41 ---
+[2026-08-16T09:50:21.422Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:21.423Z] Додано унікальних посилань зі сторінки 41: 16
+[2026-08-16T09:50:22.032Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=656&page=42&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:23.679Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 42) ---
+[2026-08-16T09:50:23.680Z] "{\"html\":\"\\r\\n    <div id=\\\"post-160712\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-160712 tors type-tors status-publish hentry category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-spetsialnist category-chastkovaprydatnist units-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky tors-status-is-open\\\">\\r\\n       
+[2026-08-16T09:50:23.681Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 42 ---
+[2026-08-16T09:50:23.682Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:23.683Z] Додано унікальних посилань зі сторінки 42: 16
+[2026-08-16T09:50:24.292Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=672&page=43&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:25.892Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 43) ---
+[2026-08-16T09:50:25.893Z] "{\"html\":\"\\r\\n    <div id=\\\"post-95475\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-95475 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-ofitserski category-sbu category-spetsialnist units-tsentr-spetsialnykh-operatsiy-a-sbu tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\\\"square-content\\\">\\
+[2026-08-16T09:50:25.894Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 43 ---
+[2026-08-16T09:50:25.894Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:25.895Z] Додано унікальних посилань зі сторінки 43: 16
+[2026-08-16T09:50:26.511Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=688&page=44&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:27.731Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 44) ---
+[2026-08-16T09:50:27.732Z] "{\"html\":\"\\r\\n    <div id=\\\"post-154358\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-154358 tors type-tors status-publish hentry category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-spetsialnist category-chastkovaprydatnist units-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky tors-status-is-open\\\">\\r\\n       
+[2026-08-16T09:50:27.732Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 44 ---
+[2026-08-16T09:50:27.733Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:27.734Z] Додано унікальних посилань зі сторінки 44: 16
+[2026-08-16T09:50:28.338Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=704&page=45&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:30.015Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 45) ---
+[2026-08-16T09:50:30.016Z] "{\"html\":\"\\r\\n    <div id=\\\"post-127973\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-127973 tors type-tors status-publish hentry category-militari category-rank category-it category-contracts category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-414-okrema-bryhada-udarnykh-
+[2026-08-16T09:50:30.016Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 45 ---
+[2026-08-16T09:50:30.017Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:30.018Z] Додано унікальних посилань зі сторінки 45: 16
+[2026-08-16T09:50:30.623Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=720&page=46&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:32.335Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 46) ---
+[2026-08-16T09:50:32.337Z] "{\"html\":\"\\r\\n    <div id=\\\"post-123714\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-123714 tors type-tors status-publish hentry category-militari category-rank category-it category-ofitserski category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-tsentr-masshtabuvannia-tekhnolohichnykh-rishen tors-status-is-ope
+[2026-08-16T09:50:32.339Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 46 ---
+[2026-08-16T09:50:32.341Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:32.342Z] Додано унікальних посилань зі сторінки 46: 16
+[2026-08-16T09:50:32.945Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=736&page=47&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:34.595Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 47) ---
+[2026-08-16T09:50:34.596Z] "{\"html\":\"\\r\\n    <div id=\\\"post-121663\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-121663 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-morskisyly category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-viyskovo-morski-syly tors-status-is-open\\\">\
+[2026-08-16T09:50:34.596Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 47 ---
+[2026-08-16T09:50:34.597Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:34.598Z] Додано унікальних посилань зі сторінки 47: 16
+[2026-08-16T09:50:35.211Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=752&page=48&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:36.781Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 48) ---
+[2026-08-16T09:50:36.781Z] "{\"html\":\"\\r\\n    <div id=\\\"post-113496\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-113496 tors type-tors status-publish hentry category-3-bazovyy category-militari category-rank category-it category-perevedennia category-riadovi category-bezpilotnisyly category-serzhantski category-szch category-spetsialnist category-chastkovaprydatnist units-427opbps tors-status-is-open
+[2026-08-16T09:50:36.782Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 48 ---
+[2026-08-16T09:50:36.782Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:36.783Z] Додано унікальних посилань зі сторінки 48: 16
+[2026-08-16T09:50:37.396Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=768&page=49&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:39.677Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 49) ---
+[2026-08-16T09:50:39.678Z] "{\"html\":\"\\r\\n    <div id=\\\"post-101030\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-101030 tors type-tors status-publish hentry category-2-boyovyy category-bpla category-militari category-dshv category-rank category-it category-perevedennia category-riadovi category-serzhantski category-spetsialnist category-chastkovaprydatnist units-rota-udarnykh-bezpilotnykh-system-77-o
+[2026-08-16T09:50:39.679Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 49 ---
+[2026-08-16T09:50:39.680Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:39.681Z] Додано унікальних посилань зі сторінки 49: 16
+[2026-08-16T09:50:40.296Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=784&page=50&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T09:50:42.416Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 50) ---
+[2026-08-16T09:50:42.417Z] "{\"html\":\"\\r\\n    <div id=\\\"post-92126\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-92126 tors type-tors status-publish hentry category-militari category-cio category-rank category-it category-ofitserski category-riadovi category-serzhantski category-spetsialnist units-holovne-upravlinnia-rozvidky tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\\\"square-co
+[2026-08-16T09:50:42.417Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 50 ---
+[2026-08-16T09:50:42.418Z] Кількість виявлених лінків через Regex: 16
+[2026-08-16T09:50:42.419Z] Додано унікальних посилань зі сторінки 50: 16
+[2026-08-16T09:50:42.420Z] Досягнуто ліміту безпеки у 50 сторінок.
+[2026-08-16T09:50:42.426Z] Унікальних URL адрес у масиві для обходу: 800
+[2026-08-16T09:50:42.428Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-648-okremyy-zenitnyy-kulemetnyy-batalyon/
+[2026-08-16T09:50:49.598Z] Base updated: 648 окремий зенітний кулеметний батальйон -> ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:50:50.401Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-tekhnichnoho-zakhystu-informatsii-do-viyskova-chastyna-a3620-hkts/
+[2026-08-16T09:50:52.273Z] Base updated: військової частини А3620 -> СПЕЦІАЛІСТ З ТЕХНІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:50:53.090Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-viyska-zv-iazku/
+[2026-08-16T09:50:55.590Z] Base updated: одній з тилових військових частин Збройних Сил України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:50:56.392Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-merezhevykh-servisiv-do-511-informatsiyno-komunikatsiynyy-vuzol/
+[2026-08-16T09:51:00.610Z] Base updated: Сили Оборони України -> ІНЖЕНЕР МЕРЕЖЕВИХ СЕРВІСІВ
+[2026-08-16T09:51:01.421Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-108-aviatsiyna-komendatura/
+[2026-08-16T09:51:04.267Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:51:05.078Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-tekhnichnoi-pidtrymky-korystuvachiv-do-viyska-zv-iazku/
+[2026-08-16T09:51:08.180Z] Base updated: одній з військових частин -> ФАХІВЕЦЬ З ТЕХНІЧНОЇ ПІДТРИМКИ КОРИСТУВАЧІВ
+[2026-08-16T09:51:08.983Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-informatsiyno-komunikatsiynykh-system-do-viyska-zv-iazku/
+[2026-08-16T09:51:10.948Z] Base updated: одній з військових частин -> ІНЖЕНЕР ІНФОРМАЦІЙНО-КОМУНІКАЦІЙНИХ СИСТЕМ
+[2026-08-16T09:51:11.757Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-komunikatsiynoho-obladnannia-do-viyska-zv-iazku/
+[2026-08-16T09:51:13.168Z] Base updated: одній з військових частин -> ІНЖЕНЕР КОМУНІКАЦІЙНОГО ОБЛАДНАННЯ
+[2026-08-16T09:51:13.980Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ai-policy-lead-do-ministerstvo-oborony/
+[2026-08-16T09:51:15.692Z] Base updated: Сили Оборони України -> AI POLICY LEAD
+[2026-08-16T09:51:16.500Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/solution-architect-do-ministerstvo-oborony/
+[2026-08-16T09:51:17.890Z] Base updated: ІТ-команди МОУ -> SOLUTION ARCHITECT
+[2026-08-16T09:51:18.694Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/security-engineer-do-tsentr-kiberzakhystu-ministerstva-oborony-ukrainy/
+[2026-08-16T09:51:20.707Z] Base updated: команди фахівців з кібербезпеки -> SECURITY ENGINEER
+[2026-08-16T09:51:21.517Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-321-okremyy-batalyon-okhorony-ta-obsluhovuvannia/
+[2026-08-16T09:51:23.521Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:51:24.333Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/automation-qa-engineer-do-viyska-zv-iazku/
+[2026-08-16T09:51:28.464Z] Base updated: Сили Оборони України -> AUTOMATION QA ENGINEER
+[2026-08-16T09:51:29.278Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/administrator-iks-do-batalyon-kayros-414-obrbps-ptakhy-madiara/
+[2026-08-16T09:51:31.013Z] Base updated: Батальйон «Кайрос» 414 ОБрБпС «Птахи Мадяра» -> АДМІНІСТРАТОР ІКС
+[2026-08-16T09:51:31.817Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-pidtrymky-korystuvachiv-ta-it-infrastruktury-do-ministerstvo-oborony/
+[2026-08-16T09:51:33.947Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ З ПІДТРИМКИ КОРИСТУВАЧІВ ТА ІТ-ІНФРАСТРУКТУРИ
+[2026-08-16T09:51:34.752Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-developer-do-viyska-zv-iazku/
+[2026-08-16T09:51:36.143Z] Base updated: Сили Оборони України -> FRONTEND DEVELOPER
+[2026-08-16T09:51:36.953Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberbezpeky-red-team-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:38.566Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З КІБЕРБЕЗПЕКИ (RED TEAM)
+[2026-08-16T09:51:39.369Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberbezpeky-blue-team-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:41.131Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З КІБЕРБЕЗПЕКИ (BLUE TEAM)
+[2026-08-16T09:51:41.947Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/seo-spetsialist-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:43.962Z] Base updated: Сили Оборони України -> SEO-СПЕЦІАЛІСТ
+[2026-08-16T09:51:44.773Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ppc-spetsialist-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:46.746Z] Base updated: Сили Оборони України -> PPC СПЕЦІАЛІСТ
+[2026-08-16T09:51:47.548Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ui-ux-dyzayner-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:50.501Z] Base updated: Сили Оборони України -> UI/UX ДИЗАЙНЕР
+[2026-08-16T09:51:51.315Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-webflow-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:53.222Z] Base updated: Сили Оборони України -> РОЗРОБНИК WEBFLOW
+[2026-08-16T09:51:54.025Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-wordpress-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:55.535Z] Base updated: Сили Оборони України -> РОЗРОБНИК WORDPRESS
+[2026-08-16T09:51:56.349Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:51:57.816Z] Base updated: Сили Оборони України -> РОЗРОБНИК ЧАТ-БОТІВ
+[2026-08-16T09:51:58.619Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/vebdyzayner-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:52:00.737Z] Base updated: Сили Оборони України -> ВЕБДИЗАЙНЕР
+[2026-08-16T09:52:01.539Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fullstack-developer-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:52:03.574Z] Base updated: Сили Оборони України -> FULLSTACK DEVELOPER
+[2026-08-16T09:52:04.380Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:52:06.167Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:52:06.969Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-testuvalnyk-bpla-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:52:08.486Z] Base updated: Сили Оборони України -> РОЗРОБНИК/ТЕСТУВАЛЬНИК БПЛА
+[2026-08-16T09:52:09.286Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-telekomunikatsiynykh-merezh-ta-informatsiynykh-system-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/
+[2026-08-16T09:52:12.359Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З ТЕЛЕКОМУНІКАЦІЙНИХ МЕРЕЖ ТА ІНФОРМАЦІЙНИХ СИСТЕМ
+[2026-08-16T09:52:13.164Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-prohramist-bpla-do-9-okrema-bryhada-bezpilotnykh-system/
+[2026-08-16T09:52:16.061Z] Base updated: Сили Оборони України -> ІНЖЕНЕР-ПРОГРАМІСТ БПЛА
+[2026-08-16T09:52:16.866Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-avtomatyzovanykh-system-do-27-prykordonnoho-zahonu/
+[2026-08-16T09:52:18.936Z] Base updated: 27-му прикордонному загоні ДПСУ -> ТЕХНІК АВТОМАТИЗОВАНИХ СИСТЕМ
+[2026-08-16T09:52:19.757Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-3-mekhanizovanyy-batalyon-42-ombr/
+[2026-08-16T09:52:21.695Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T09:52:22.505Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-spetsialist-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:25.078Z] Base updated: Сили Оборони України -> IT-СПЕЦІАЛІСТ
+[2026-08-16T09:52:25.879Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:27.984Z] Base updated: Сили Оборони України -> FRONTEND-РОЗРОБНИК
+[2026-08-16T09:52:28.786Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/backend-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:30.937Z] Base updated: Сили Оборони України -> BACKEND-РОЗРОБНИК
+[2026-08-16T09:52:31.740Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fullstack-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:33.110Z] Base updated: Сили Оборони України -> FULLSTACK-РОЗРОБНИК
+[2026-08-16T09:52:33.913Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-radio-ta-kiberborotby-do-9-okrema-bryhada-bezpilotnykh-system/
+[2026-08-16T09:52:35.426Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ГРУПИ РАДІО- ТА КІБЕРБОРОТЬБИ
+[2026-08-16T09:52:36.226Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-iz-kiberzakhystu-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:37.829Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ІЗ КІБЕРЗАХИСТУ
+[2026-08-16T09:52:38.629Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/mayster-telekomunikatsiynykh-merezh-ta-informatsiynykh-system-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:40.663Z] Base updated: Сили Оборони України -> МАЙСТЕР ТЕЛЕКОМУНІКАЦІЙНИХ МЕРЕЖ ТА ІНФОРМАЦІЙНИХ СИСТЕМ
+[2026-08-16T09:52:41.474Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/web-dyzayner-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:43.245Z] Base updated: Сили Оборони України -> ВЕБДИЗАЙНЕР
+[2026-08-16T09:52:44.068Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-webflow-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:46.961Z] Base updated: Сили Оборони України -> РОЗРОБНИК WEBFLOW
+[2026-08-16T09:52:47.763Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:49.876Z] Base updated: Сили Оборони України -> РОЗРОБНИК ЧАТ-БОТІВ
+[2026-08-16T09:52:50.680Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-wordpress-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-16T09:52:53.110Z] Base updated: Сили Оборони України -> РОЗРОБНИК WORDPRESS
+[2026-08-16T09:52:53.916Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-vzvodu-zv-iazku-do-12-okrema-bryhada-spetsialnoho-pryznachennia-azov/
+[2026-08-16T09:52:56.200Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР ВЗВОДУ ЗВʼЯЗКУ
+[2026-08-16T09:52:57.016Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/sudovyy-ekspert-z-komp-iuternoi-tekhniky-ta-prohramnykh-produktiv-do-ukrainskyy-naukovo-doslidnyy-instytut-spetsialnoi-tekhniky-ta-sudovykh-ekspertyz-sbu/
+[2026-08-16T09:52:58.766Z] Base updated: безпеки України є державною спеціалізованою експертною науково-дослідною установою -> СУДОВИЙ ЕКСПЕРТ З КОМПʼЮТЕРНОЇ ТЕХНІКИ ТА ПРОГРАМНИХ ПРОДУКТІВ
+[2026-08-16T09:52:59.575Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-hrupy-zv-iazku-do-viysk-zv-iazku/
+[2026-08-16T09:53:06.274Z] Base updated: одній з тилових військових частин (частині забезпечення) Військ Зв'язку Збройних Сил України -> ІНЖЕНЕР ГРУПИ ЗВ’ЯЗКУ
+[2026-08-16T09:53:07.089Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-422-okremyy-batalyon-bezpilotnykh-system-luftwaffe/
+[2026-08-16T09:53:09.138Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:53:09.952Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/starshyy-frontend-rozrobnyk-do-komanduvannia-raketnykh-viysk-i-artylerii-zsu/
+[2026-08-16T09:53:11.999Z] Base updated: Сили Оборони України -> СТАРШИЙ FRONTEND РОЗРОБНИК
+[2026-08-16T09:53:12.806Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ui-ux-dyzayner-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T09:53:15.226Z] Base updated: Сили Оборони України -> UI/UX ДИЗАЙНЕР
+[2026-08-16T09:53:16.038Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-v-avtomatyzovanykh-systemakh-do-19-tsentr-spetsialnoho-pryznachennia-vsp/
+[2026-08-16T09:53:19.126Z] Base updated: правопорядку Збройних Сил України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ В АВТОМАТИЗОВАНИХ СИСТЕМАХ
+[2026-08-16T09:53:19.938Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-merezh-ta-prohramnoho-zabezpechennia-do-kharkivskyy-natsionalnyy-universytet-povitrianykh-syl-imeni-ivana-kozheduba/
+[2026-08-16T09:53:21.654Z] Base updated: підрозділах навчального закладу -> НАЧАЛЬНИК ГРУПИ МЕРЕЖ ТА ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ
+[2026-08-16T09:53:22.459Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-laboratorii-tekhnichnykh-zasobiv-navchannia-do-kharkivskyy-natsionalnyy-universytet-povitrianykh-syl-imeni-ivana-kozheduba/
+[2026-08-16T09:53:23.880Z] Base updated: підрозділах навчального закладу -> ТЕХНІК ЛАБОРАТОРІЇ ТЕХНІЧНИХ ЗАСОБІВ НАВЧАННЯ
+[2026-08-16T09:53:24.682Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-zv-iazkivets-do-zenitnyy-raketnyy-dyvizion-prybultsi-115-ombr/
+[2026-08-16T09:53:26.596Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР/ЗВʼЯЗКІВЕЦЬ
+[2026-08-16T09:53:27.411Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-20-okrema-bryhada-bezpilotnykh-system-k-2/
+[2026-08-16T09:53:28.843Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:53:29.653Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-viddilennia-tsyfrovoi-transformatsii-do-20-okrema-bryhada-bezpilotnykh-system-k-2/
+[2026-08-16T09:53:31.237Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ВІДДІЛЕННЯ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ
+[2026-08-16T09:53:32.049Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoi-transformatsii-do-20-okrema-bryhada-bezpilotnykh-system-k-2/
+[2026-08-16T09:53:33.599Z] Base updated: Сили Оборони України -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОЇ ТРАНСФОРМАЦІЇ
+[2026-08-16T09:53:34.402Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/biznes-analityk-do-20-okrema-bryhada-bezpilotnykh-system-k-2/
+[2026-08-16T09:53:37.536Z] Base updated: Сили Оборони України -> БІЗНЕС-АНАЛІТИК
+[2026-08-16T09:53:38.348Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-hrupy-zviazku-ta-kiberbezpeky-do-20-okrema-bryhada-bezpilotnykh-system-k-2/
+[2026-08-16T09:53:40.368Z] Base updated: Сили Оборони України -> ОФІЦЕР ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T09:53:41.186Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-14-shturmovyy-polk/
+[2026-08-16T09:53:43.765Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:53:44.571Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-14-shturmovyy-polk/
+[2026-08-16T09:53:46.662Z] Base updated: Сили Оборони України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:53:47.470Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fullstack-developer-do-tsentr-upravlinnia-rozvidkoiu-komanduvannia-ob-iednanykh-syl/
+[2026-08-16T09:53:49.487Z] Base updated: Сили Оборони України -> FULLSTACK DEVELOPER
+[2026-08-16T09:53:50.288Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-tsentr-upravlinnia-rozvidkoiu-komanduvannia-ob-iednanykh-syl/
+[2026-08-16T09:53:52.156Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T09:53:52.970Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-analitychnykh-system-middle-senior-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T09:53:54.556Z] Base updated: Сили Оборони України -> РОЗРОБНИК АНАЛІТИЧНИХ СИСТЕМ (MIDDLE/SENIOR)
+[2026-08-16T09:53:55.359Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-iz-vprovadzhennia-shi-middle-senior-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T09:53:57.436Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ІЗ ВПРОВАДЖЕННЯ ШІ (MIDDLE/SENIOR)
+[2026-08-16T09:53:58.259Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-qa-automation-engineer-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/
+[2026-08-16T09:53:59.888Z] Base updated: Сили Оборони України -> SENIOR QA AUTOMATION ENGINEER
+[2026-08-16T09:54:00.698Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-143-okrema-mekhanizovana-bryhada/
+[2026-08-16T09:54:02.756Z] Base updated: Сили Оборони України -> ОФІЦЕР СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:54:03.558Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/kerivnyk-hrupy-tekhnichnoho-zakhystu-informatsii-do-ministerstvo-oborony/
+[2026-08-16T09:54:06.072Z] Base updated: сфері обслуговування ІТ інфраструктури та надання консультативних послуг щодо роботи в системах та програмних комплексах -> КЕРІВНИК ГРУПИ ТЕХНІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:54:06.887Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/kerivnyk-napriamu-informatsiynoi-bezpeky-do-ministerstvo-oborony/
+[2026-08-16T09:54:08.740Z] Base updated: сфері обслуговування ІТ інфраструктури та надання консультативних послуг щодо роботи в системах та програмних комплексах -> КЕРІВНИК НАПРЯМУ ІНФОРМАЦІЙНОЇ БЕЗПЕКИ
+[2026-08-16T09:54:09.555Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-9-okrema-bryhada-bezpilotnykh-system/
+[2026-08-16T09:54:10.926Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T09:54:11.732Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-2-batalyon-bezpilotnykh-system-katekhon-106-obrtro/
+[2026-08-16T09:54:13.585Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T09:54:14.401Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/nachalnyk-hrupy-zviazku-ta-kiberbezpeky-do-2-batalyon-bezpilotnykh-system-katekhon-106-obrtro/
+[2026-08-16T09:54:16.484Z] Base updated: Сили Оборони України -> НАЧАЛЬНИК ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T09:54:17.285Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/seo-spetsialist-do-12-bryhady-azov-nhu/
+[2026-08-16T09:54:20.019Z] Base updated: Сили Оборони України -> SEO-СПЕЦІАЛІСТ
+[2026-08-16T09:54:20.829Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-22-okrema-mekhanizovana-bryhada/
+[2026-08-16T09:54:22.351Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:54:23.159Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-1226-okremyy-batalyon-pidtrymky/
+[2026-08-16T09:54:25.204Z] Base updated: Сили Оборони України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:54:26.017Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-zakhystu-informatsii-do-21-okrema-mekhanizovana-bryhada/
+[2026-08-16T09:54:27.824Z] Base updated: Сили Оборони України -> ОФІЦЕР ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:54:28.627Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-python-developer-do-viyska-zv-iazku/
+[2026-08-16T09:54:29.996Z] Base updated: одній з військових частин -> SENIOR PYTHON DEVELOPER
+[2026-08-16T09:54:30.804Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-hrupy-kiberzakhystu-do-viyskova-chastyna-t0400-dsst/
+[2026-08-16T09:54:34.641Z] Base updated: військовій частині Т0400 Державної спеціальної служби транспорту за напрямком кібербезпеки -> ТЕХНІК ГРУПИ КІБЕРЗАХИСТУ
+[2026-08-16T09:54:35.447Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/embedded-rozrobnyk-do-batalyon-kayros-414-obrbps-ptakhy-madiara/
+[2026-08-16T09:54:37.432Z] Base updated: Батальйон «Кайрос» 414 ОБрБпС «Птахи Мадяра» -> EMBEDDED-РОЗРОБНИК
+[2026-08-16T09:54:38.241Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-tsyfrovizatsiia-do-9-okrema-bryhada-bezpilotnykh-system/
+[2026-08-16T09:54:39.630Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:54:40.445Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/serzhant-hrupy-zv-iazku-ta-kiberbezpeky-do-237-okremyy-batalyon-bezpilotnykh-system/
+[2026-08-16T09:54:42.937Z] Base updated: 237 окремому батальйоні безпілотних систем -> СЕРЖАНТ ГРУПИ ЗВ’ЯЗКУ ТА КІБЕРБЕЗПЕКИ
+[2026-08-16T09:54:43.741Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/serzhant-sluzhby-zakhystu-informatsii-v-avtomatyzovanykh-systemakh-do-237-okremyy-batalyon-bezpilotnykh-system/
+[2026-08-16T09:54:45.697Z] Base updated: 237 окремому батальйоні безпілотних систем -> СЕРЖАНТ СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:54:46.508Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/serzhant-hrupy-tsyfrovoho-rozvytku-do-237-okremyy-batalyon-bezpilotnykh-system/
+[2026-08-16T09:54:48.397Z] Base updated: 237 окремому батальйоні безпілотних систем -> СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:54:49.201Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-hrupy-tsyfrovoho-rozvytku-do-237-okremyy-batalyon-bezpilotnykh-system/
+[2026-08-16T09:54:50.586Z] Base updated: 237 окремому батальйоні безпілотних систем -> ОФІЦЕР ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:54:51.389Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/s-embeded-prohramist-do-1-okremyy-medychnyy-batalyon/
+[2026-08-16T09:54:52.686Z] Base updated: 1-го Інтернаціонального легіону -> С++ EMBEDED ПРОГРАМІСТ
+[2026-08-16T09:54:53.493Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-systemnyy-administrator-do-1-okremyy-medychnyy-batalyon/
+[2026-08-16T09:54:54.873Z] Base updated: 1-го Інтернаціонального легіону -> МЕРЕЖЕВИЙ/СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:54:55.680Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/sql-developer-do-1-okremyy-medychnyy-batalyon/
+[2026-08-16T09:54:57.094Z] Base updated: 1-го Інтернаціонального легіону -> SQL DEVELOPER
+[2026-08-16T09:54:57.895Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/backend-developer-do-1-okremyy-medychnyy-batalyon/
+[2026-08-16T09:54:59.276Z] Base updated: 1-го Інтернаціонального легіону -> BACKEND DEVELOPER
+[2026-08-16T09:55:00.084Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-1-okremyy-medychnyy-batalyon/
+[2026-08-16T09:55:03.119Z] Base updated: 1-го Інтернаціонального легіону -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T09:55:03.923Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-prohramist-do-48-okremyy-rozviduvalnyy-batalyon-tykha-nich/
+[2026-08-16T09:55:05.943Z] Base updated: Сили Оборони України -> ІНЖЕНЕР-ПРОГРАМІСТ
+[2026-08-16T09:55:06.750Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-nhu/
+[2026-08-16T09:55:08.568Z] Base updated: підрозділі зв’язку Національної Гвардії України та виконання завдань з підтримки комп’ютерної мережі -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:55:09.376Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-administrator-do-nhu/
+[2026-08-16T09:55:10.809Z] Base updated: підрозділі зв’язку Національної Гвардії України та виконання завдань з налаштування та підтримки комп’ютерної мережі -> МЕРЕЖЕВИЙ АДМІНІСТРАТОР
+[2026-08-16T09:55:11.614Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-servernoho-sehmenta-do-nhu/
+[2026-08-16T09:55:12.939Z] Base updated: підрозділі зв’язку Національної Гвардії України та виконання задач з розвитку та підтримки серверної і мережевої інфраструктури -> СИСТЕМНИЙ АДМІНІСТРАТОР СЕРВЕРНОГО СЕГМЕНТА
+[2026-08-16T09:55:13.742Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/administrator-bezpeky-do-natsionalna-hvardiia-ukrainy/
+[2026-08-16T09:55:15.668Z] Base updated: підрозділі зв’язку Національної гвардії України -> АДМІНІСТРАТОР БЕЗПЕКИ
+[2026-08-16T09:55:16.478Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/zv-iazkivets-systemnyy-administrator-do-natsionalna-hvardiia-ukrainy/
+[2026-08-16T09:55:17.847Z] Base updated: підрозділі зв’язку Національної гвардії України та виконання задач з розвитку та підтримки інформаційно-комунікаційної системи -> ЗВ’ЯЗКІВЕЦЬ/СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:55:18.653Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-viyskova-chastyna-t0400-dsst/
+[2026-08-16T09:55:20.456Z] Base updated: військовій частині Т0400 Державної спеціальної служби транспорту за напрямком цифрової трансформації батальйону -> ШТАБ-СЕРЖАНТ ГРУПИ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:55:21.259Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-do-batalyon-bezpilotnykh-system-sapsan-14-ombr/
+[2026-08-16T09:55:23.154Z] Base updated: батальйону безпілотних систем «Сапсан» 14 ОМБр -> СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:55:23.955Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/starshyy-operator-aparatnoi-do-14-okrema-mekhanizovana-bryhada-imeni-kniazia-romana-velykoho/
+[2026-08-16T09:55:25.275Z] Base updated: Сили Оборони України -> СТАРШИЙ ОПЕРАТОР АПАРАТНОЇ
+[2026-08-16T09:55:26.081Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-14-okrema-mekhanizovana-bryhada-imeni-kniazia-romana-velykoho/
+[2026-08-16T09:55:30.238Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:55:31.053Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/it-fakhivets-do-ukrainskyy-naukovo-doslidnyy-instytut-spetsialnoi-tekhniky-ta-sudovykh-ekspertyz-sbu/
+[2026-08-16T09:55:33.678Z] Base updated: безпеки України є державною спеціалізованою експертною науково-дослідною установою -> ІТ-ФАХІВЕЦЬ
+[2026-08-16T09:55:34.486Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/prohramist-do-ukrainskyy-naukovo-doslidnyy-instytut-spetsialnoi-tekhniky-ta-sudovykh-ekspertyz-sbu/
+[2026-08-16T09:55:35.888Z] Base updated: безпеки України є державною спеціалізованою експертною науково-дослідною установою -> ПРОГРАМІСТ
+[2026-08-16T09:55:36.690Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/planshetyst-telehrafist-do-58-okrema-motopikhotna-bryhada-imeni-hetmana-ivana-vyhovskoho/
+[2026-08-16T09:55:38.108Z] Base updated: Сили Оборони України -> ПЛАНШЕТИСТ-ТЕЛЕГРАФІСТ
+[2026-08-16T09:55:38.909Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/solution-architect-software-security-data-enterprise-architecture-do-ministerstvo-oborony/
+[2026-08-16T09:55:40.805Z] Base updated: Сили Оборони України -> SOLUTION ARCHITECT (SOFTWARE/SECURITY/DATA/ENTERPRISE ARCHITECTURE)
+[2026-08-16T09:55:41.606Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/kerivnyk-napriamu-polityk-uriaduvannia-ta-upravlinnia-danymy-do-ministerstvo-oborony/
+[2026-08-16T09:55:43.018Z] Base updated: Сили Оборони України -> КЕРІВНИК НАПРЯМУ ПОЛІТИК УРЯДУВАННЯ ТА УПРАВЛІННЯ ДАНИМИ
+[2026-08-16T09:55:43.824Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/kerivnyk-napriamu-polityk-ta-stratehii-shtuchnoho-intelektu-do-ministerstvo-oborony/
+[2026-08-16T09:55:45.709Z] Base updated: Сили Оборони України -> КЕРІВНИК НАПРЯМУ ПОЛІТИК ТА СТРАТЕГІЇ ШТУЧНОГО ІНТЕЛЕКТУ
+[2026-08-16T09:55:46.512Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/holovnyy-arkhitektor-danykh-do-ministerstvo-oborony/
+[2026-08-16T09:55:48.021Z] Base updated: одному з підрозділів Міністерства оборони України -> ГОЛОВНИЙ АРХІТЕКТОР ДАНИХ
+[2026-08-16T09:55:48.828Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-do-ministerstvo-oborony-2/
+[2026-08-16T09:55:50.520Z] Base updated: на посаді аналітика цифрової команди Міністерства оборони України -> АНАЛІТИК
+[2026-08-16T09:55:51.329Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/vulnerability-analyst-do-tsentr-kiberzakhystu-ministerstva-oborony-ukrainy/
+[2026-08-16T09:55:52.728Z] Base updated: Сили Оборони України -> VULNERABILITY ANALYST
+[2026-08-16T09:55:53.534Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/penetration-tester-do-ministerstvo-oborony/
+[2026-08-16T09:55:55.476Z] Base updated: команди фахівців з кібербезпеки -> PENETRATION TESTER
+[2026-08-16T09:55:56.292Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/soc-analyst-l1-do-ministerstvo-oborony/
+[2026-08-16T09:56:00.071Z] Base updated: команди фахівців з кібербезпеки -> SOC ANALYST L1
+[2026-08-16T09:56:00.877Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/shtab-serzhant-viddilennia-tsyfrovoho-rozvytku-do-26-okrema-artyleriyska-bryhada-imeni-heneral-khorunzhoho-romana-dashkevycha/
+[2026-08-16T09:56:02.221Z] Base updated: Сили Оборони України -> ШТАБ-СЕРЖАНТ ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:56:03.032Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ofitser-viddilennia-tsyfrovoho-rozvytku-do-26-okrema-artyleriyska-bryhada-imeni-heneral-khorunzhoho-romana-dashkevycha/
+[2026-08-16T09:56:04.467Z] Base updated: Сили Оборони України -> ОФІЦЕР ВІДДІЛЕННЯ ЦИФРОВОГО РОЗВИТКУ
+[2026-08-16T09:56:05.269Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-engineer-do-414-okremoho-polku-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:07.094Z] Base updated: Сили Оборони України -> DEVOPS ENGINEER
+[2026-08-16T09:56:07.896Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/automation-qa-engineer-do-414-okremoho-polku-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:09.219Z] Base updated: Сили Оборони України -> AUTOMATION QA ENGINEER
+[2026-08-16T09:56:10.022Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-kryptohrafichnoho-zakhystu-informatsii-do-414-okremoi-bryhady-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:11.892Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ КРИПТОГРАФІЧНОГО ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:56:12.700Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tekhnik-sluzhby-zakhystu-informatsii-do-414-okremoi-bryhady-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:14.115Z] Base updated: Сили Оборони України -> ТЕХНІК СЛУЖБИ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:56:14.921Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-z-rozrobky-na-fpga-do-414-okremoi-bryhady-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:16.738Z] Base updated: Сили Оборони України -> ІНЖЕНЕР З РОЗРОБКИ НА FPGA
+[2026-08-16T09:56:17.543Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-java-backend-engineer-do-414-okremoi-bryhady-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:19.243Z] Base updated: Сили Оборони України -> SENIOR JAVA BACKEND ENGINEER
+[2026-08-16T09:56:20.055Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-z-nalashtuvannia-ardupilot-mission-planner-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:23.240Z] Base updated: Сили Оборони України -> ІНЖЕНЕР З НАЛАШТУВАННЯ ARDUPILOT/MISSION PLANNER
+[2026-08-16T09:56:24.049Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-zakhystu-informatsii-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:25.992Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ ІЗ ЗАХИСТУ ІНФОРМАЦІЇ
+[2026-08-16T09:56:26.803Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-tekhnichnoi-pidtrymky-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:28.297Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ ТЕХНІЧНОЇ ПІДТРИМКИ
+[2026-08-16T09:56:29.104Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-administrator-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:32.700Z] Base updated: Сили Оборони України -> МЕРЕЖЕВИЙ АДМІНІСТРАТОР
+[2026-08-16T09:56:33.508Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/mayster-slabotochnoho-montazhu-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:35.317Z] Base updated: Сили Оборони України -> МАЙСТЕР СЛАБОТОЧНОГО МОНТАЖУ
+[2026-08-16T09:56:36.133Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ui-ux-dyzayner-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:38.079Z] Base updated: Сили Оборони України -> UI/UX ДИЗАЙНЕР
+[2026-08-16T09:56:38.891Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/database-administrator-postgresql-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:40.275Z] Base updated: Сили Оборони України -> DATABASE ADMINISTRATOR (POSTGRESQL)
+[2026-08-16T09:56:41.083Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-spetsialist-do-414-okrema-bryhada-udarnykh-bpas-ptakhy-madiara/
+[2026-08-16T09:56:42.488Z] Base updated: Сили Оборони України -> OSINT-СПЕЦІАЛІСТ
+[2026-08-16T09:56:43.293Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-geoint-analityk-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:56:44.834Z] Base updated: Сили Оборони України -> OSINT/GEOINT-АНАЛІТИК
+[2026-08-16T09:56:45.644Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/systemnyy-administrator-active-directory-dhcp-dns-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:56:47.532Z] Base updated: Сили Оборони України -> СИСТЕМНИЙ АДМІНІСТРАТОР (ACTIVE DIRECTORY/DHCP/DNS)
+[2026-08-16T09:56:48.347Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-analytics-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:56:50.329Z] Base updated: Сили Оборони України -> DATA ANALYTICS
+[2026-08-16T09:56:51.133Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/frontend-react-backend-rozrobnyk-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:56:53.300Z] Base updated: Сили Оборони України -> FRONTEND/REACT/BACKEND-РОЗРОБНИК
+[2026-08-16T09:56:54.107Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/cybersec-engineer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:56:56.009Z] Base updated: Сили Оборони України -> CYBERSEC ENGINEER
+[2026-08-16T09:56:56.815Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:56:58.999Z] Base updated: Сили Оборони України -> DEVOPS
+[2026-08-16T09:56:59.802Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/tech-support-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:01.687Z] Base updated: Сили Оборони України -> TECH SUPPORT
+[2026-08-16T09:57:02.490Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-engineer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:03.806Z] Base updated: Сили Оборони України -> DATA ENGINEER
+[2026-08-16T09:57:04.620Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/java-developer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:05.993Z] Base updated: Сили Оборони України -> JAVA DEVELOPER
+[2026-08-16T09:57:06.797Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberbezpeky-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:11.057Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З КІБЕРБЕЗПЕКИ
+[2026-08-16T09:57:11.859Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/analityk-imint-geoint-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:14.731Z] Base updated: Сили Оборони України -> АНАЛІТИК IMINT (GEOINT)
+[2026-08-16T09:57:15.539Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/sigint-analityk-elint-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:17.603Z] Base updated: Сили Оборони України -> SIGINT-АНАЛІТИК (ELINT)
+[2026-08-16T09:57:18.407Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/sigint-analityk-comin-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:20.417Z] Base updated: Сили Оборони України -> SIGINT-АНАЛІТИК (COMIN)
+[2026-08-16T09:57:21.221Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/osint-analityk-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:22.845Z] Base updated: Сили Оборони України -> OSINT-АНАЛІТИК
+[2026-08-16T09:57:23.660Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-kiberzakhystu-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:25.469Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З КІБЕРЗАХИСТУ
+[2026-08-16T09:57:26.270Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-z-kiberbezpeky-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:30.220Z] Base updated: Сили Оборони України -> ФАХІВЕЦЬ З КІБЕРБЕЗПЕКИ
+[2026-08-16T09:57:31.033Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-systemnyy-administrator-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:34.727Z] Base updated: Сили Оборони України -> DEVOPS/СИСТЕМНИЙ АДМІНІСТРАТОР
+[2026-08-16T09:57:35.535Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/product-manager-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:37.918Z] Base updated: Сили Оборони України -> PRODUCT MANAGER
+[2026-08-16T09:57:38.720Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/python-developer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:43.310Z] Base updated: Сили Оборони України -> PYTHON DEVELOPER
+[2026-08-16T09:57:44.114Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-analyst-power-bi-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:45.476Z] Base updated: Сили Оборони України -> DATA ANALYST (POWER BI)
+[2026-08-16T09:57:46.283Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/embedded-engineer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:50.317Z] Base updated: Сили Оборони України -> EMBEDDED ENGINEER
+[2026-08-16T09:57:51.143Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/machine-learning-embedded-engineer-mobilni-prystroi-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:53.502Z] Base updated: Сили Оборони України -> MACHINE LEARNING EMBEDDED ENGINEER (МОБІЛЬНІ ПРИСТРОЇ)
+[2026-08-16T09:57:54.310Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/machine-learning-engineer-data-scientist-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:56.998Z] Base updated: Сили Оборони України -> MACHINE LEARNING ENGINEER/DATA SCIENTIST
+[2026-08-16T09:57:57.806Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-analyst-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:57:59.760Z] Base updated: Сили Оборони України -> DATA ANALYST
+[2026-08-16T09:58:00.564Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/ui-ux-designer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:06.021Z] Base updated: Сили Оборони України -> UI/UX DESIGNER
+[2026-08-16T09:58:06.835Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/anotator-danykh-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:08.623Z] Base updated: Сили Оборони України -> АНОТАТОР ДАНИХ
+[2026-08-16T09:58:09.424Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/qa-engineer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:11.022Z] Base updated: Сили Оборони України -> QA ENGINEER
+[2026-08-16T09:58:11.832Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/inzhener-avtomatyzovanykh-system-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:13.700Z] Base updated: Сили Оборони України -> ІНЖЕНЕР АВТОМАТИЗОВАНИХ СИСТЕМ
+[2026-08-16T09:58:14.514Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-prohramnoho-zabezpechennia-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:16.158Z] Base updated: Сили Оборони України -> РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ
+[2026-08-16T09:58:16.969Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/rozrobnyk-prohramnoho-zabezpechennia-python-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:19.016Z] Base updated: Сили Оборони України -> РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ (PYTHON)
+[2026-08-16T09:58:19.822Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/devops-rozrobnyk-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:22.058Z] Base updated: Сили Оборони України -> DEVOPS-РОЗРОБНИК
+[2026-08-16T09:58:22.858Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/merezhevyy-administrator-devops-engineer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:24.690Z] Base updated: Сили Оборони України -> МЕРЕЖЕВИЙ АДМІНІСТРАТОР (DEVOPS ENGINEER)
+[2026-08-16T09:58:25.513Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/administrator-baz-danykh-sql-nosql-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:27.365Z] Base updated: Сили Оборони України -> АДМІНІСТРАТОР БАЗ ДАНИХ (SQL/NOSQL)
+[2026-08-16T09:58:28.173Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/biznes-analityk-erp-systemy-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:29.752Z] Base updated: Сили Оборони України -> БІЗНЕС-АНАЛІТИК (ERP-СИСТЕМИ)
+[2026-08-16T09:58:30.560Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/full-stack-developer-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:32.612Z] Base updated: Сили Оборони України -> FULL STACK DEVELOPER
+[2026-08-16T09:58:33.416Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/spetsialist-z-informatsiynoi-bezpeky-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:35.480Z] Base updated: Сили Оборони України -> СПЕЦІАЛІСТ З ІНФОРМАЦІЙНОЇ БЕЗПЕКИ
+[2026-08-16T09:58:36.290Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/data-analityk-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/
+[2026-08-16T09:58:38.245Z] Base updated: Сили Оборони України -> ДАТА-АНАЛІТИК
+[2026-08-16T09:58:39.049Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/fakhivets-iz-suprovodzhennia-it-produktiv-do-414-okrema-bryhada-bezpilotnykh-system-ptakhy-madiara/

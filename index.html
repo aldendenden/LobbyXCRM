@@ -69,23 +69,43 @@
                 const tr = document.createElement('tr');
                 if (vac.status === 'ignored') tr.className = 'ignored';
 
-                let selectStyle = 'sel-new';
-                if (vac.status === 'interested') selectStyle = 'sel-interested';
-                if (vac.status === 'applied') selectStyle = 'sel-applied';
-                if (vac.status === 'ignored') selectStyle = 'sel-ignored';
+                const tdUnit = document.createElement('td');
+                const unitTag = document.createElement('span');
+                unitTag.className = 'unit-tag';
+                unitTag.textContent = vac.unit || 'IT';
+                tdUnit.appendChild(unitTag);
 
-                tr.innerHTML = `
-                    <td><span class="unit-tag">${vac.unit || 'IT'}</span></td>
-                    <td><a href="${vac.url}" target="_blank" class="vac-link">${vac.title} 🔗</a></td>
-                    <td style="text-align: center;">
-                        <select class="${selectStyle}" onchange="changeStatus('${vac.url}', this)">
-                            <option value="new" ${vac.status === 'new' ? 'selected' : ''}>🆕 Нова</option>
-                            <option value="interested" ${vac.status === 'interested' ? 'selected' : ''}>👍 Цікаво</option>
-                            <option value="applied" ${vac.status === 'applied' ? 'selected' : ''}>✉️ Є заявка</option>
-                            <option value="ignored" ${vac.status === 'ignored' ? 'selected' : ''}>👎 Не цікаво</option>
-                        </select>
-                    </td>
-                `;
+                const tdTitle = document.createElement('td');
+                const link = document.createElement('a');
+                link.href = vac.url;
+                link.target = '_blank';
+                link.className = 'vac-link';
+                link.textContent = (vac.title || 'Без назви') + ' 🔗';
+                tdTitle.appendChild(link);
+
+                const tdStatus = document.createElement('td');
+                tdStatus.style.textAlign = 'center';
+                const select = document.createElement('select');
+                select.className = vac.status === 'interested' ? 'sel-interested' : vac.status === 'applied' ? 'sel-applied' : vac.status === 'ignored' ? 'sel-ignored' : 'sel-new';
+                const options = [
+                    ['new', '🆕 Нова'],
+                    ['interested', '👍 Цікаво'],
+                    ['applied', '✉️ Є заявка'],
+                    ['ignored', '👎 Не цікаво']
+                ];
+                options.forEach(([val, label]) => {
+                    const opt = document.createElement('option');
+                    opt.value = val;
+                    opt.textContent = label;
+                    if (vac.status === val) opt.selected = true;
+                    select.appendChild(opt);
+                });
+                select.addEventListener('change', () => changeStatus(vac.url, select));
+                tdStatus.appendChild(select);
+
+                tr.appendChild(tdUnit);
+                tr.appendChild(tdTitle);
+                tr.appendChild(tdStatus);
                 tbody.appendChild(tr);
             });
         }
