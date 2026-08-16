@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { SearchIcon } from './Icons.jsx';
 
 export default function SearchBar({ value, onChange }) {
     const inputRef = useRef(null);
@@ -11,6 +12,7 @@ export default function SearchBar({ value, onChange }) {
 
     return (
         <div className="search-box">
+            <span className="search-icon"><SearchIcon className="icon" /></span>
             <input
                 id="searchInput"
                 ref={inputRef}

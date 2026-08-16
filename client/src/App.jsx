@@ -3,6 +3,7 @@ import { fetchVacancies, runScrape } from './api.js';
 import StatsBar from './components/StatsBar.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import VacancyTable from './components/VacancyTable.jsx';
+import { MedalIcon, RefreshIcon, WarningIcon } from './components/Icons.jsx';
 
 export default function App() {
     const [vacancies, setVacancies] = useState([]);
@@ -67,6 +68,7 @@ export default function App() {
         all: vacancies.length,
         interested: vacancies.filter(v => v.status === 'interested').length,
         applied: vacancies.filter(v => v.status === 'applied').length,
+        feedback: vacancies.filter(v => v.status === 'feedback').length,
         ignored: vacancies.filter(v => v.status === 'ignored').length,
     }), [vacancies]);
 
@@ -74,7 +76,7 @@ export default function App() {
         <div className="container">
             <header>
                 <div className="header-left">
-                    <h1>🎖️ Alenev Lobby X CRM</h1>
+                    <h1><MedalIcon className="icon logo-icon" /> Alenev Lobby X CRM</h1>
                     <SearchBar
                         value={searchQuery}
                         onChange={setSearchQuery}
@@ -86,13 +88,14 @@ export default function App() {
                     disabled={isScraping}
                     className="btn"
                 >
-                    {isScraping ? 'Сканю Lobby X...' : '🔄 Оновити з сайту'}
+                    <RefreshIcon className={`icon${isScraping ? ' spin' : ''}`} />
+                    {isScraping ? ' Сканю Lobby X...' : ' Оновити з сайту'}
                 </button>
             </header>
 
             {error && (
-                <div style={{ marginBottom: 16, padding: 10, borderRadius: 8, background: '#fef2f2', color: '#991b1b', border: '1px solid #fecaca', fontWeight: 600, fontSize: 13 }}>
-                    ⚠️ {error}
+                <div className="error-banner">
+                    <WarningIcon className="icon" /> {error}
                 </div>
             )}
 

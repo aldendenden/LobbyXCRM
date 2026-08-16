@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import StatusSelect from './StatusSelect.jsx';
+import { ExternalIcon } from './Icons.jsx';
 import { updateNotes, updateStatus } from '../api.js';
 
 export default function VacancyRow({ vac, updateVacancy }) {
@@ -41,7 +42,8 @@ export default function VacancyRow({ vac, updateVacancy }) {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {(vac.title || 'Без назви') + ' 🔗'}
+                    {(vac.title || 'Без назви')}{' '}
+                    <ExternalIcon className="icon vac-ext" />
                 </a>
             </td>
             <td>

@@ -30,7 +30,7 @@ app.get('/api/vacancies', (req, res) => {
 // і не можуть бути затерті при оновленні вакансій.
 app.post('/api/vacancies/status', (req, res) => {
     const { url, status } = req.body;
-    if (!url || !['new', 'interested', 'applied', 'ignored'].includes(status)) {
+    if (!url || !['new', 'interested', 'applied', 'feedback', 'ignored'].includes(status)) {
         return res.status(400).json({ error: 'Некоректний запит' });
     }
     if (!db.hasVacancy(url)) {

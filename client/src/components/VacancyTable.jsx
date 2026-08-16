@@ -8,7 +8,10 @@ export default function VacancyTable({ vacancies, loading, searchQuery, updateVa
                 <table>
                     <tbody>
                         <tr>
-                            <td className="empty-row">Завантаження...</td>
+                            <td className="empty-row">
+                                <span className="loading-spinner"></span>
+                                Завантаження...
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -39,10 +42,10 @@ export default function VacancyTable({ vacancies, loading, searchQuery, updateVa
             <table>
                 <thead>
                     <tr>
-                        <th style={{ width: '22%' }}>Підрозділ</th>
-                        <th style={{ width: '38%' }}>Посада (Посилання)</th>
-                        <th style={{ width: '20%' }}>Нотатки</th>
-                        <th style={{ width: '20%', textAlign: 'center' }}>Статус</th>
+                        <th style={{ width: '12%' }}>Підрозділ</th>
+                        <th style={{ width: '40%' }}>Посада (Посилання)</th>
+                        <th style={{ width: '29%' }}>Нотатки</th>
+                        <th style={{ width: '19%', textAlign: 'center' }}>Статус</th>
                     </tr>
                 </thead>
                 <tbody>
