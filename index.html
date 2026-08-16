@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lobby X IT CRM</title>
+    <style>
+        body { font-family: system-ui, sans-serif; background-color: #f8fafc; color: #1e293b; padding: 24px; margin: 0; }
+        .container { max-width: 1100px; margin: 0 auto; background: white; padding: 24px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
+        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px; }
+        h1 { margin: 0; font-size: 22px; font-weight: 800; }
+        .btn { background: #2563eb; color: white; font-weight: 700; padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer; font-size: 14px; }
+        .btn:hover { background: #1d4ed8; }
+        .btn:disabled { background: #93c5fd; cursor: not-allowed; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+        .card { padding: 12px; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center; cursor: pointer; font-weight: 600; background: white; font-size: 13px; }
+        .card:hover { background: #f1f5f9; }
+        .card.active-all { background: #0f172a; color: white; border-color: #0f172a; }
+        .card.active-interested { background: #10b981; color: white; border-color: #10b981; }
+        .card.active-applied { background: #3b82f6; color: white; border-color: #3b82f6; }
+        .card.active-ignored { background: #f59e0b; color: white; border-color: #f59e0b; }
+        .card-num { font-size: 20px; font-weight: 800; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+        th { background: #f1f5f9; padding: 12px; color: #475569; font-weight: 700; border-bottom: 2px solid #cbd5e1; }
+        td { padding: 12px; border-bottom: 1px solid #e2e8f0; }
+        tr.ignored { opacity: 0.4; text-decoration: line-through; background: #f8fafc; }
+        .unit-tag { background: #f1f5f9; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 11px; border: 1px solid #cbd5e1; }
+        .vac-link { color: #2563eb; text-decoration: none; font-weight: 600; }
+        .vac-link:hover { text-decoration: underline; }
+        select { width: 100%; max-width: 170px; padding: 5px 10px; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 12px; font-weight: 700; cursor: pointer; }
+        .sel-new { background: #fef9c3; color: #854d0e; }
+        .sel-interested { background: #ecfdf5; color: #065f46; }
+        .sel-applied { background: #eff6ff; color: #1e40af; }
+        .sel-ignored { background: #fffbeb; color: #92400e; }
+        .empty-row { padding: 32px; text-align: center; color: #94a3b8; font-weight: 500; }
+    </style>
+    <script>
+        window.appState = { vacancies: [], filterStatus: 'all', isScraping: false };
+
+        function updateStats() {
+            const list = window.appState.vacancies;
+            document.getElementById('count-all').innerText = list.length;
+            document.getElementById('count-interested').innerText = list.filter(v => v.status === 'interested').length;
+            document.getElementById('count-applied').innerText = list.filter(v => v.status === 'applied').length;
+            document.getElementById('count-ignored').innerText = list.filter(v => v.status === 'ignored').length;
+        }
+
+        function setFilter(status) {
+            window.appState.filterStatus = status;
+            document.querySelectorAll('.card').forEach(c => c.className = 'card');
+            document.getElementById('card-' + status).classList.add('active-' + (status === 'all' ? 'all' : status));
+            renderTable();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('vacTableBody');
+            tbody.innerHTML = '';
+            let list = window.appState.vacancies;
+
+            if (window.appState.filterStatus !== 'all') {
+                list = list.filter(v => v.status === window.appState.filterStatus);
+            }
+
+            if (list.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="3" class="empty-row">Вакансій не знайдено.</td></tr>`;
+                return;
+            }
+
+            list.forEach(vac => {
+                const tr = document.createElement('tr');
+                if (vac.status === 'ignored') tr.className = 'ignored';
+
+                let selectStyle = 'sel-new';
+                if (vac.status === 'interested') selectStyle = 'sel-interested';
+                if (vac.status === 'applied') selectStyle = 'sel-applied';
+                if (vac.status === 'ignored') selectStyle = 'sel-ignored';
+
+                tr.innerHTML = `
+                    <td><span class="unit-tag">${vac.unit || 'IT'}</span></td>
+                    <td><a href="${vac.url}" target="_blank" class="vac-link">${vac.title} 🔗</a></td>
+                    <td style="text-align: center;">
+                        <select class="${selectStyle}" onchange="changeStatus('${vac.url}', this)">
+                            <option value="new" ${vac.status === 'new' ? 'selected' : ''}>🆕 Нова</option>
+                            <option value="interested" ${vac.status === 'interested' ? 'selected' : ''}>👍 Цікаво</option>
+                            <option value="applied" ${vac.status === 'applied' ? 'selected' : ''}>✉️ Є заявка</option>
+                            <option value="ignored" ${vac.status === 'ignored' ? 'selected' : ''}>👎 Не цікаво</option>
+                        </select>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function changeStatus(url, selectEl) {
+            const nextStatus = selectEl.value;
+            const item = window.appState.vacancies.find(v => v.url === url);
+            if (item) item.status = nextStatus;
+
+            selectEl.className = nextStatus === 'interested' ? 'sel-interested' : nextStatus === 'applied' ? 'sel-applied' : nextStatus === 'ignored' ? 'sel-ignored' : 'sel-new';
+            selectEl.closest('tr').className = nextStatus === 'ignored' ? 'ignored' : '';
+
+            fetch('/api/vacancies/status', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url, status: nextStatus })
+            }).then(() => {
+                updateStats();
+                if (window.appState.filterStatus !== 'all' && window.appState.filterStatus !== nextStatus) {
+                    renderTable();
+                }
+            });
+        }
+
+        function runScraper() {
+            if (window.appState.isScraping) return;
+            window.appState.isScraping = true;
+            const btn = document.getElementById('scrapeBtn');
+            btn.disabled = true;
+            btn.innerText = 'Сканю Lobby X...';
+
+            fetch('/api/scrape')
+                .then(res => res.json())
+                .then(data => {
+                    alert(`Додано нових позицій: ${data.added}`);
+                    return fetch('/api/vacancies');
+                })
+                .then(res => res.json())
+                .then(data => {
+                    window.appState.vacancies = data;
+                    renderTable();
+                    updateStats();
+                })
+                .catch(() => alert('Помилка оновлення'))
+                .finally(() => {
+                    window.appState.isScraping = false;
+                    btn.disabled = false;
+                    btn.innerText = '🔄 Оновити з сайту';
+                });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/vacancies')
+                .then(res => res.json())
+                .then(data => {
+                    window.appState.vacancies = data;
+                    renderTable();
+                    updateStats();
+                });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div>
+                <h1>🎖️ Lobby X CRM</h1>
+            </div>
+            <button id="scrapeBtn" onclick="runScraper()" class="btn">
+                🔄 Оновити з сайту
+            </button>
+        </header>
+
+        <div class="grid">
+            <div id="card-all" onclick="setFilter('all')" class="card active-all">
+                <div>Всього в базі</div>
+                <div id="count-all" class="card-num">0</div>
+            </div>
+            <div id="card-interested" onclick="setFilter('interested')" class="card">
+                <div>👍 Цікаво</div>
+                <div id="count-interested" class="card-num">0</div>
+            </div>
+            <div id="card-applied" onclick="setFilter('applied')" class="card">
+                <div>✉️ Є заявка</div>
+                <div id="count-applied" class="card-num">0</div>
+            </div>
+            <div id="card-ignored" onclick="setFilter('ignored')" class="card">
+                <div>👎 Не цікаво</div>
+                <div id="count-ignored" class="card-num">0</div>
+            </div>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Підрозділ</th>
+                        <th style="width: 50%;">Посада (Посилання)</th>
+                        <th style="width: 25%; text-align: center;">Статус</th>
+                    </tr>
+                </thead>
+                <tbody id="vacTableBody">
+                    <tr><td colspan="3" class="empty-row">Завантаження...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

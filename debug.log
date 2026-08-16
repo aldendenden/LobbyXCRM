@@ -1,0 +1,8 @@
+[2026-08-16T08:23:21.067Z] === ЗАПУСК НОВОГО АНАЛІЗУ АРІ ===
+[2026-08-16T08:23:22.886Z] Запит на лінк: https://lobbyx.army/wp-json/internal-api/home-page/get-tors-card?action=loadmore&offset=0&page=1&category=&category_sector=&category_sphere=27&category_event=&category_conditions=&category_rank=&category_unit=&category_contracts=&category_busy_time=&category_format=&search=&language=uk&ver=2026.06.12
+[2026-08-16T08:23:23.948Z] --- СИРИЙ ВМІСТ СЕРВЕРА (СТОРІНКА 1) ---
+[2026-08-16T08:23:23.949Z] {\"html\":\"\\r\\n    <div id=\\\"post-210892\\\" class=\\\"col-xs-6 col-md-3 square clearfix post_item post-210892 tors type-tors status-publish hentry category-3-bazovyy category-it category-perevedennia category-povitrianisyly category-serzhantski category-chastkovaprydatnist units-648-okremyi-zenitnyi-kulemetnyi-batalion tors-status-is-open\\\">\\r\\n        \\r\\n        <div class=\\\"square
+[2026-08-16T08:23:23.950Z] --- КІНЕЦЬ СИРОГО ВМІСТУ СТОРІНКИ 1 ---
+[2026-08-16T08:23:23.952Z] Кількість виявлених лінків через Regex: 0
+[2026-08-16T08:23:23.955Z] Унікальних URL адрес у масиві для обходу: 0
+[2026-08-16T08:23:24.563Z] === РОБОТУ ЗАВЕРШЕНО. Успішно внесено позицій: 0 ===

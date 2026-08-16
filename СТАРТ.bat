@@ -1,0 +1,43 @@
+@echo off
+title LobbyX CRM - Автономний запуск
+chcp 65001 > nul
+cd /d "%~dp0"
+
+echo [ІНФО] Перевірка та очищення фонових процесів...
+:: Цей рядок примусово закриває будь-який старий сервер Node, що застряг у пам'яті
+taskkill /f /im node.exe >nul 2>&1
+
+:: Додаткове очищення порту 3000, якщо він заблокований
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000') do (
+    taskkill /f /pid %%a >nul 2>&1
+)
+
+where node >nul 2>nul
+if errorlevel 1 (
+    echo [ПОМИЛКА] Node.js не знайдено в системі!
+    echo Будь ласка, встановіть Node.js з офіційного сайту: https://nodejs.org
+    pause
+    exit
+)
+
+if not exist "node_modules\" (
+    echo [ІНФО] Перший запуск програми. Встановлюю необхідні компоненти...
+    call npm install express puppeteer cheerio
+    if errorlevel 1 (
+        echo [ПОМИЛКА] Не вдалося встановити модулі.
+        pause
+        exit
+    )
+    echo [УСПІХ] Всі компоненти успішно встановлено!
+)
+
+echo [ІНФО] Запускаю локальний сервер Node.js...
+:: Запускаємо сервер в окремому вікні
+start "LobbyX Backend Server" cmd /k "node server.js"
+
+echo [ІНФО] Очікування стабілізації сервера...
+timeout /t 5 > nul
+
+echo [ІНФО] Відкриваю CRM-інтерфейс...
+start http://localhost:3000
+exit
