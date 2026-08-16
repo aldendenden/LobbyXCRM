@@ -245,6 +245,7 @@ h1 {
 }
 
 .card.active-all { background: rgba(255, 255, 255, 0.14); color: var(--text); border-color: rgba(255,255,255,0.4); }
+.card.active-new { background: rgba(215, 201, 184, 0.16); color: #e8dcc9; border-color: rgba(215, 201, 184, 0.55); box-shadow: 0 4px 22px rgba(215, 201, 184, 0.15); }
 .card.active-interested { background: linear-gradient(135deg, rgba(16, 185, 129, 0.28), rgba(16, 185, 129, 0.12)); color: #7ee2b8; border-color: rgba(16, 185, 129, 0.6); box-shadow: 0 4px 22px rgba(16, 185, 129, 0.25); }
 .card.active-applied { background: var(--accent-soft); color: var(--accent); border-color: rgba(255, 138, 61, 0.65); box-shadow: 0 4px 22px var(--accent-glow); }
 .card.active-feedback { background: rgba(56, 189, 248, 0.18); color: #7dd3fc; border-color: rgba(56, 189, 248, 0.6); box-shadow: 0 4px 22px rgba(56, 189, 248, 0.22); }
@@ -474,6 +475,33 @@ tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
 .vac-link:hover .vac-ext {
     opacity: 1;
     transform: translate(2px, -2px);
+}
+
+.ignore-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    background: rgba(239, 68, 68, 0.08);
+    color: #f87171;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, color 0.2s ease;
+}
+
+.ignore-btn:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.7);
+    transform: translateY(-1px);
+}
+
+.ignore-btn.active {
+    background: rgba(239, 68, 68, 0.25);
+    border-color: rgba(239, 68, 68, 0.7);
 }
 
 .status-select {

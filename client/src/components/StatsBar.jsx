@@ -1,8 +1,9 @@
 import React from 'react';
-import { ListIcon, MessageIcon, SendIcon, StarIcon, XIcon } from './Icons.jsx';
+import { ListIcon, MessageIcon, SendIcon, StarIcon, XIcon, ZapIcon } from './Icons.jsx';
 
 const CARDS = [
     { id: 'all', label: 'Всього в базі', key: 'all', activeClass: 'active-all', Icon: ListIcon },
+    { id: 'new', label: 'Нові', key: 'new', activeClass: 'active-new', Icon: ZapIcon },
     { id: 'interested', label: 'Цікаво', key: 'interested', activeClass: 'active-interested', Icon: StarIcon },
     { id: 'applied', label: 'Є заявка', key: 'applied', activeClass: 'active-applied', Icon: SendIcon },
     { id: 'feedback', label: 'Є фідбек', key: 'feedback', activeClass: 'active-feedback', Icon: MessageIcon },

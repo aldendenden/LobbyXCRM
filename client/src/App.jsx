@@ -68,6 +68,7 @@ export default function App() {
 
     const stats = useMemo(() => ({
         all: vacancies.length,
+        new: vacancies.filter(v => v.status === 'new').length,
         interested: vacancies.filter(v => v.status === 'interested').length,
         applied: vacancies.filter(v => v.status === 'applied').length,
         feedback: vacancies.filter(v => v.status === 'feedback').length,

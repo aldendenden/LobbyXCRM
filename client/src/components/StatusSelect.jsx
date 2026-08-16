@@ -3,11 +3,11 @@ import { createPortal } from 'react-dom';
 import { CheckIcon, ChevronDownIcon, MessageIcon, SendIcon, StarIcon, XIcon, ZapIcon } from './Icons.jsx';
 
 const OPTIONS = [
+    { value: 'ignored', label: 'Не цікаво', Icon: XIcon, className: 'opt-ignored' },
     { value: 'new', label: 'Нова', Icon: ZapIcon, className: 'opt-new' },
     { value: 'interested', label: 'Цікаво', Icon: StarIcon, className: 'opt-interested' },
     { value: 'applied', label: 'Є заявка', Icon: SendIcon, className: 'opt-applied' },
     { value: 'feedback', label: 'Є фідбек', Icon: MessageIcon, className: 'opt-feedback' },
-    { value: 'ignored', label: 'Не цікаво', Icon: XIcon, className: 'opt-ignored' },
 ];
 
 export default function StatusSelect({ value, onChange }) {

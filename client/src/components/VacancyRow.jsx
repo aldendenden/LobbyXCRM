@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import StatusSelect from './StatusSelect.jsx';
-import { ExternalIcon, ZapIcon } from './Icons.jsx';
+import { ExternalIcon, XIcon, ZapIcon } from './Icons.jsx';
 import { updateNotes, updateStatus, runAutofill } from '../api.js';
 
 export default function VacancyRow({ vac, updateVacancy }) {
@@ -61,15 +61,25 @@ export default function VacancyRow({ vac, updateVacancy }) {
                 <span className="unit-tag">{vac.unit || 'IT'}</span>
             </td>
             <td>
-                <a
-                    className="vac-link"
-                    href={vac.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    {(vac.title || 'Без назви')}{' '}
-                    <ExternalIcon className="icon vac-ext" />
-                </a>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <button
+                        type="button"
+                        className={`ignore-btn${isIgnored ? ' active' : ''}`}
+                        onClick={() => handleStatus(isIgnored ? 'new' : 'ignored')}
+                        title={isIgnored ? 'Повернути у статус «Нова»' : 'Позначити як «Не цікаво»'}
+                    >
+                        <XIcon className="icon" />
+                    </button>
+                    <a
+                        className="vac-link"
+                        href={vac.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {(vac.title || 'Без назви')}{' '}
+                        <ExternalIcon className="icon vac-ext" />
+                    </a>
+                </div>
             </td>
             <td>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
