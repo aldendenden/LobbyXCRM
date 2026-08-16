@@ -4,8 +4,66 @@ const puppeteer = require('puppeteer');
 const settings = require('./settings');
 
 const FILES_DIR = path.join(__dirname, 'autofill_files');
+const LOG_PATH = path.join(__dirname, 'debug.log');
 
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
+// Таймаут, скільки тримаємо Chrome відкритим, чекаючи на відправку заявки
+const OBSERVE_TIMEOUT_MS = 30 * 60 * 1000;
+
+// Хук на сторінці: перехоплюємо FormData, що надсилається через XHR/fetch,
+// бо тіло multipart-запиту браузер не віддає через postData().
+// Збережений у window.__afCapturedRequests — це точний склад заявки.
+function injectCaptureHook() {
+    const push = (entries) => {
+        (window.__afCapturedRequests = window.__afCapturedRequests || []).push({
+            t: Date.now(),
+            entries,
+            files: entries.filter(e => e.file).map(e => ({ field: e.field, name: e.file, size: e.size })),
+        });
+    };
+    const scan = (body) => {
+        const entries = [];
+        if (body && typeof body.forEach === 'function') {
+            body.forEach((v, k) => {
+                const isFile = typeof File !== 'undefined' && v instanceof File;
+                entries.push({ field: k, file: isFile ? v.name : '', size: isFile ? v.size : null });
+            });
+        }
+        return entries;
+    };
+    const hookXHR = () => {
+        const XHR = window.XMLHttpRequest;
+        if (!XHR || !XHR.prototype) return;
+        const orig = XHR.prototype.send;
+        XHR.prototype.send = function (body) {
+            try {
+                const entries = scan(body);
+                if (entries.length) push(entries);
+            } catch (e) { /* ignore */ }
+            return orig.apply(this, arguments);
+        };
+    };
+    const hookFetch = () => {
+        if (!window.fetch) return;
+        const origFetch = window.fetch;
+        window.fetch = function (input, init) {
+            try {
+                const entries = scan(init && init.body);
+                if (entries.length) push(entries);
+            } catch (e) { /* ignore */ }
+            return origFetch.apply(this, arguments);
+        };
+    };
+    hookXHR();
+    hookFetch();
+}
+
+function log(message) {
+    const line = `[${new Date().toISOString()}] ${message}\n`;
+    try { fs.appendFileSync(LOG_PATH, line, 'utf8'); } catch (e) { /* ignore */ }
+    console.log(message);
+}
 
 function getStoredFilePath(fileName) {
     if (!fileName) return null;
@@ -16,58 +74,130 @@ function getStoredFilePath(fileName) {
 // Встановлення значення текстового поля
 async function fillText(page, name, value) {
     if (value === undefined || value === null || String(value) === '') return;
-    await page.evaluate(({ name, value }) => {
+    const ok = await page.evaluate(({ name, value }) => {
         const el = document.querySelector(`input[name="${name}"], textarea[name="${name}"]`);
-        if (!el) return;
+        if (!el) return false;
         el.value = String(value);
         el.dispatchEvent(new Event('input', { bubbles: true }));
         el.dispatchEvent(new Event('change', { bubbles: true }));
+        return true;
     }, { name, value });
+    log(ok ? `ПОЛЕ ЗАПОВНЕНО: ${name} = "${value}"` : `ПОПЕРЕДЖЕННЯ: поле не знайдено: ${name}`);
 }
 
 // Вибір радіокнопки за значенням
 async function pickRadio(page, name, value) {
     if (!value) return;
-    await page.evaluate(({ name, value }) => {
+    const ok = await page.evaluate(({ name, value }) => {
         const el = document.querySelector(`input[type="radio"][name="${name}"][value="${value}"]`);
-        if (!el) return;
+        if (!el) return false;
         el.checked = true;
         el.dispatchEvent(new Event('change', { bubbles: true }));
+        return true;
     }, { name, value });
+    log(ok ? `РАДІО: ${name} = "${value}"` : `ПОПЕРЕДЖЕННЯ: радіо ${name} не знайдено (значення "${value}")`);
 }
 
 // Чекбокс: вмикаємо якщо треба (назва поля без [] — кілька чекбоксів під одним ім'ям)
 async function setCheckbox(page, name, on) {
     if (!on) return;
-    await page.evaluate(({ name }) => {
-        document.querySelectorAll(`input[type="checkbox"][name="${name}"]`).forEach(el => {
+    const count = await page.evaluate(({ name }) => {
+        const els = document.querySelectorAll(`input[type="checkbox"][name="${name}"]`);
+        els.forEach(el => {
             if (!el.checked) {
                 el.checked = true;
                 el.dispatchEvent(new Event('change', { bubbles: true }));
             }
         });
+        return els.length;
     }, { name });
+    log(count > 0 ? `ЧЕКБОКС: ${name} = увімкнено` : `ПОПЕРЕДЖЕННЯ: чекбокс не знайдено: ${name}`);
 }
 
 // Вибір значення у випадаючому списку
 async function pickSelect(page, name, value) {
     if (!value) return;
-    await page.evaluate(({ name, value }) => {
+    const ok = await page.evaluate(({ name, value }) => {
         const el = document.querySelector(`select[name="${name}"]`);
-        if (!el) return;
+        if (!el) return false;
         const exists = Array.from(el.options).some(o => o.value === value);
         if (exists) el.value = value;
         el.dispatchEvent(new Event('change', { bubbles: true }));
+        return true;
     }, { name, value });
+    log(ok ? `СЕЛЕКТ: ${name} = "${value}"` : `ПОПЕРЕДЖЕННЯ: селект не знайдено: ${name}`);
 }
 
-// Прикріплення файлів через input[type=file]
+// Підсумкова перевірка: зчитуємо назад реальний стан форми
+async function verifyForm(page) {
+    const summary = await page.evaluate(() => {
+        const val = sel => {
+            const el = document.querySelector(sel);
+            return el ? el.value : '';
+        };
+        const checkedVal = name => {
+            const el = document.querySelector(`input[type="radio"][name="${name}"]:checked`);
+            return el ? el.value : '';
+        };
+        const checkedBox = name =>
+            Array.from(document.querySelectorAll(`input[type="checkbox"][name="${name}"]:checked`)).map(e => e.value);
+        const fileInfo = name => {
+            const el = document.querySelector(`input[type="file"][name="${name}"]`);
+            const f = el && el.files && el.files[0];
+            return f ? `${f.name} (${f.size} байт)` : '';
+        };
+        return {
+            personName: val('input[name="person-name"]'),
+            gender: checkedVal('radio-gender'),
+            age: val('input[name="number-age"]'),
+            email: val('input[name="person-contact-mail"]'),
+            phone: val('input[name="person-contact-tel"]'),
+            status: checkedVal('current-status'),
+            contract: checkedBox('interested-in-new-contracts[]'),
+            combat: checkedBox('military-experience[]'),
+            szch: checkedBox('current-szch[]'),
+            training: checkedBox('military-training[]'),
+            rank: val('select[name="dropdown-rank"]'),
+            cvText: val('textarea[name="person-cv-textarea"]'),
+            file755: fileInfo('file-755'),
+            file760: fileInfo('file-760'),
+            newsletter: checkedBox('checkbox-290[]'),
+            privacy: checkedBox('checkbox-717[]'),
+        };
+    });
+    log(`ПЕРЕВІРКА ФОРМИ: ${JSON.stringify(summary)}`);
+}
+
+// Прикріплення файлу і зчитування підтвердження з DOM
 async function attachFile(page, name, fileName) {
+    if (!fileName) return null;
     const p = getStoredFilePath(fileName);
-    if (!p) return;
+    if (!p) {
+        log(`ПОПЕРЕДЖЕННЯ: файл не знайдено на диску для поля ${name}: ${fileName}`);
+        return null;
+    }
+    const diskSize = fs.statSync(p).size;
     const input = await page.$(`input[type="file"][name="${name}"]`);
-    if (!input) return;
+    if (!input) {
+        log(`ПОПЕРЕДЖЕННЯ: поле завантаження файлу не знайдено: ${name}`);
+        return null;
+    }
     await input.uploadFile(p);
+
+    // Читаємо назад, що реально опинилося в input.files
+    const info = await page.evaluate(({ name }) => {
+        const el = document.querySelector(`input[type="file"][name="${name}"]`);
+        const f = el && el.files && el.files[0];
+        return f ? { name: f.name, size: f.size } : null;
+    }, { name });
+
+    if (info) {
+        const intact = info.size === diskSize;
+        log(`ФАЙЛ ДОДАНО ДО ФОРМИ: ${name} -> ${info.name} (у формі ${info.size} байт; на диску ${diskSize} байт; цілісність: ${intact ? 'ОК' : 'НЕ ЗБІГАЄТЬСЯ!'})`);
+    } else {
+        log(`ПОПЕРЕДЖЕННЯ: не вдалося підтвердити прикріплення файлу для ${name} (${fileName})`);
+    }
+    return info;
 }
 
 // Заповнення форми на сторінці вакансії з відкритою модалкою
@@ -88,6 +218,7 @@ async function runAutofill({ url }) {
     try {
         page = await browser.newPage();
         await page.setUserAgent(USER_AGENT);
+        await page.evaluateOnNewDocument(injectCaptureHook);
 
         await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
 
@@ -113,9 +244,12 @@ async function runAutofill({ url }) {
         await pickSelect(page, 'dropdown-rank', cfg.rank);
         await fillText(page, 'person-cv-textarea', cfg.cvText);
 
-        // Файли (CV та додатковий файл)
-        await attachFile(page, 'file-755', cfg.cvFileName);
-        await attachFile(page, 'file-760', cfg.extraFileName);
+        // Файли (CV та додатковий файл) з підтвердженням
+        const files = [];
+        const cv = await attachFile(page, 'file-755', cfg.cvFileName);
+        const extra = await attachFile(page, 'file-760', cfg.extraFileName);
+        if (cv) files.push(cv);
+        if (extra) files.push(extra);
 
         // Згода на розсилку (необов'язково)
         await setCheckbox(page, 'checkbox-290[]', cfg.newsletterConsent);
@@ -128,11 +262,49 @@ async function runAutofill({ url }) {
             if (btn) btn.scrollIntoView({ block: 'center' });
         });
 
-        // Тримаємо вікно відкритим — користувач вирішує капчу й надсилає заявку сам.
-        // Відпускаємо керування, не закриваючи браузер.
-        browser.disconnect();
+        // Підсумкова перевірка: що реально опинилося у формі
+        await verifyForm(page);
 
-        return { success: true, url };
+        // 4) Спостерігаємо за надсиланням: момент відправки ловимо по POST-multipart,
+        //    а склад заявки — з перехопленого FormData (window.__afCapturedRequests).
+        let seenCaptures = 0;
+        const logSubmissions = async () => {
+            let captured = [];
+            try {
+                captured = await page.evaluate(() => window.__afCapturedRequests || []);
+            } catch (e) { captured = []; }
+            while (seenCaptures < captured.length) {
+                const c = captured[seenCaptures];
+                seenCaptures++;
+                const filesDesc = c.files.map(f => `${f.field} -> ${f.name} (${f.size} байт)`).join(', ') || 'немає';
+                const fieldDesc = [...new Set(c.entries.map(e => e.field))].slice(0, 25).join(', ') || 'немає';
+                log(`ЗАЯВКА НАДІСЛАНА | вакансія: ${url} | файли у запиті: ${filesDesc} | поля: ${fieldDesc}`);
+            }
+        };
+        page.on('request', (request) => {
+            const method = request.method();
+            const ct = (request.headers()['content-type'] || '');
+            if (method !== 'POST' || !ct.includes('multipart/form-data')) return;
+            logSubmissions();
+        });
+
+        log(`Автозаявку підготовлено: ${url}. Форма заповнена, файлів: ${files.length}. Чекаємо на відправку користувачем.`);
+
+        // 5) Вікно залишається відкритим — користувач вирішує капчу й надсилає заявку сам.
+        //    Підтримуємо з'єднання, щоб зафіксувати момент відправки у лог.
+        const finish = async () => {
+            clearTimeout(timer);
+            try { await browser.close(); } catch (e) { /* ignore */ }
+        };
+        const timer = setTimeout(() => {
+            log('Автозаявка: час очікування вичерпано (30 хв), вікно закрито.');
+            finish();
+        }, OBSERVE_TIMEOUT_MS);
+        browser.once('disconnected', () => {
+            clearTimeout(timer);
+        });
+
+        return { success: true, url, files };
     } catch (e) {
         try { await browser.close(); } catch (closeErr) { /* ignore */ }
         throw e;

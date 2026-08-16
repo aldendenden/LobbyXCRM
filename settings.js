@@ -63,13 +63,14 @@ function loadSettings() {
 }
 
 function saveSettings(next) {
+    const current = cached || loadSettings();
     const merged = {
         mode: next.mode === 'turso' ? 'turso' : 'local',
         turso: {
             url: String(next.turso?.url || '').trim(),
             authToken: String(next.turso?.authToken || '').trim(),
         },
-        autofill: { ...DEFAULT_AUTOFILL, ...(next.autofill || {}) },
+        autofill: { ...DEFAULT_AUTOFILL, ...(current.autofill || {}), ...(next.autofill || {}) },
     };
     cached = merged;
     fs.writeFileSync(SETTINGS_PATH, JSON.stringify(merged, null, 2), 'utf8');

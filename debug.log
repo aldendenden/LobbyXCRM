@@ -1580,3 +1580,53 @@
 [2026-08-16T10:43:38.724Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/full-stack-developer-do-225-okremyy-shturmovyy-polk/
 [2026-08-16T10:44:08.809Z] Помилка парсингу URL https://lobbyx.army/tor/full-stack-developer-do-225-okremyy-shturmovyy-polk/: Navigation timeout of 30000 ms exceeded
 [2026-08-16T10:44:08.894Z] Перехід на внутрішню сторінку: https://lobbyx.army/tor/senior-software-test-automation-engineer-do-okremyy-spetsialnyy-tsentr-elektronnoi-pidtrymky-2/
+[2026-08-16T15:55:42.878Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> verify_test.pdf (39 байт)
+[2026-08-16T15:55:42.880Z] ПОПЕРЕДЖЕННЯ: файл не знайдено на диску для поля file-760: 
+[2026-08-16T15:55:42.961Z] Автозаявку підготовлено: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-viyska-zv-iazku/. Форма заповнена, файлів: 1. Чекаємо на відправку користувачем.
+[2026-08-16T16:27:03.858Z] Автозаявку підготовлено: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/. Форма заповнена, файлів: 0. Чекаємо на відправку користувачем.
+[2026-08-16T16:30:02.713Z] Автозаявку підготовлено: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-648-okremyy-zenitnyy-kulemetnyy-batalyon/. Форма заповнена, файлів: 0. Чекаємо на відправку користувачем.
+[2026-08-16T16:30:34.095Z] Автозаявку підготовлено: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/. Форма заповнена, файлів: 0. Чекаємо на відправку користувачем.
+[2026-08-16T16:35:25.625Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Іван Тестовий"
+[2026-08-16T16:35:25.654Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-16T16:35:25.668Z] ПОЛЕ ЗАПОВНЕНО: number-age = "30"
+[2026-08-16T16:35:25.757Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "test@test.com"
+[2026-08-16T16:35:25.938Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "+380000000000"
+[2026-08-16T16:35:25.987Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-16T16:35:26.091Z] ЧЕКБОКС: interested-in-new-contracts[] = увімкнено
+[2026-08-16T16:35:26.141Z] ЧЕКБОКС: military-training[] = увімкнено
+[2026-08-16T16:35:26.216Z] СЕЛЕКТ: dropdown-rank = "Лейтенант"
+[2026-08-16T16:35:26.257Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "Досвід у IT"
+[2026-08-16T16:35:26.335Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-16T16:35:26.559Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Іван Тестовий","gender":"Чоловік","age":"30","email":"test@test.com","phone":"+380000000000","status":"Військовослужбовець","contract":["Хочу підписати новий контракт"],"combat":[],"szch":[],"training":["Маю завершене навчання в одній із військових сфер"],"rank":"Лейтенант","cvText":"Досвід у IT","file755":"","file760":"","newsletter":[],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-16T16:35:26.564Z] Автозаявку підготовлено: https://lobbyx.army/tor/ofitser-sluzhby-zakhystu-informatsii-do-viyska-zv-iazku/. Форма заповнена, файлів: 0. Чекаємо на відправку користувачем.
+[2026-08-16T16:38:52.646Z] ПЕРЕВІРКА ФОРМИ: {"personName":"","gender":"Чоловік","age":"","email":"","phone":"","status":"","contract":[],"combat":[],"szch":[],"training":[],"rank":"Немає","cvText":"","file755":"","file760":"","newsletter":[],"privacy":[]}
+[2026-08-16T16:38:52.649Z] Автозаявку підготовлено: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/. Форма заповнена, файлів: 0. Чекаємо на відправку користувачем.
+[2026-08-16T16:48:32.086Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-16T16:48:32.095Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-16T16:48:32.104Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-16T16:48:32.111Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-16T16:48:32.118Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-16T16:48:32.126Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-16T16:48:32.132Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-16T16:48:32.143Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-16T16:48:32.206Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-16T16:48:32.217Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-16T16:48:32.230Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-16T16:48:32.244Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-16T16:48:32.249Z] Автозаявку підготовлено: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/. Форма заповнена, файлів: 1. Чекаємо на відправку користувачем.
+[2026-08-16T16:49:30.998Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/rozrobnyk-chat-botiv-do-1-korpus-natsionalnoi-hvardii-ukrainy-azov/ | файли у запиті: немає | поля: 
+[2026-08-16T16:58:08.956Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-16T16:58:08.964Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-16T16:58:08.975Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-16T16:58:08.981Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-16T16:58:08.991Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-16T16:58:08.999Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-16T16:58:09.009Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-16T16:58:09.018Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-16T16:58:09.103Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-16T16:58:09.155Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-16T16:58:09.170Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-16T16:58:09.187Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-16T16:58:09.190Z] Автозаявку підготовлено: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-3-mekhanizovanyy-batalyon-42-ombr/. Форма заповнена, файлів: 1. Чекаємо на відправку користувачем.
+[2026-08-16T16:59:31.812Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-3-mekhanizovanyy-batalyon-42-ombr/ | файли у запиті: немає | поля: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+[2026-08-16T16:59:31.813Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/shtab-serzhant-hrupy-zviazku-ta-kiberbezpeky-do-3-mekhanizovanyy-batalyon-42-ombr/ | файли у запиті: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт) | поля: _wpcf7, _wpcf7_version, _wpcf7_locale, _wpcf7_unit_tag, _wpcf7_container_post, _wpcf7_posted_data_hash, person-name, radio-gender, number-age, person-contact-mail, person-contact-tel, current-status, dropdown-rank, person-cv-textarea, file-755, file-760, file-761, file-762, file-763, file-764, country, tor-id, send-hirefire-vacancy-id, send-ga-data, checkbox-290[]

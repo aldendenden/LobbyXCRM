@@ -39,9 +39,14 @@ export default function VacancyRow({ vac, updateVacancy }) {
         setAutoMsg('');
         setAutoError('');
         try {
-            await runAutofill(vac.url);
-            setAutoMsg('Форма відкрита та заповнена');
-            setTimeout(() => setAutoMsg(''), 4000);
+            const res = await runAutofill(vac.url);
+            const files = (res.files || []).map(f => f.name).join(', ');
+            setAutoMsg(
+                files
+                    ? `Форма відкрита та заповнена. Файли у формі: ${files}`
+                    : 'Форма відкрита та заповнена'
+            );
+            setTimeout(() => setAutoMsg(''), 8000);
         } catch (e) {
             setAutoError(e.message || 'Помилка автозаявки');
             setTimeout(() => setAutoError(''), 6000);
