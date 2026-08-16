@@ -262,14 +262,8 @@ app.get('/api/scrape', async (req, res) => {
     }
 });
 
-// Статика React-фронтенду (client/dist). Якщо збірка ще не зроблена,
-// віддаємо старий index.html як запасний варіант.
-if (fs.existsSync(path.join(CLIENT_DIST, 'index.html'))) {
-    app.use(express.static(CLIENT_DIST));
-    app.get('/', (req, res) => res.sendFile(path.join(CLIENT_DIST, 'index.html')));
-} else {
-    app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
-    console.log('React-збірка не знайдена (client/dist). Використовую legacy index.html.');
-}
+// Статика React-фронтенду (client/dist)
+app.use(express.static(CLIENT_DIST));
+app.get('/', (req, res) => res.sendFile(path.join(CLIENT_DIST, 'index.html')));
 
 app.listen(3000, () => console.log('Сервер працює: http://localhost:3000'));

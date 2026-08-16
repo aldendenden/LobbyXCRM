@@ -76,7 +76,7 @@ export default function App() {
         <div className="container">
             <header>
                 <div className="header-left">
-                    <h1><MedalIcon className="icon logo-icon" /> Alenev Lobby X CRM</h1>
+                    <h1><MedalIcon className="icon logo-icon" /> Alenev Lobby X IT CRM</h1>
                     <SearchBar
                         value={searchQuery}
                         onChange={setSearchQuery}

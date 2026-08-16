@@ -147,6 +147,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    overflow: hidden;
     background: var(--accent);
     color: #fff;
     font-weight: 700;
@@ -366,12 +367,6 @@ input:-webkit-autofill:focus {
     background: rgba(0, 0, 0, 0.15);
 }
 
-.table-wrap::after {
-    content: '';
-    display: block;
-    height: 28px;
-}
-
 table {
     width: 100%;
     table-layout: fixed;
@@ -437,7 +432,7 @@ tbody tr:not(.ignored):hover {
 }
 
 tbody tr.ignored {
-    opacity: 0.35;
+    opacity: 0.35 !important;
     text-decoration: line-through;
 }
 
@@ -482,7 +477,6 @@ tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
 }
 
 .status-select {
-    position: relative;
     width: 100%;
     max-width: 170px;
     margin: 0 auto;
@@ -521,7 +515,7 @@ tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
     transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.status-select.open .chevron { transform: rotate(180deg); }
+.status-btn .chevron.up { transform: rotate(180deg); }
 
 .status-btn span {
     overflow: hidden;
@@ -530,19 +524,15 @@ tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
 }
 
 .status-menu {
-    position: absolute;
-    top: calc(100% + 6px);
-    left: 0;
-    right: 0;
-    z-index: 999;
+    position: fixed;
+    z-index: 9999;
     margin: 0;
     padding: 5px;
     list-style: none;
     background: var(--panel-solid);
-    background-clip: padding-box;
     border: 1px solid var(--border-strong);
     border-radius: 12px;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.6);
     animation: menuIn 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
