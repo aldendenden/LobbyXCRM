@@ -22,6 +22,12 @@ const DEFAULT_AUTOFILL = {
     privacyConsent: true,
 };
 
+const DEFAULT_CAPTCHA = {
+    enabled: false,
+    maxAttempts: 5,
+    modelPath: path.join(__dirname, 'vosk_models', 'vosk-model-small-en-us-0.15'),
+};
+
 const DEFAULT_SETTINGS = {
     mode: 'local',
     turso: {
@@ -29,6 +35,7 @@ const DEFAULT_SETTINGS = {
         authToken: '',
     },
     autofill: { ...DEFAULT_AUTOFILL },
+    captcha: { ...DEFAULT_CAPTCHA },
 };
 
 let cached = null;
@@ -43,6 +50,7 @@ function loadSettings() {
                 ...raw,
                 turso: { ...DEFAULT_SETTINGS.turso, ...(raw.turso || {}) },
                 autofill: { ...DEFAULT_AUTOFILL, ...(raw.autofill || {}) },
+                captcha: { ...DEFAULT_CAPTCHA, ...(raw.captcha || {}) },
             };
             if (cached.mode !== 'local' && cached.mode !== 'turso') {
                 cached.mode = 'local';
@@ -71,6 +79,7 @@ function saveSettings(next) {
             authToken: String(next.turso?.authToken || '').trim(),
         },
         autofill: { ...DEFAULT_AUTOFILL, ...(current.autofill || {}), ...(next.autofill || {}) },
+        captcha: { ...DEFAULT_CAPTCHA, ...(current.captcha || {}), ...(next.captcha || {}) },
     };
     cached = merged;
     fs.writeFileSync(SETTINGS_PATH, JSON.stringify(merged, null, 2), 'utf8');
@@ -85,6 +94,7 @@ module.exports = {
     SETTINGS_PATH,
     DEFAULT_SETTINGS,
     DEFAULT_AUTOFILL,
+    DEFAULT_CAPTCHA,
     loadSettings,
     saveSettings,
     getSettings,

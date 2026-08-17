@@ -1,12 +1,14 @@
 const path = require('path');
 const fs = require('fs');
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+puppeteer.use(StealthPlugin());
 const settings = require('./settings');
+const db = require('./db');
+const { solveCaptcha } = require('./solver');
 
 const FILES_DIR = path.join(__dirname, 'autofill_files');
 const LOG_PATH = path.join(__dirname, 'debug.log');
-
-const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
 // Таймаут, скільки тримаємо Chrome відкритим, чекаючи на відправку заявки
 const OBSERVE_TIMEOUT_MS = 30 * 60 * 1000;
@@ -211,13 +213,12 @@ async function runAutofill({ url }) {
     const browser = await puppeteer.launch({
         headless: false,
         defaultViewport: null,
-        args: ['--disable-blink-features=AutomationControlled', '--start-maximized'],
+        args: ['--start-maximized'],
     });
 
     let page;
     try {
         page = await browser.newPage();
-        await page.setUserAgent(USER_AGENT);
         await page.evaluateOnNewDocument(injectCaptureHook);
 
         await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
@@ -265,9 +266,37 @@ async function runAutofill({ url }) {
         // Підсумкова перевірка: що реально опинилося у формі
         await verifyForm(page);
 
+        // 3b) Автоматичне розв'язання reCAPTCHA (якщо увімкнено)
+        const captchaCfg = settings.getSettings().captcha || {};
+        let captchaSolved = false;
+        if (captchaCfg.enabled) {
+            log('reCAPTCHA: запускаю автоматичне розв\'язання...');
+            captchaSolved = await solveCaptcha(page, {
+                maxAttempts: captchaCfg.maxAttempts || 5,
+                modelPath: captchaCfg.modelPath || '',
+                log,
+            });
+            if (captchaSolved) {
+                log('reCAPTCHA: ВИРІШЕНО — натискаю "Відправити" автоматично...');
+                // Автоматично натискаємо кнопку відправки після вирішення captcha
+                try {
+                    await page.click('.wpcf7-form input[type="submit"]');
+                    log('reCAPTCHA: кнопку "Відправити" натиснуто');
+                } catch (e) {
+                    log(`reCAPTCHA: помилка натискання "Відправити" — ${e.message}`);
+                }
+            } else {
+                log('reCAPTCHA: НЕ ВИРІШЕНО — вирішіть вручну та натисніть "Відправити"');
+            }
+        } else {
+            log('reCAPTCHA: автоматичне розв\'язання вимкнено — вирішіть вручну');
+        }
+
         // 4) Спостерігаємо за надсиланням: момент відправки ловимо по POST-multipart,
         //    а склад заявки — з перехопленого FormData (window.__afCapturedRequests).
+        //    Після успішної відправки автоматично змінюємо статус на "є заявка".
         let seenCaptures = 0;
+        let statusUpdated = false;
         const logSubmissions = async () => {
             let captured = [];
             try {
@@ -279,6 +308,17 @@ async function runAutofill({ url }) {
                 const filesDesc = c.files.map(f => `${f.field} -> ${f.name} (${f.size} байт)`).join(', ') || 'немає';
                 const fieldDesc = [...new Set(c.entries.map(e => e.field))].slice(0, 25).join(', ') || 'немає';
                 log(`ЗАЯВКА НАДІСЛАНА | вакансія: ${url} | файли у запиті: ${filesDesc} | поля: ${fieldDesc}`);
+
+                // Автозміна статусу на "є заявка" після відправки
+                if (!statusUpdated) {
+                    statusUpdated = true;
+                    try {
+                        await db.setStatus(url, 'applied');
+                        log(`СТАТУС ОНОВЛЕНО: ${url} -> applied (є заявка)`);
+                    } catch (e) {
+                        log(`ПОПЕРЕДЖЕННЯ: не вдалося оновити статус — ${e.message}`);
+                    }
+                }
             }
         };
         page.on('request', (request) => {
@@ -288,10 +328,9 @@ async function runAutofill({ url }) {
             logSubmissions();
         });
 
-        log(`Автозаявку підготовлено: ${url}. Форма заповнена, файлів: ${files.length}. Чекаємо на відправку користувачем.`);
+        log(`Автозаявку підготовлено: ${url}. Форма заповнена, файлів: ${files.length}. Чекаємо на відправку.`);
 
-        // 5) Вікно залишається відкритим — користувач вирішує капчу й надсилає заявку сам.
-        //    Підтримуємо з'єднання, щоб зафіксувати момент відправки у лог.
+        // 5) Вікно залишається відкритим — чекаємо на відправку та фіксуємо результат у лог.
         const finish = async () => {
             clearTimeout(timer);
             try { await browser.close(); } catch (e) { /* ignore */ }

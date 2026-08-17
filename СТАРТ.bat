@@ -1,66 +1,92 @@
 @echo off
-title LobbyX CRM - Автономний запуск
-chcp 65001 > nul
+title LobbyX CRM
 cd /d "%~dp0"
 
-echo [ІНФО] Перевірка та очищення фонових процесів...
-:: Цей рядок примусово закриває будь-який старий сервер Node, що застряг у пам'яті
+echo [INFO] Cleaning up background processes...
 taskkill /f /im node.exe >nul 2>&1
-
-:: Додаткове очищення порту 3000, якщо він заблокований
-for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000') do (
-    taskkill /f /pid %%a >nul 2>&1
-)
 
 where node >nul 2>nul
 if errorlevel 1 (
-    echo [ПОМИЛКА] Node.js не знайдено в системі!
-    echo Будь ласка, встановіть Node.js з офіційного сайту: https://nodejs.org
+    echo [ERROR] Node.js not found!
+    echo Download from: https://nodejs.org
     pause
-    exit
+    exit /b 1
 )
 
-if not exist "node_modules\" (
-    echo [ІНФО] Перший запуск програми. Встановлюю серверні компоненти...
-    call npm install express puppeteer cheerio
-    if errorlevel 1 (
-        echo [ПОМИЛКА] Не вдалося встановити модулі.
-        pause
-        exit
-    )
-    echo [УСПІХ] Серверні компоненти успішно встановлено!
+:: --- 1. Server deps ---
+if not exist "node_modules\" goto :install_server
+goto :skip_server
+:install_server
+echo [INFO] Installing server dependencies...
+call npm install --ignore-scripts
+if errorlevel 1 (
+    echo [ERROR] npm install failed.
+    pause
+    exit /b 1
 )
+echo [OK] Server dependencies installed.
+:skip_server
 
-if not exist "client\node_modules\" (
-    echo [ІНФО] Встановлюю React-компоненти фронтенду...
-    cd client
-    call npm install
-    if errorlevel 1 (
-        echo [ПОМИЛКА] Не вдалося встановити React-модулі.
-        pause
-        exit
-    )
-    cd ..
-    echo [УСПІХ] React-компоненти успішно встановлено!
+:: --- 1b. ffmpeg binary ---
+if exist "node_modules\ffmpeg-static\ffmpeg.exe" goto :skip_ffmpeg
+echo [INFO] Downloading ffmpeg binary...
+node "node_modules\ffmpeg-static\install.js"
+:skip_ffmpeg
+
+:: --- 2. Chrome for Puppeteer ---
+if exist "%USERPROFILE%\.cache\puppeteer\chrome\" goto :skip_chrome
+echo [INFO] Downloading Chrome for Puppeteer...
+call npx --yes puppeteer browsers install chrome
+if errorlevel 1 (
+    echo [WARN] Chrome download failed. Autofill may not work.
+) else (
+    echo [OK] Chrome downloaded.
 )
+:skip_chrome
 
-echo [ІНФО] Збираю React-фронтенд (client\dist)...
-cd client
+:: --- 3. React deps ---
+if not exist "client\node_modules\" goto :install_react
+goto :skip_react
+:install_react
+echo [INFO] Installing React dependencies...
+cd /d "%~dp0client"
+call npm install
+if errorlevel 1 (
+    cd /d "%~dp0"
+    echo [ERROR] React npm install failed.
+    pause
+    exit /b 1
+)
+cd /d "%~dp0"
+echo [OK] React dependencies installed.
+:skip_react
+
+:: --- 4. Vosk model ---
+if exist "vosk_models\vosk-model-small-en-us-0.15\" goto :skip_vosk
+echo [INFO] Downloading Vosk model (~40 MB)...
+call node download-model.js
+if errorlevel 1 (
+    echo [WARN] Vosk model download failed. Captcha solver disabled.
+) else (
+    echo [OK] Vosk model downloaded.
+)
+:skip_vosk
+
+:: --- 5. Build React ---
+echo [INFO] Building frontend...
+cd /d "%~dp0client"
 call npm run build
 if errorlevel 1 (
-    echo [ПОМИЛКА] Помилка збірки React-фронтенду.
+    cd /d "%~dp0"
+    echo [ERROR] React build failed.
     pause
-    exit
+    exit /b 1
 )
-cd ..
+cd /d "%~dp0"
 
-echo [ІНФО] Запускаю локальний сервер Node.js...
-:: Запускаємо сервер в окремому вікні
-start "LobbyX Backend Server" cmd /k "node server.js"
-
-echo [ІНФО] Очікування стабілізації сервера...
-timeout /t 5 > nul
-
-echo [ІНФО] Відкриваю CRM-інтерфейс...
+:: --- 6. Start ---
+echo [INFO] Starting server...
+start "LobbyX Backend Server" cmd /k "cd /d %~dp0 && node server.js"
+timeout /t 5 /nobreak >nul
 start http://localhost:3000
-exit
+exit /b 0

@@ -100,6 +100,16 @@ app.post('/api/settings/autofill', (req, res) => {
     res.json({ success: true, settings: settings.getSettings() });
 });
 
+// Збереження налаштувань reCAPTCHA solver
+app.post('/api/settings/captcha', (req, res) => {
+    const data = (req.body || {}).captcha;
+    if (!data || typeof data !== 'object' || Array.isArray(data)) {
+        return res.status(400).json({ error: 'Некоректні дані captcha' });
+    }
+    settings.saveSettings({ ...settings.getSettings(), captcha: data });
+    res.json({ success: true, settings: settings.getSettings() });
+});
+
 // Завантаження файлу для автозаявки (CV / додатковий файл)
 app.post('/api/autofill/files', autofillUpload.single('file'), (req, res) => {
     if (!req.file) {

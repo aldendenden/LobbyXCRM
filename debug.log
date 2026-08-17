@@ -1645,3 +1645,216 @@
 [2026-08-16T17:09:40.702Z] Автозаявку підготовлено: https://lobbyx.army/tor/spetsialist-iz-kiberzakhystu-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/. Форма заповнена, файлів: 1. Чекаємо на відправку користувачем.
 [2026-08-16T17:10:21.258Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/spetsialist-iz-kiberzakhystu-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/ | файли у запиті: немає | поля: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
 [2026-08-16T17:10:21.260Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/spetsialist-iz-kiberzakhystu-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/ | файли у запиті: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт) | поля: _wpcf7, _wpcf7_version, _wpcf7_locale, _wpcf7_unit_tag, _wpcf7_container_post, _wpcf7_posted_data_hash, person-name, radio-gender, number-age, person-contact-mail, person-contact-tel, current-status, dropdown-rank, person-cv-textarea, file-755, file-760, file-761, file-762, file-763, file-764, country, tor-id, send-hirefire-vacancy-id, send-ga-data, checkbox-290[]
+[2026-08-17T05:54:54.952Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T05:54:54.962Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T05:54:54.975Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T05:54:54.984Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T05:54:54.990Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T05:54:54.998Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T05:54:55.070Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T05:54:55.093Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T05:54:55.140Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T05:54:55.151Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T05:54:55.161Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T05:54:55.176Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T05:54:55.177Z] reCAPTCHA: запускаю автоматичне розв'язання...
+[2026-08-17T05:54:57.792Z] reCAPTCHA: шукаю checkbox...
+[2026-08-17T05:54:57.793Z] reCAPTCHA: anchor iframe не знайдено, пробую знайти через .g-recaptcha...
+[2026-08-17T05:54:59.821Z] reCAPTCHA: натискаю checkbox...
+[2026-08-17T05:55:05.469Z] reCAPTCHA: чекаю на bframe...
+[2026-08-17T05:55:05.495Z] reCAPTCHA: спроба 1/5
+[2026-08-17T05:55:07.158Z] reCAPTCHA: переключено на аудіо-виклик
+[2026-08-17T05:55:09.192Z] reCAPTCHA: audio URL: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7SdM4OJ2sAA8OF-Oka7aHLju...
+[2026-08-17T05:55:09.216Z] reCAPTCHA: аудіо завантажено (37000 байт)
+[2026-08-17T05:55:09.241Z] reCAPTCHA: помилка транскрипції — spawn C:\LobbyX_UI\node_modules\ffmpeg-static\ffmpeg.exe ENOENT
+[2026-08-17T05:55:12.312Z] reCAPTCHA: спроба 2/5
+[2026-08-17T05:55:12.341Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T05:55:15.352Z] reCAPTCHA: спроба 3/5
+[2026-08-17T05:55:15.380Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T05:55:18.394Z] reCAPTCHA: спроба 4/5
+[2026-08-17T05:55:18.422Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T05:55:21.425Z] reCAPTCHA: спроба 5/5
+[2026-08-17T05:55:21.453Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T05:55:24.458Z] reCAPTCHA: вичерпано 5 спроб
+[2026-08-17T05:55:24.461Z] reCAPTCHA: НЕ ВИРІШЕНО — вирішіть вручну та натисніть "Відправити"
+[2026-08-17T05:55:24.462Z] Автозаявку підготовлено: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-14-shturmovyy-polk/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T06:00:53.938Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T06:00:53.950Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T06:00:53.958Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T06:00:53.967Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T06:00:53.975Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T06:00:53.986Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T06:00:53.996Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T06:00:54.013Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T06:00:54.166Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T06:00:54.261Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T06:00:54.276Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T06:00:54.291Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T06:00:54.298Z] reCAPTCHA: запускаю автоматичне розв'язання...
+[2026-08-17T06:00:54.300Z] reCAPTCHA: шукаю checkbox...
+[2026-08-17T06:00:54.301Z] reCAPTCHA: натискаю checkbox...
+[2026-08-17T06:00:56.809Z] reCAPTCHA: чекаю на bframe...
+[2026-08-17T06:00:56.809Z] reCAPTCHA: спроба 1/5
+[2026-08-17T06:00:56.889Z] reCAPTCHA: переключено на аудіо-виклик
+[2026-08-17T06:00:58.907Z] reCAPTCHA: audio URL: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA5DFtN3eRKKXwn-M3-EpjTS1y...
+[2026-08-17T06:00:58.944Z] reCAPTCHA: аудіо завантажено (32820 байт)
+[2026-08-17T06:00:58.950Z] reCAPTCHA: помилка транскрипції — spawn C:\LobbyX_UI\node_modules\ffmpeg-static\ffmpeg.exe ENOENT
+[2026-08-17T06:01:02.009Z] reCAPTCHA: спроба 2/5
+[2026-08-17T06:01:02.041Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T06:01:05.048Z] reCAPTCHA: спроба 3/5
+[2026-08-17T06:01:05.088Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T06:01:08.099Z] reCAPTCHA: спроба 4/5
+[2026-08-17T06:01:08.133Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T06:01:11.140Z] reCAPTCHA: спроба 5/5
+[2026-08-17T06:01:11.181Z] reCAPTCHA: не вдалося переключити на аудіо — Node is either not clickable or not an Element
+[2026-08-17T06:01:14.193Z] reCAPTCHA: вичерпано 5 спроб
+[2026-08-17T06:01:14.195Z] reCAPTCHA: НЕ ВИРІШЕНО — вирішіть вручну та натисніть "Відправити"
+[2026-08-17T06:01:14.198Z] Автозаявку підготовлено: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-do-14-shturmovyy-polk/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T06:13:47.192Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T06:13:47.222Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T06:13:47.237Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T06:13:47.251Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T06:13:47.316Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T06:13:47.343Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T06:13:47.406Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T06:13:47.435Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T06:13:47.473Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T06:13:47.499Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T06:13:47.517Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T06:13:47.562Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T06:13:47.593Z] reCAPTCHA: запускаю автоматичне розв'язання...
+[2026-08-17T06:13:47.608Z] reCAPTCHA: завантажую модель Vosk...
+[2026-08-17T06:13:50.088Z] reCAPTCHA: модель завантажена
+[2026-08-17T06:13:50.092Z] reCAPTCHA: знайдено 3 frames
+[2026-08-17T06:13:50.094Z]   frame[0]: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-v-avtomatyzovanykh-systemakh-do-19-tsentr-spetsialnoho-pr
+[2026-08-17T06:13:50.095Z]   frame[1]: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc35t0UAAAAANbd18LHCXEGg6csAQFdSb2hfVM-&co=aHR0cHM6Ly9sb2JieXguYXJt
+[2026-08-17T06:13:50.098Z]   frame[2]: about:blank
+[2026-08-17T06:13:50.099Z] reCAPTCHA: anchor знайдено — https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc35t0UAAAAANbd18LHCXEGg6csAQFdSb2hfVM-&co=aHR0
+[2026-08-17T06:13:50.803Z] reCAPTCHA: checkbox натиснуто
+[2026-08-17T06:13:53.817Z] reCAPTCHA: bframe знайдено — https://www.google.com/recaptcha/api2/bframe?hl=uk&v=XOqlk8PL_yVx6IdpLbpXdiLy&k=6Lc35t0UAAAAANbd18LH
+[2026-08-17T06:13:53.818Z] reCAPTCHA: === спроба 1/5 ===
+[2026-08-17T06:13:53.838Z] reCAPTCHA: audio button натиснуто (JS)
+[2026-08-17T06:13:56.856Z] reCAPTCHA: audioSrc = NULL
+[2026-08-17T06:13:56.857Z] reCAPTCHA: audio src не знайдено, чекаю 5с...
+[2026-08-17T06:14:01.863Z] reCAPTCHA: audioSrc (retry) = NULL
+[2026-08-17T06:14:01.863Z] reCAPTCHA: audio src досі null, пропускаю спробу
+[2026-08-17T06:14:04.924Z] reCAPTCHA: === спроба 2/5 ===
+[2026-08-17T06:14:04.929Z] reCAPTCHA: audio button натиснуто (JS)
+[2026-08-17T06:14:07.935Z] reCAPTCHA: audioSrc = NULL
+[2026-08-17T06:14:07.947Z] reCAPTCHA: audio src не знайдено, чекаю 5с...
+[2026-08-17T06:14:12.960Z] reCAPTCHA: audioSrc (retry) = NULL
+[2026-08-17T06:14:12.961Z] reCAPTCHA: audio src досі null, пропускаю спробу
+[2026-08-17T06:14:16.001Z] reCAPTCHA: === спроба 3/5 ===
+[2026-08-17T06:14:16.010Z] reCAPTCHA: audio button натиснуто (JS)
+[2026-08-17T06:14:19.016Z] reCAPTCHA: audioSrc = NULL
+[2026-08-17T06:14:19.017Z] reCAPTCHA: audio src не знайдено, чекаю 5с...
+[2026-08-17T06:14:24.034Z] reCAPTCHA: audioSrc (retry) = NULL
+[2026-08-17T06:14:24.036Z] reCAPTCHA: audio src досі null, пропускаю спробу
+[2026-08-17T06:14:27.077Z] reCAPTCHA: === спроба 4/5 ===
+[2026-08-17T06:14:27.083Z] reCAPTCHA: audio button натиснуто (JS)
+[2026-08-17T06:14:30.093Z] reCAPTCHA: audioSrc = NULL
+[2026-08-17T06:14:30.094Z] reCAPTCHA: audio src не знайдено, чекаю 5с...
+[2026-08-17T06:14:35.110Z] reCAPTCHA: audioSrc (retry) = NULL
+[2026-08-17T06:14:35.114Z] reCAPTCHA: audio src досі null, пропускаю спробу
+[2026-08-17T06:14:38.195Z] reCAPTCHA: === спроба 5/5 ===
+[2026-08-17T06:14:38.210Z] reCAPTCHA: audio button натиснуто (JS)
+[2026-08-17T06:14:41.231Z] reCAPTCHA: audioSrc = NULL
+[2026-08-17T06:14:41.234Z] reCAPTCHA: audio src не знайдено, чекаю 5с...
+[2026-08-17T06:14:46.251Z] reCAPTCHA: audioSrc (retry) = NULL
+[2026-08-17T06:14:46.252Z] reCAPTCHA: audio src досі null, пропускаю спробу
+[2026-08-17T06:14:49.295Z] reCAPTCHA: вичерпано 5 спроб
+[2026-08-17T06:14:49.296Z] reCAPTCHA: НЕ ВИРІШЕНО — вирішіть вручну та натисніть "Відправити"
+[2026-08-17T06:14:49.299Z] Автозаявку підготовлено: https://lobbyx.army/tor/nachalnyk-sluzhby-zakhystu-informatsii-v-avtomatyzovanykh-systemakh-do-19-tsentr-spetsialnoho-pryznachennia-vsp/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T07:03:55.974Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T07:03:55.990Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T07:03:56.006Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T07:03:56.017Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T07:03:56.081Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T07:03:56.107Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T07:03:56.133Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T07:03:56.164Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T07:03:56.209Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T07:03:56.236Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T07:03:56.257Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T07:03:56.295Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T07:03:56.299Z] reCAPTCHA: автоматичне розв'язання вимкнено — вирішіть вручну
+[2026-08-17T07:03:56.303Z] Автозаявку підготовлено: https://lobbyx.army/tor/solution-architect-do-ministerstvo-oborony/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T07:04:26.492Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/solution-architect-do-ministerstvo-oborony/ | файли у запиті: немає | поля: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+[2026-08-17T07:04:27.518Z] СТАТУС ОНОВЛЕНО: https://lobbyx.army/tor/solution-architect-do-ministerstvo-oborony/ -> applied (є заявка)
+[2026-08-17T07:04:27.521Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/solution-architect-do-ministerstvo-oborony/ | файли у запиті: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт) | поля: _wpcf7, _wpcf7_version, _wpcf7_locale, _wpcf7_unit_tag, _wpcf7_container_post, _wpcf7_posted_data_hash, person-name, radio-gender, number-age, person-contact-mail, person-contact-tel, current-status, dropdown-rank, person-cv-textarea, file-755, file-760, file-761, file-762, file-763, file-764, country, tor-id, send-hirefire-vacancy-id, send-ga-data, checkbox-290[]
+[2026-08-17T07:05:35.501Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T07:05:35.516Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T07:05:35.531Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T07:05:35.548Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T07:05:35.620Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T07:05:35.660Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T07:05:35.722Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T07:05:35.808Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T07:05:35.924Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T07:05:35.995Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T07:05:36.029Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T07:05:36.059Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T07:05:36.111Z] reCAPTCHA: автоматичне розв'язання вимкнено — вирішіть вручну
+[2026-08-17T07:05:36.114Z] Автозаявку підготовлено: https://lobbyx.army/tor/backend-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T07:05:58.228Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/backend-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/ | файли у запиті: немає | поля: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+[2026-08-17T07:05:58.817Z] СТАТУС ОНОВЛЕНО: https://lobbyx.army/tor/backend-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/ -> applied (є заявка)
+[2026-08-17T07:05:58.819Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/backend-rozrobnyk-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/ | файли у запиті: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт) | поля: _wpcf7, _wpcf7_version, _wpcf7_locale, _wpcf7_unit_tag, _wpcf7_container_post, _wpcf7_posted_data_hash, person-name, radio-gender, number-age, person-contact-mail, person-contact-tel, current-status, dropdown-rank, person-cv-textarea, file-755, file-760, file-761, file-762, file-763, file-764, country, tor-id, send-hirefire-vacancy-id, send-ga-data, checkbox-290[]
+[2026-08-17T07:09:17.596Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T07:09:17.609Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T07:09:17.618Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T07:09:17.629Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T07:09:17.639Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T07:09:17.647Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T07:09:17.658Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T07:09:17.667Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T07:09:17.753Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T07:09:17.796Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T07:09:17.822Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T07:09:17.847Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T07:09:17.854Z] reCAPTCHA: автоматичне розв'язання вимкнено — вирішіть вручну
+[2026-08-17T07:09:17.860Z] Автозаявку підготовлено: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-648-okremyy-zenitnyy-kulemetnyy-batalyon/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T07:11:10.169Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-648-okremyy-zenitnyy-kulemetnyy-batalyon/ | файли у запиті: немає | поля: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+[2026-08-17T07:11:10.801Z] СТАТУС ОНОВЛЕНО: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-648-okremyy-zenitnyy-kulemetnyy-batalyon/ -> applied (є заявка)
+[2026-08-17T07:11:10.809Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/shtab-serzhant-hrupy-tsyfrovoho-rozvytku-do-648-okremyy-zenitnyy-kulemetnyy-batalyon/ | файли у запиті: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт) | поля: _wpcf7, _wpcf7_version, _wpcf7_locale, _wpcf7_unit_tag, _wpcf7_container_post, _wpcf7_posted_data_hash, person-name, radio-gender, number-age, person-contact-mail, person-contact-tel, current-status, dropdown-rank, person-cv-textarea, file-755, file-760, file-761, file-762, file-763, file-764, country, tor-id, send-hirefire-vacancy-id, send-ga-data, checkbox-290[]
+[2026-08-17T07:14:52.536Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T07:14:52.547Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T07:14:52.554Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T07:14:52.562Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T07:14:52.572Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T07:14:52.581Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T07:14:52.588Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T07:14:52.598Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T07:14:52.657Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T07:14:52.670Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T07:14:52.680Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T07:14:52.700Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T07:14:52.730Z] reCAPTCHA: автоматичне розв'язання вимкнено — вирішіть вручну
+[2026-08-17T07:14:52.732Z] Автозаявку підготовлено: https://lobbyx.army/tor/rozrobnyk-analitychnykh-system-middle-senior-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/. Форма заповнена, файлів: 1. Чекаємо на відправку.
+[2026-08-17T07:17:13.782Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/rozrobnyk-analitychnykh-system-middle-senior-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/ | файли у запиті: немає | поля: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+[2026-08-17T07:17:14.525Z] СТАТУС ОНОВЛЕНО: https://lobbyx.army/tor/rozrobnyk-analitychnykh-system-middle-senior-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/ -> applied (є заявка)
+[2026-08-17T07:17:14.526Z] ЗАЯВКА НАДІСЛАНА | вакансія: https://lobbyx.army/tor/rozrobnyk-analitychnykh-system-middle-senior-do-komanduvannia-raketnykh-viysk-i-artylerii-ksv-zsu/ | файли у запиті: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт) | поля: _wpcf7, _wpcf7_version, _wpcf7_locale, _wpcf7_unit_tag, _wpcf7_container_post, _wpcf7_posted_data_hash, person-name, radio-gender, number-age, person-contact-mail, person-contact-tel, current-status, dropdown-rank, person-cv-textarea, file-755, file-760, file-761, file-762, file-763, file-764, country, tor-id, send-hirefire-vacancy-id, send-ga-data, checkbox-290[]
+[2026-08-17T07:19:29.769Z] ПОЛЕ ЗАПОВНЕНО: person-name = "Алєнєв Денис Олександрович"
+[2026-08-17T07:19:29.780Z] РАДІО: radio-gender = "Чоловік"
+[2026-08-17T07:19:29.793Z] ПОЛЕ ЗАПОВНЕНО: number-age = "46"
+[2026-08-17T07:19:29.801Z] ПОЛЕ ЗАПОВНЕНО: person-contact-mail = "alden26@proton.me"
+[2026-08-17T07:19:29.810Z] ПОЛЕ ЗАПОВНЕНО: person-contact-tel = "380 96 008 4767"
+[2026-08-17T07:19:29.818Z] РАДІО: current-status = "Військовослужбовець"
+[2026-08-17T07:19:29.828Z] СЕЛЕКТ: dropdown-rank = "Солдат / Матрос"
+[2026-08-17T07:19:29.839Z] ПОЛЕ ЗАПОВНЕНО: person-cv-textarea = "В прикріпленому резюме все детально описано."
+[2026-08-17T07:19:29.917Z] ФАЙЛ ДОДАНО ДО ФОРМИ: file-755 -> 1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (у формі 295806 байт; на диску 295806 байт; цілісність: ОК)
+[2026-08-17T07:19:29.941Z] ЧЕКБОКС: checkbox-290[] = увімкнено
+[2026-08-17T07:19:29.959Z] ЧЕКБОКС: checkbox-717[] = увімкнено
+[2026-08-17T07:19:29.971Z] ПЕРЕВІРКА ФОРМИ: {"personName":"Алєнєв Денис Олександрович","gender":"Чоловік","age":"46","email":"alden26@proton.me","phone":"380 96 008 4767","status":"Військовослужбовець","contract":[],"combat":[],"szch":[],"training":[],"rank":"Солдат / Матрос","cvText":"В прикріпленому резюме все детально описано.","file755":"1786898872185-Alenev_Denis_CV_UA_15082026-2.pdf (295806 байт)","file760":"","newsletter":["Даю згоду на отримання інформаційних розсилок від Lobby X"],"privacy":["Я приймаю умови Політики конфіденційності та даю згоду на обробку своїх персональних даних"]}
+[2026-08-17T07:19:29.975Z] reCAPTCHA: запускаю автоматичне розв'язання...
+[2026-08-17T07:19:29.978Z] reCAPTCHA: завантажую модель Vosk...
+[2026-08-17T07:19:32.749Z] reCAPTCHA: модель завантажена
+[2026-08-17T07:19:32.753Z] reCAPTCHA: знайдено 3 frames
+[2026-08-17T07:19:32.755Z]   frame[0]: https://lobbyx.army/tor/rozrobnyk-webflow-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/
+[2026-08-17T07:19:32.756Z]   frame[1]: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc35t0UAAAAANbd18LHCXEGg6csAQFdSb2hfVM-&co=aHR0cHM6Ly9sb2JieXguYXJt
+[2026-08-17T07:19:32.757Z]   frame[2]: about:blank
+[2026-08-17T07:19:32.759Z] reCAPTCHA: anchor знайдено — https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc35t0UAAAAANbd18LHCXEGg6csAQFdSb2hfVM-&co=aHR0
+[2026-08-17T07:19:33.445Z] reCAPTCHA: checkbox натиснуто
+[2026-08-17T07:19:36.489Z] reCAPTCHA: вирішено без виклику!
+[2026-08-17T07:19:36.491Z] reCAPTCHA: ВИРІШЕНО — натискаю "Відправити" автоматично...
+[2026-08-17T07:19:36.689Z] reCAPTCHA: кнопку "Відправити" натиснуто
+[2026-08-17T07:19:36.695Z] Автозаявку підготовлено: https://lobbyx.army/tor/rozrobnyk-webflow-do-12-bryhada-spetsialnoho-pryznachennia-azov-imeni-dmytra-vyshnevetskoho/. Форма заповнена, файлів: 1. Чекаємо на відправку.

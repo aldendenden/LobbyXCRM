@@ -290,7 +290,7 @@ export default function AutofillTab({ open, onSaved }) {
                             <Check label="Приймаю умови Політики конфіденційності та даю згоду на обробку персональних даних *" checked={data.privacyConsent} onChange={set('privacyConsent')} />
                         </div>
                         <div className="settings-hint">
-                            reCAPTCHA неможливо пройти автоматично — після відкриття форми залишиться натиснути капчу та «Відправити».
+                            reCAPTCHA можна розв&apos;язати автоматично (див. вкладку «Captcha») або вручну — після відкриття форми натисніть капчу та «Відправити».
                         </div>
                     </div>
 

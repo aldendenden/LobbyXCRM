@@ -55,6 +55,14 @@ export function saveAutofillSettings(autofill) {
     });
 }
 
+export function saveCaptchaSettings(captcha) {
+    return request('/api/settings/captcha', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ captcha }),
+    });
+}
+
 export function uploadAutofillFile(file) {
     const fd = new FormData();
     fd.append('file', file);

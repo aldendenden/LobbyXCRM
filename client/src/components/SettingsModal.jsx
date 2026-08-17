@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { fetchSettings, saveSettings, syncDatabases } from '../api.js';
 import AutofillTab from './AutofillTab.jsx';
+import CaptchaTab from './CaptchaTab.jsx';
 import { RefreshIcon, XIcon } from './Icons.jsx';
 
 export default function SettingsModal({ open, onClose, onSaved }) {
@@ -106,10 +107,19 @@ export default function SettingsModal({ open, onClose, onSaved }) {
                     >
                         Дані автозаявки
                     </button>
+                    <button
+                        type="button"
+                        className={`settings-tab${activeTab === 'captcha' ? ' active' : ''}`}
+                        onClick={() => setActiveTab('captcha')}
+                    >
+                        Captcha
+                    </button>
                 </div>
 
                 {activeTab === 'autofill' ? (
                     <AutofillTab open={open} onSaved={() => setSuccess(true)} />
+                ) : activeTab === 'captcha' ? (
+                    <CaptchaTab open={open} onSaved={() => setSuccess(true)} />
                 ) : (
                 <div className="modal-body">
                     <div className="field-label">База даних</div>
