@@ -17,7 +17,7 @@
 /db_backup.json
 
 # Налаштування (секрети)
-/settings.json
+settings.json
 
 # Завантажені файли користувача
 /autofill_files
