@@ -244,10 +244,10 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
             continue;
         }
         _log(`reCAPTCHA: raw text = "${rawText}"`);
-        const answer = wordsToDigits(rawText);
-        _log(`reCAPTCHA: digits = "${answer}"`);
+        const answer = rawText.trim();
+        _log(`reCAPTCHA: answer = "${answer}"`);
 
-        if (!answer || answer.length < 2) {
+        if (!answer || answer.length < 1) {
             _log('reCAPTCHA: відповідь занадто коротка');
             try { await bframe.click('#recaptcha-reload-button'); } catch (e) { /* ignore */ }
             await delay(3000);

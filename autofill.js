@@ -266,35 +266,8 @@ async function runAutofill({ url }) {
         // Підсумкова перевірка: що реально опинилося у формі
         await verifyForm(page);
 
-        // 3b) Автоматичне розв'язання reCAPTCHA (якщо увімкнено)
-        const captchaCfg = settings.getSettings().captcha || {};
-        let captchaSolved = false;
-        if (captchaCfg.enabled) {
-            log('reCAPTCHA: запускаю автоматичне розв\'язання...');
-            captchaSolved = await solveCaptcha(page, {
-                maxAttempts: captchaCfg.maxAttempts || 5,
-                modelPath: captchaCfg.modelPath || '',
-                log,
-            });
-            if (captchaSolved) {
-                log('reCAPTCHA: ВИРІШЕНО — натискаю "Відправити" автоматично...');
-                // Автоматично натискаємо кнопку відправки після вирішення captcha
-                try {
-                    await page.click('.wpcf7-form input[type="submit"]');
-                    log('reCAPTCHA: кнопку "Відправити" натиснуто');
-                } catch (e) {
-                    log(`reCAPTCHA: помилка натискання "Відправити" — ${e.message}`);
-                }
-            } else {
-                log('reCAPTCHA: НЕ ВИРІШЕНО — вирішіть вручну та натисніть "Відправити"');
-            }
-        } else {
-            log('reCAPTCHA: автоматичне розв\'язання вимкнено — вирішіть вручну');
-        }
-
-        // 4) Спостерігаємо за надсиланням: момент відправки ловимо по POST-multipart,
-        //    а склад заявки — з перехопленого FormData (window.__afCapturedRequests).
-        //    Після успішної відправки автоматично змінюємо статус на "є заявка".
+        // 3b) Спостерігаємо за надсиланням: момент відправки ловимо по POST-multipart.
+        //    Реєструємо listener ЗАРАЗ, до натискання submit, щоб не пропустити запит.
         let seenCaptures = 0;
         let statusUpdated = false;
         const logSubmissions = async () => {
@@ -309,7 +282,6 @@ async function runAutofill({ url }) {
                 const fieldDesc = [...new Set(c.entries.map(e => e.field))].slice(0, 25).join(', ') || 'немає';
                 log(`ЗАЯВКА НАДІСЛАНА | вакансія: ${url} | файли у запиті: ${filesDesc} | поля: ${fieldDesc}`);
 
-                // Автозміна статусу на "є заявка" після відправки
                 if (!statusUpdated) {
                     statusUpdated = true;
                     try {
@@ -327,6 +299,30 @@ async function runAutofill({ url }) {
             if (method !== 'POST' || !ct.includes('multipart/form-data')) return;
             logSubmissions();
         });
+
+        // Автоматичне розв'язання reCAPTCHA (якщо увімкнено)
+        const captchaCfg = settings.getSettings().captcha || {};
+        if (captchaCfg.enabled) {
+            log('reCAPTCHA: запускаю автоматичне розв\'язання...');
+            const captchaSolved = await solveCaptcha(page, {
+                maxAttempts: captchaCfg.maxAttempts || 5,
+                modelPath: captchaCfg.modelPath || '',
+                log,
+            });
+            if (captchaSolved) {
+                log('reCAPTCHA: ВИРІШЕНО — натискаю "Відправити" автоматично...');
+                try {
+                    await page.click('.wpcf7-form input[type="submit"]');
+                    log('reCAPTCHA: кнопку "Відправити" натиснуто');
+                } catch (e) {
+                    log(`reCAPTCHA: помилка натискання "Відправити" — ${e.message}`);
+                }
+            } else {
+                log('reCAPTCHA: НЕ ВИРІШЕНО — вирішіть вручну та натисніть "Відправити"');
+            }
+        } else {
+            log('reCAPTCHA: автоматичне розв\'язання вимкнено — вирішіть вручну');
+        }
 
         log(`Автозаявку підготовлено: ${url}. Форма заповнена, файлів: ${files.length}. Чекаємо на відправку.`);
 
