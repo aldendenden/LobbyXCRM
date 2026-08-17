@@ -1,10 +1,35 @@
+# Залежності
 /node_modules
 /client/node_modules
+
+# Збірка фронтенду
 /client/dist
+
+# База даних (SQLite)
 /lobbyx.db
 /lobbyx_backup.db
 /lobbyx.db-journal
 /lobbyx.db-wal
 /lobbyx.db-shm
+
+# Legacy БД
+/db.json
+/db_backup.json
+
+# Налаштування (секрети)
 /settings.json
+
+# Завантажені файли користувача
 /autofill_files
+
+# Vosk модель (~40MB, завантажується автоматично)
+/vosk_models
+
+# Runtime-логи
+/debug.log
+/server_test.log
+
+# Тимчасові/робочі файли
+/PLAN-stealth.md
+/server_js.pdf
+/screenshots/db_backup.json
