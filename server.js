@@ -378,6 +378,27 @@ app.get('/api/scrape', async (req, res) => {
     }
 });
 
+// SSE: пуш змін статусів у реальному часі
+app.get('/api/events', (req, res) => {
+    console.log('[SSE] клієнт підключився');
+    res.set({
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+    });
+    res.flushHeaders();
+    res.write(':\n\n');
+    const onStatus = ({ url, status }) => {
+        console.log(`[SSE] пуш: ${url} -> ${status}`);
+        res.write(`data: ${JSON.stringify({ url, status })}\n\n`);
+    };
+    db.bus.on('statusChanged', onStatus);
+    req.on('close', () => {
+        console.log('[SSE] клієнт відключився');
+        db.bus.off('statusChanged', onStatus);
+    });
+});
+
 // Статика React-фронтенду (client/dist)
 app.use(express.static(CLIENT_DIST));
 app.get('/', (req, res) => res.sendFile(path.join(CLIENT_DIST, 'index.html')));

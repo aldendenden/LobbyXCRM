@@ -32,6 +32,21 @@ export default function App() {
         loadVacancies();
     }, [loadVacancies]);
 
+    // SSE: оновлюємо статус конкретної вакансії коли сервер пушить зміну
+    useEffect(() => {
+        const es = new EventSource('/api/events');
+        es.onopen = () => console.log('[SSE] connected');
+        es.onmessage = (ev) => {
+            try {
+                const { url, status } = JSON.parse(ev.data);
+                console.log('[SSE] received:', url, status);
+                setVacancies(prev => prev.map(v => (v.url === url ? { ...v, status } : v)));
+            } catch (e) { /* ignore */ }
+        };
+        es.onerror = (e) => console.error('[SSE] error', e);
+        return () => es.close();
+    }, []);
+
     const updateVacancy = useCallback((url, patch) => {
         setVacancies(prev => prev.map(v => (v.url === url ? { ...v, ...patch } : v)));
     }, []);

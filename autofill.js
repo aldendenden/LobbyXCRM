@@ -284,6 +284,7 @@ async function runAutofill({ url }) {
 
                 if (!statusUpdated) {
                     statusUpdated = true;
+                    log(`СТАТУС: викликаю db.setStatus(${url}, applied)...`);
                     try {
                         await db.setStatus(url, 'applied');
                         log(`СТАТУС ОНОВЛЕНО: ${url} -> applied (є заявка)`);

@@ -1,8 +1,12 @@
 const path = require('path');
 const fs = require('fs');
+const { EventEmitter } = require('events');
 const { DatabaseSync } = require('node:sqlite');
 const { createClient } = require('@libsql/client');
 const settings = require('./settings');
+
+const bus = new EventEmitter();
+bus.setMaxListeners(50);
 
 const DB_PATH = path.join(__dirname, 'lobbyx.db');
 const BACKUP_PATH = path.join(__dirname, 'lobbyx_backup.db');
@@ -220,6 +224,8 @@ async function setStatus(url, status) {
         INSERT INTO vacancy_meta (url, status, updated_at) VALUES (?, ?, datetime('now'))
         ON CONFLICT(url) DO UPDATE SET status = excluded.status, updated_at = excluded.updated_at
     `, [url, status]);
+    console.log(`[DB] setStatus: ${url} -> ${status} (changes: ${result.changes})`);
+    bus.emit('statusChanged', { url, status });
     return result.changes > 0;
 }
 
@@ -373,4 +379,5 @@ module.exports = {
     setNotes,
     getVacancyMeta,
     syncDatabases,
+    bus,
 };
