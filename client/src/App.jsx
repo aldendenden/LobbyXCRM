@@ -38,12 +38,20 @@ export default function App() {
         es.onopen = () => console.log('[SSE] connected');
         es.onmessage = (ev) => {
             try {
-                const { url, status } = JSON.parse(ev.data);
-                console.log('[SSE] received:', url, status);
-                setVacancies(prev => prev.map(v => (v.url === url ? { ...v, status } : v)));
-            } catch (e) { /* ignore */ }
+                const data = JSON.parse(ev.data);
+                if (!data || !data.url) return;
+                console.log('[SSE] received:', data.url, data.status);
+                setVacancies(prev => prev.map(v => (v.url === data.url ? { ...v, status: data.status } : v)));
+            } catch (e) {
+                console.error('[SSE] parse error:', e, 'raw:', ev.data);
+            }
         };
-        es.onerror = (e) => console.error('[SSE] error', e);
+        es.onerror = (e) => {
+            console.error('[SSE] error:', e);
+            if (es.readyState === EventSource.CLOSED) {
+                console.error('[SSE] connection closed permanently');
+            }
+        };
         return () => es.close();
     }, []);
 

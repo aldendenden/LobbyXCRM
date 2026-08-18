@@ -385,7 +385,9 @@ app.get('/api/events', (req, res) => {
         'Content-Type': 'text/event-stream',
         'Cache-Control': 'no-cache',
         'Connection': 'keep-alive',
+        'X-Accel-Buffering': 'no',
     });
+    if (req.socket) req.socket.setNoDelay(true);
     res.flushHeaders();
     res.write(':\n\n');
     const onStatus = ({ url, status }) => {
@@ -393,8 +395,12 @@ app.get('/api/events', (req, res) => {
         res.write(`data: ${JSON.stringify({ url, status })}\n\n`);
     };
     db.bus.on('statusChanged', onStatus);
+    const keepalive = setInterval(() => {
+        try { res.write(': ping\n\n'); } catch (e) { /* ignore */ }
+    }, 30000);
     req.on('close', () => {
         console.log('[SSE] клієнт відключився');
+        clearInterval(keepalive);
         db.bus.off('statusChanged', onStatus);
     });
 });

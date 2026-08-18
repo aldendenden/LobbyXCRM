@@ -90,6 +90,16 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
         return false;
     }
 
+    // Helper: detect garbled / anti-bot challenge content
+    function isGarbledText(text) {
+        if (!text) return false;
+        const stripped = text.replace(/\s/g, '');
+        if (stripped.length === 0) return false;
+        // Too many non-alpha symbols suggests anti-bot gibberish
+        const nonAlpha = stripped.replace(/[a-zA-Z0-9]/g, '').length;
+        return nonAlpha / stripped.length > 0.4;
+    }
+
     // 1) List all frames for debug
     const allFrames = page.frames().map(f => f.url());
     _log(`reCAPTCHA: знайдено ${allFrames.length} frames`);
@@ -162,9 +172,21 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
                 break;
             }
             _log('reCAPTCHA: audio button натиснуто (JS)');
-            await delay(3000);
+            await delay(5000);
         } else {
             _log('reCAPTCHA: вже в audio mode');
+        }
+
+        // Detect garbled / anti-bot challenge text in the bframe
+        const bframeText = await bframe.evaluate(() => {
+            return document.body ? document.body.innerText : '';
+        }).catch(() => '');
+        if (isGarbledText(bframeText)) {
+            _log(`reCAPTCHA: виявлено anti-bot контент, чекаю 15с...`);
+            await delay(15000);
+            try { await bframe.click('#recaptcha-reload-button'); } catch (e) { /* ignore */ }
+            await delay(5000);
+            continue;
         }
 
         // Find audio element and get src
@@ -250,7 +272,15 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
         if (!answer || answer.length < 1) {
             _log('reCAPTCHA: відповідь занадто коротка');
             try { await bframe.click('#recaptcha-reload-button'); } catch (e) { /* ignore */ }
-            await delay(3000);
+            await delay(5000);
+            continue;
+        }
+
+        // Skip clearly garbled transcriptions (likely anti-bot audio)
+        if (isGarbledText(answer)) {
+            _log('reCAPTCHA: транскрипція виглядає як anti-bot шум, пропускаю...');
+            try { await bframe.click('#recaptcha-reload-button'); } catch (e) { /* ignore */ }
+            await delay(8000);
             continue;
         }
 
@@ -292,7 +322,7 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
 
         _log('reCAPTCHA: не пройшло, новий виклик...');
         try { await bframe.click('#recaptcha-reload-button'); } catch (e) { /* ignore */ }
-        await delay(3000);
+        await delay(5000);
     }
 
     _log(`reCAPTCHA: вичерпано ${maxAttempts} спроб`);

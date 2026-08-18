@@ -147,8 +147,8 @@ async function queryRun(sql, params = []) {
         const result = ensureLocal().prepare(sql).run(...params);
         return { changes: Number(result.changes) };
     }
-    const { rowCount } = await turso().execute(sql, params);
-    return { changes: rowCount };
+    const { rowsAffected } = await turso().execute(sql, params);
+    return { changes: rowsAffected };
 }
 
 // ---------- Одноразова міграція старого db.json (лише локально) ----------

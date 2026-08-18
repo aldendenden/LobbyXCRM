@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import StatusSelect from './StatusSelect.jsx';
-import { ExternalIcon, XIcon, ZapIcon } from './Icons.jsx';
+import { ExternalIcon, XIcon, ZapIcon, StarIcon } from './Icons.jsx';
 import { updateNotes, updateStatus, runAutofill } from '../api.js';
 
 export default function VacancyRow({ vac, updateVacancy }) {
@@ -69,6 +69,14 @@ export default function VacancyRow({ vac, updateVacancy }) {
                         title={isIgnored ? 'Повернути у статус «Нова»' : 'Позначити як «Не цікаво»'}
                     >
                         <XIcon className="icon" />
+                    </button>
+                    <button
+                        type="button"
+                        className={`star-btn${vac.status === 'interested' ? ' active' : ''}`}
+                        onClick={() => handleStatus(vac.status === 'interested' ? 'new' : 'interested')}
+                        title={vac.status === 'interested' ? 'Повернути у статус «Нова»' : 'Позначити як «Цікаво»'}
+                    >
+                        <StarIcon className="icon" />
                     </button>
                     <a
                         className="vac-link"
