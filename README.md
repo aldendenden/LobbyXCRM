@@ -185,7 +185,7 @@ npm start
 2. Встановіть **максимальну кількість спроб** (за замовчуванням 5) — після вичерпання Chrome залишається відкритим для ручного проходження.
 3. Натисніть **«Зберегти налаштування reCAPTCHA»**.
 
-![Project Screenshot](screenshots/61-main.jpg)
+![Project Screenshot](screenshots/061-main.jpg)
 
 **Як працює:**
 - При натисканні «Автозаявка» програма сама натискає checkbox reCAPTCHA.
