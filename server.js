@@ -225,7 +225,7 @@ app.get('/api/scrape', async (req, res) => {
             console.log(`Завантажую: Сторінка ${pageNum} (Offset: ${offset})...`);
             logToFile(`Запит на лінк: ${ajaxUrl}`);
 
-            await page.goto(ajaxUrl, { waitUntil: 'networkidle2' });
+            await page.goto(ajaxUrl, { waitUntil: 'networkidle2', timeout: 60000 });
 
             let rawContent = await page.evaluate(() => document.body.textContent || document.body.innerText);
             rawContent = rawContent.trim();
@@ -298,11 +298,10 @@ app.get('/api/scrape', async (req, res) => {
         let addedCount = 0;
 
         for (const url of allScrapedUrls) {
-            if (await db.hasVacancy(url)) continue;
-
             try {
+                if (await db.hasVacancy(url)) continue;
                 logToFile(`Перехід на внутрішню сторінку: ${url}`);
-                await page.goto(url, { waitUntil: 'networkidle2' });
+                await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
                 await page.waitForSelector('h1', { timeout: 5000 }).catch(() => {});
 
                 const details = await page.evaluate(() => {
@@ -371,10 +370,11 @@ app.get('/api/scrape', async (req, res) => {
         res.json({ success: true, added: addedCount });
 
     } catch (err) {
+        const causeDetail = err.cause && err.cause.message ? ` (причина: ${err.cause.message})` : '';
         console.error('Помилка парсингу:', err);
-        logToFile(`КРИТИЧНА ПОМИЛКА СКРИПТА: ${err.message}`);
+        logToFile(`КРИТИЧНА ПОМИЛКА СКРИПТА: ${err.message}${causeDetail}`);
         if (browser) await browser.close();
-        res.status(500).json({ error: err.message, added: 0 });
+        res.status(500).json({ error: err.message + causeDetail, added: 0 });
     }
 });
 
