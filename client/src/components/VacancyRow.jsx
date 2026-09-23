@@ -56,7 +56,7 @@ export default function VacancyRow({ vac, updateVacancy }) {
     };
 
     return (
-        <tr className={isIgnored ? 'ignored' : ''}>
+        <tr className={`${isIgnored ? 'ignored' : ''}${vac.closed ? ' closed' : ''}`}>
             <td>
                 <span className="unit-tag">{vac.unit || 'IT'}</span>
             </td>
@@ -87,6 +87,7 @@ export default function VacancyRow({ vac, updateVacancy }) {
                         {(vac.title || 'Без назви')}{' '}
                         <ExternalIcon className="icon vac-ext" />
                     </a>
+                    {vac.closed && <span className="vac-closed">Закрита</span>}
                 </div>
             </td>
             <td>

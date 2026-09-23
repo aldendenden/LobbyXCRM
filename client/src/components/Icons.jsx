@@ -78,6 +78,13 @@ export const XIcon = props => (
     </svg>
 );
 
+export const CircleSlashIcon = props => (
+    <svg {...base} {...props}>
+        <circle cx="12" cy="12" r="9" />
+        <line x1="5" y1="5" x2="19" y2="19" />
+    </svg>
+);
+
 export const ZapIcon = props => (
     <svg {...base} {...props}>
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />

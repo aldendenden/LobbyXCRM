@@ -198,7 +198,7 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
     margin-bottom: 24px;
 }
@@ -225,6 +225,7 @@ h1 {
 .card:nth-child(4) { animation-delay: 0.26s; }
 .card:nth-child(5) { animation-delay: 0.33s; }
 .card:nth-child(6) { animation-delay: 0.4s; }
+.card:nth-child(7) { animation-delay: 0.47s; }
 
 .card::before {
     content: '';
@@ -251,6 +252,7 @@ h1 {
 .card.active-applied { background: var(--accent-soft); color: var(--accent); border-color: rgba(255, 138, 61, 0.65); box-shadow: 0 4px 22px var(--accent-glow); }
 .card.active-feedback { background: rgba(56, 189, 248, 0.18); color: #7dd3fc; border-color: rgba(56, 189, 248, 0.6); box-shadow: 0 4px 22px rgba(56, 189, 248, 0.22); }
 .card.active-ignored { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border-color: rgba(239, 68, 68, 0.55); box-shadow: 0 4px 22px rgba(239, 68, 68, 0.2); }
+.card.active-closed { background: rgba(168, 85, 247, 0.18); color: #d8b4fe; border-color: rgba(168, 85, 247, 0.55); box-shadow: 0 4px 22px rgba(168, 85, 247, 0.2); }
 
 .card-icon {
     display: block;
@@ -439,6 +441,24 @@ tbody tr.ignored {
 }
 
 tbody tr.ignored:hover { opacity: 0.6; background: rgba(255, 255, 255, 0.03); }
+
+tbody tr.closed { opacity: 0.55; }
+tbody tr.closed:hover { opacity: 0.75; background: rgba(168, 85, 247, 0.06); }
+
+.vac-closed {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #d8b4fe;
+    background: rgba(168, 85, 247, 0.16);
+    border: 1px solid rgba(168, 85, 247, 0.45);
+}
 
 .unit-tag {
     display: inline-block;

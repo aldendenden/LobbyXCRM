@@ -65,7 +65,7 @@ export default function App() {
         setError('');
         try {
             const data = await runScrape();
-            window.alert(`Додано нових позицій: ${data.added}`);
+            window.alert(`Додано нових позицій: ${data.added}${data.closed ? `, закрито: ${data.closed}` : ''}`);
             await loadVacancies();
         } catch (e) {
             setError(`Помилка оновлення: ${e.message}`);
@@ -76,7 +76,11 @@ export default function App() {
 
     const filtered = useMemo(() => {
         let list = vacancies;
-        if (filterStatus !== 'all') {
+        if (filterStatus === 'closed') {
+            list = list.filter(v => v.closed);
+        } else if (filterStatus === 'new') {
+            list = list.filter(v => v.status === 'new' && !v.closed);
+        } else if (filterStatus !== 'all') {
             list = list.filter(v => v.status === filterStatus);
         }
         const q = searchQuery.trim().toLowerCase();
@@ -91,11 +95,12 @@ export default function App() {
 
     const stats = useMemo(() => ({
         all: vacancies.length,
-        new: vacancies.filter(v => v.status === 'new').length,
+        new: vacancies.filter(v => v.status === 'new' && !v.closed).length,
         interested: vacancies.filter(v => v.status === 'interested').length,
         applied: vacancies.filter(v => v.status === 'applied').length,
         feedback: vacancies.filter(v => v.status === 'feedback').length,
         ignored: vacancies.filter(v => v.status === 'ignored').length,
+        closed: vacancies.filter(v => v.closed).length,
     }), [vacancies]);
 
     return (

@@ -296,68 +296,106 @@ app.get('/api/scrape', async (req, res) => {
         logToFile(`Унікальних URL адрес у масиві для обходу: ${allScrapedUrls.length}`);
 
         let addedCount = 0;
+        let closedCount = 0;
+
+        const resolveUnit = async (details) => {
+            let unit = 'Сили Оборони України';
+
+            if (details.unitUrl && /lobbyx\.army\/battalions\//.test(details.unitUrl)) {
+                try {
+                    const batResponse = await fetch(details.unitUrl);
+                    const batHtml = await batResponse.text();
+                    const batMatch = /<h1[^>]*>([\s\S]*?)<\/h1>/i.exec(batHtml);
+                    if (batMatch) {
+                        const batName = batMatch[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+                        if (batName) unit = batName;
+                    }
+                } catch (batErr) {
+                    logToFile(`Помилка отримання назви підрозділу ${details.unitUrl}: ${batErr.message}`);
+                }
+            }
+
+            if (unit === 'Сили Оборони України' && details.overview) {
+                const unitMatch = /(?:службу|служби)\s+(?:у складі\s+|у\s+|в\s+|до\s+)?([^.,!\n]{4,140}?)(?=\s+(?:Повітряного|у місті|у Києві|на території|у складі)|\s*[.,]|\s*$)/i.exec(details.overview);
+                if (unitMatch) unit = unitMatch[1].trim();
+            }
+
+            return unit;
+        };
+
+        const feedSet = new Set(allScrapedUrls);
+        const stateByUrl = new Map((await db.getAllVacancyStates()).map(s => [s.url, s]));
+
+        for (const st of stateByUrl.values()) {
+            if (feedSet.has(st.url) && st.closed) await db.setVacancyClosed(st.url, false);
+        }
+
+        const HTTP_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
+        const fetchPage = async (url) => {
+            const resp = await fetch(url, {
+                headers: {
+                    'User-Agent': HTTP_UA,
+                    Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                },
+                signal: AbortSignal.timeout(25000),
+                redirect: 'follow',
+            });
+            const html = await resp.text();
+            const $ = cheerio.load(html);
+            let overview = '';
+            $('h2').each((i, el) => {
+                if (!overview && $(el).text().trim().toLowerCase().startsWith('огляд')) {
+                    const nxt = $(el).next();
+                    if (nxt.length) overview = nxt.text().trim();
+                }
+            });
+            return {
+                status: resp.status,
+                isClosed: $('.vacancy-close__title').length > 0 || $('p.vacancy-close__title').length > 0,
+                title: $('h1.vacancy-name').first().text().trim() || $('h1').first().text().trim(),
+                unitUrl: $('a.about__unit--button').first().attr('href') || '',
+                overview,
+            };
+        };
 
         for (const url of allScrapedUrls) {
             try {
-                if (await db.hasVacancy(url)) continue;
+                if (stateByUrl.has(url)) continue;
                 logToFile(`Перехід на внутрішню сторінку: ${url}`);
-                await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
-                await page.waitForSelector('h1', { timeout: 5000 }).catch(() => {});
-
-                const details = await page.evaluate(() => {
-                    const h1Element = document.querySelector('h1.vacancy-name') || document.querySelector('h1');
-                    let title = h1Element ? h1Element.innerText.trim() : '';
-
-                    // Підрозділ: беремо лінк сторінки батальйону, якщо він є
-                    let unitUrl = '';
-                    const unitLink = document.querySelector('a.about__unit--button');
-                    if (unitLink) {
-                        unitUrl = unitLink.getAttribute('href') || '';
-                    }
-
-                    // Запасний варіант: абзац «Огляд», перше речення після «службу …»
-                    let overview = '';
-                    const oglyad = Array.from(document.querySelectorAll('h2')).find(h => h.innerText.trim().toLowerCase().startsWith('огляд'));
-                    if (oglyad && oglyad.nextElementSibling) {
-                        overview = oglyad.nextElementSibling.innerText.trim();
-                    }
-
-                    return { title, unitUrl, overview };
-                });
-
-                let unit = 'Сили Оборони України';
-
-                // 1) Офіційна назва підрозділу зі сторінки батальйону
-                if (details.unitUrl && /lobbyx\.army\/battalions\//.test(details.unitUrl)) {
-                    try {
-                        const batResponse = await fetch(details.unitUrl);
-                        const batHtml = await batResponse.text();
-                        const batMatch = /<h1[^>]*>([\s\S]*?)<\/h1>/i.exec(batHtml);
-                        if (batMatch) {
-                            const batName = batMatch[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-                            if (batName) unit = batName;
-                        }
-                    } catch (batErr) {
-                        logToFile(`Помилка отримання назви підрозділу ${details.unitUrl}: ${batErr.message}`);
-                    }
+                const d = await fetchPage(url);
+                if (d.isClosed || d.status === 404 || d.status === 410) {
+                    logToFile(`Нова вакансія вже закрита, не додаю: ${url}`);
+                    continue;
                 }
+                if (!d.title || d.title.length <= 2) continue;
+                const unit = await resolveUnit(d);
+                await db.upsertVacancy(url, d.title, unit);
+                await db.setVacancyClosed(url, false);
+                addedCount++;
+                console.log(`[ДОДАНО] ${unit} -> ${d.title}`);
+                logToFile(`Base updated: ${unit} -> ${d.title}`);
+                await new Promise(r => setTimeout(r, 400));
+            } catch (e) {
+                console.log(`Помилка сторінки ${url}:`, e.message);
+                logToFile(`Помилка парсингу URL ${url}: ${e.message}`);
+            }
+        }
 
-                // 2) Запасний варіант: назва з абзацу «Огляд»
-                if (unit === 'Сили Оборони України' && details.overview) {
-                    const unitMatch = /(?:службу|служби)\s+(?:у складі\s+|у\s+|в\s+|до\s+)?([^.,!\n]{4,140}?)(?=\s+(?:Повітряного|у місті|у Києві|на території|у складі)|\s*[.,]|\s*$)/i.exec(details.overview);
-                    if (unitMatch) unit = unitMatch[1].trim();
+        const unseenUrls = [...stateByUrl.keys()].filter(u => !feedSet.has(u));
+        for (const url of unseenUrls) {
+            try {
+                logToFile(`Перевірка актуальності існуючої вакансії: ${url}`);
+                const d = await fetchPage(url);
+                if (d.isClosed || d.status === 404 || d.status === 410) {
+                    await db.setVacancyClosed(url, true);
+                    closedCount++;
+                    console.log(`[ЗАКРИТА] ${url}`);
+                    logToFile(`Вакансія закрита: ${url}`);
+                } else if (d.status === 200) {
+                    await db.setVacancyClosed(url, false);
                 }
-
-                if (details.title && details.title.length > 2) {
-                    // Upsert: додає нову вакансію або оновлює title/unit.
-                    // Статус та нотатки у таблиці vacancy_meta не чіпаються.
-                    await db.upsertVacancy(url, details.title, unit);
-                    addedCount++;
-                    console.log(`[ДОДАНО] ${unit} -> ${details.title}`);
-                    logToFile(`Base updated: ${unit} -> ${details.title}`);
-                }
-
-                await new Promise(r => setTimeout(r, 800));
+                await new Promise(r => setTimeout(r, 400));
             } catch (e) {
                 console.log(`Помилка сторінки ${url}:`, e.message);
                 logToFile(`Помилка парсингу URL ${url}: ${e.message}`);
@@ -365,9 +403,9 @@ app.get('/api/scrape', async (req, res) => {
         }
 
         await browser.close();
-        console.log(`Процес завершено. Додано: ${addedCount}`);
-        logToFile(`=== РОБОТУ ЗАВЕРШЕНО. Успішно внесено позицій: ${addedCount} ===`);
-        res.json({ success: true, added: addedCount });
+        console.log(`Процес завершено. Додано: ${addedCount}, закрито: ${closedCount}`);
+        logToFile(`=== РОБОТУ ЗАВЕРШЕНО. Успішно внесено позицій: ${addedCount}, закрито вакансій: ${closedCount} ===`);
+        res.json({ success: true, added: addedCount, closed: closedCount });
 
     } catch (err) {
         const causeDetail = err.cause && err.cause.message ? ` (причина: ${err.cause.message})` : '';

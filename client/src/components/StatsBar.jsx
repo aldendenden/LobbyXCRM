@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListIcon, MessageIcon, SendIcon, StarIcon, XIcon, ZapIcon } from './Icons.jsx';
+import { CircleSlashIcon, ListIcon, MessageIcon, SendIcon, StarIcon, XIcon, ZapIcon } from './Icons.jsx';
 
 const CARDS = [
     { id: 'all', label: 'Всього в базі', key: 'all', activeClass: 'active-all', Icon: ListIcon },
@@ -8,6 +8,7 @@ const CARDS = [
     { id: 'applied', label: 'Є заявка', key: 'applied', activeClass: 'active-applied', Icon: SendIcon },
     { id: 'feedback', label: 'Є фідбек', key: 'feedback', activeClass: 'active-feedback', Icon: MessageIcon },
     { id: 'ignored', label: 'Не цікаво', key: 'ignored', activeClass: 'active-ignored', Icon: XIcon },
+    { id: 'closed', label: 'Закриті', key: 'closed', activeClass: 'active-closed', Icon: CircleSlashIcon },
 ];
 
 export default function StatsBar({ stats, filterStatus, onFilter }) {

@@ -20,7 +20,8 @@ const SCHEMA_STATEMENTS = [
         url         TEXT PRIMARY KEY,
         title       TEXT NOT NULL DEFAULT '',
         unit        TEXT NOT NULL DEFAULT '',
-        scraped_at  TEXT NOT NULL DEFAULT (datetime('now'))
+        scraped_at  TEXT NOT NULL DEFAULT (datetime('now')),
+        closed      INTEGER NOT NULL DEFAULT 0
     );`,
     `CREATE TABLE IF NOT EXISTS vacancy_meta (
         url        TEXT PRIMARY KEY REFERENCES vacancies(url) ON DELETE CASCADE,
@@ -32,6 +33,7 @@ const SCHEMA_STATEMENTS = [
 
 const VACANCIES_SQL = `
     SELECT v.url, v.title, v.unit, v.scraped_at,
+           COALESCE(v.closed, 0) AS closed,
            COALESCE(m.status, 'new') AS status,
            COALESCE(m.notes, '')    AS notes
     FROM vacancies v
@@ -65,7 +67,20 @@ function ensureLocal() {
     localDb.exec('PRAGMA foreign_keys = ON;');
     for (const sql of SCHEMA_STATEMENTS) localDb.exec(sql);
     ensureLocalMetaColumn();
+    ensureLocalClosedColumn();
     return localDb;
+}
+
+let localClosedColReady = false;
+
+function ensureLocalClosedColumn() {
+    if (localClosedColReady) return;
+    const db = ensureLocal();
+    const cols = db.prepare("PRAGMA table_info('vacancies')").all();
+    if (!cols.some(c => c.name === 'closed')) {
+        db.exec('ALTER TABLE vacancies ADD COLUMN closed INTEGER NOT NULL DEFAULT 0');
+    }
+    localClosedColReady = true;
 }
 
 function openDatabase() {
@@ -91,6 +106,10 @@ async function ensureTursoSchema() {
         await client.execute('ALTER TABLE vacancy_meta ADD COLUMN updated_at TEXT');
     }
     await client.execute("UPDATE vacancy_meta SET updated_at = datetime('now') WHERE updated_at IS NULL");
+    const { rows: vacRows } = await client.execute("PRAGMA table_info('vacancies')");
+    if (!vacRows.some(r => r.name === 'closed')) {
+        await client.execute('ALTER TABLE vacancies ADD COLUMN closed INTEGER NOT NULL DEFAULT 0');
+    }
 }
 
 // Тест підключення без зміни поточного бекенду
@@ -217,6 +236,15 @@ async function upsertVacancy(url, title, unit) {
 async function hasVacancy(url) {
     const row = await queryGet('SELECT 1 AS x FROM vacancies WHERE url = ?', [url]);
     return !!row;
+}
+
+async function getAllVacancyStates() {
+    const rows = await queryAll('SELECT url, closed FROM vacancies');
+    return rows.map(r => ({ url: r.url, closed: !!r.closed }));
+}
+
+async function setVacancyClosed(url, closed) {
+    await queryRun('UPDATE vacancies SET closed = ? WHERE url = ?', [closed ? 1 : 0, url]);
 }
 
 async function setStatus(url, status) {
@@ -375,6 +403,8 @@ module.exports = {
     getVacancies,
     upsertVacancy,
     hasVacancy,
+    getAllVacancyStates,
+    setVacancyClosed,
     setStatus,
     setNotes,
     getVacancyMeta,
