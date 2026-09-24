@@ -4,6 +4,8 @@ import { fetchSettings, saveCaptchaSettings } from '../api.js';
 const DEFAULT_DATA = {
     enabled: false,
     maxAttempts: 5,
+    solver: 'local',
+    apiKey: '',
 };
 
 export default function CaptchaTab({ open, onSaved }) {
@@ -42,6 +44,8 @@ export default function CaptchaTab({ open, onSaved }) {
             await saveCaptchaSettings({
                 enabled: !!data.enabled,
                 maxAttempts: Math.max(1, Math.min(10, Number(data.maxAttempts) || 5)),
+                solver: data.solver === '2captcha' ? '2captcha' : 'local',
+                apiKey: String(data.apiKey || '').trim(),
             });
             setSuccess(true);
             setTimeout(() => setSuccess(false), 2500);
@@ -62,11 +66,54 @@ export default function CaptchaTab({ open, onSaved }) {
             {loaded && (
                 <>
                     <div className="autofill-section">
-                        <div className="field-label">reCAPTCHA Solver (Vosk)</div>
-                        <div className="settings-hint" style={{ marginBottom: 16 }}>
-                            Автоматичне розв&apos;язання reCAPTCHA v2 через аудіо-виклик та розпізнавання мовлення.
-                            Модель завантажується автоматично при першому запуску.
+                        <div className="field-label">Метод розв&apos;язання reCAPTCHA</div>
+
+                        <div className="settings-field">
+                            <div className="autofill-radio-group">
+                                <label className={`autofill-radio${data.solver !== '2captcha' ? ' selected' : ''}`}>
+                                    <input
+                                        type="radio"
+                                        name="captcha-solver"
+                                        checked={data.solver !== '2captcha'}
+                                        onChange={() => set('solver')('local')}
+                                    />
+                                    Локально (Vosk)
+                                </label>
+                                <label className={`autofill-radio${data.solver === '2captcha' ? ' selected' : ''}`}>
+                                    <input
+                                        type="radio"
+                                        name="captcha-solver"
+                                        checked={data.solver === '2captcha'}
+                                        onChange={() => set('solver')('2captcha')}
+                                    />
+                                    2captcha.com
+                                </label>
+                            </div>
                         </div>
+
+                        {data.solver === '2captcha' ? (
+                            <>
+                                <div className="settings-hint" style={{ marginBottom: 16 }}>
+                                    Зовнішній сервіс 2captcha.com: token отримується по API та вставляється
+                                    у поле g-recaptcha-response. Потрібен ключ API (зареєструйтесь на 2captcha.com,
+                                    поповніть баланс і скопіюйте ключ).
+                                </div>
+                                <label className="settings-field">
+                                    <span>API Key (2captcha)</span>
+                                    <input
+                                        type="password"
+                                        value={data.apiKey}
+                                        onChange={e => set('apiKey')(e.target.value)}
+                                        placeholder="Ваш ключ з 2captcha.com"
+                                    />
+                                </label>
+                            </>
+                        ) : (
+                            <div className="settings-hint" style={{ marginBottom: 16 }}>
+                                Автоматичне розв&apos;язання reCAPTCHA v2 через аудіо-виклик та розпізнавання мовлення.
+                                Модель завантажується автоматично при першому запуску.
+                            </div>
+                        )}
 
                         <label className="autofill-check">
                             <input

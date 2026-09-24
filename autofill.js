@@ -308,6 +308,8 @@ async function runAutofill({ url }) {
             const captchaSolved = await solveCaptcha(page, {
                 maxAttempts: captchaCfg.maxAttempts || 5,
                 modelPath: captchaCfg.modelPath || '',
+                solver: captchaCfg.solver || 'local',
+                apiKey: captchaCfg.apiKey || '',
                 log,
             });
             if (captchaSolved) {

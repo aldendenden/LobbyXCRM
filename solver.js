@@ -69,6 +69,17 @@ function delay(ms) {
     return new Promise(r => setTimeout(r, ms));
 }
 
+async function dumpBframe(bframe, _log, label) {
+    try {
+        const html = await bframe.evaluate(() => {
+            return document.body ? document.body.innerHTML.substring(0, 4000) : '(no body)';
+        });
+        _log(`reCAPTCHA: [DUMP ${label}] ${html}`);
+    } catch (e) {
+        _log(`reCAPTCHA: dump ${label} failed — ${e.message}`);
+    }
+}
+
 async function isSolved(page) {
     return page.evaluate(() => {
         const t = document.querySelector('#g-recaptcha-response, textarea[name="g-recaptcha-response"]');
@@ -76,8 +87,122 @@ async function isSolved(page) {
     });
 }
 
-async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
+async function twoCaptcha({ apiKey, sitekey, pageUrl, maxWaitSec = 180, log } = {}) {
+    const base = 'https://2captcha.com';
+    log('2captcha: надсилаю запит на розв\'язання...');
+    const submitParams = new URLSearchParams({
+        key: apiKey,
+        method: 'userrecaptcha',
+        googlekey: sitekey,
+        pageurl: pageUrl,
+        json: '1',
+    });
+    const submitResp = await fetch(`${base}/in.php?${submitParams.toString()}`);
+    const submitJson = await submitResp.json();
+    if (submitJson.status !== 1 || !submitJson.request) {
+        log(`2captcha: in.php помилка — ${JSON.stringify(submitJson)}`);
+        return null;
+    }
+    const id = submitJson.request;
+    log(`2captcha: завдання прийнято, id=${id}, чекаю розв'язання (до ${maxWaitSec}с)...`);
+    const start = Date.now();
+    let token = null;
+    while (Date.now() - start < maxWaitSec * 1000) {
+        await new Promise(r => setTimeout(r, 5000));
+        const pollParams = new URLSearchParams({ key: apiKey, action: 'get', id, json: '1' });
+        const pollResp = await fetch(`${base}/res.php?${pollParams.toString()}`);
+        const pollJson = await pollResp.json();
+        if (pollJson.status === 1) {
+            token = pollJson.request;
+            break;
+        }
+        if (pollJson.status === 0 && pollJson.request && !/CAPCHA_NOT_READY/.test(pollJson.request)) {
+            log(`2captcha: res.php помилка — ${JSON.stringify(pollJson)}`);
+            return null;
+        }
+    }
+    if (token) log(`2captcha: отримано token (${token.length} символів)`);
+    else log('2captcha: таймаут очікування розв\'язання');
+    return token;
+}
+
+async function solveCaptcha2captcha(page, { apiKey, log } = {}) {
     const _log = log || console.log;
+    _log('reCAPTCHA: використовую сервіс 2captcha.com...');
+
+    // 1) Find sitekey
+    let sitekey = await page.evaluate(() => {
+        const iframe = document.querySelector('iframe[src*="recaptcha/api2/anchor"]');
+        if (iframe && iframe.src) {
+            const m = iframe.src.match(/[?&]k=([^&]+)/);
+            if (m) return m[1];
+        }
+        const el = document.querySelector('.g-recaptcha[data-sitekey], [data-sitekey]');
+        if (el) return el.getAttribute('data-sitekey');
+        return null;
+    }).catch(() => null);
+    if (!sitekey) {
+        const anchorFrame = findFrame(page, 'recaptcha/api2/anchor');
+        if (anchorFrame) {
+            const m = anchorFrame.url().match(/[?&]k=([^&]+)/);
+            if (m) sitekey = m[1];
+        }
+    }
+    if (!sitekey) {
+        _log('reCAPTCHA: 2captcha — sitekey НЕ ЗНАЙДЕНО, пропускаю');
+        return false;
+    }
+    _log(`reCAPTCHA: 2captcha — sitekey = ${sitekey}`);
+
+    // 2) Get token from service
+    let token;
+    try {
+        token = await twoCaptcha({ apiKey, sitekey, pageUrl: page.url(), log: _log });
+    } catch (e) {
+        _log(`reCAPTCHA: 2captcha помилка запиту — ${e.message}`);
+        return false;
+    }
+    if (!token) return false;
+
+    // 3) Inject token into response fields + notify the widget
+    const injected = await page.evaluate((tok) => {
+        const els = document.querySelectorAll('#g-recaptcha-response, textarea[name="g-recaptcha-response"], .g-recaptcha-response');
+        let n = 0;
+        els.forEach(el => {
+            el.value = tok;
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+            el.dispatchEvent(new Event('change', { bubbles: true }));
+            n++;
+        });
+        try {
+            const clients = (window.___grecaptcha_cfg || {}).clients || {};
+            Object.values(clients).forEach(c => {
+                if (typeof c.callback === 'function') { try { c.callback(tok); } catch (e) {} }
+                if (c && c.R && typeof c.R.callback === 'function') { try { c.R.callback.call(c, tok); } catch (e) {} }
+            });
+        } catch (e) { /* ignore */ }
+        return n;
+    }, token).catch(() => 0);
+    _log(`reCAPTCHA: 2captcha — token введено у ${injected} полів`);
+
+    if (await isSolved(page)) {
+        _log('reCAPTCHA: РОЗВ\'ЯЗАНО (2captcha)');
+        return true;
+    }
+    _log('reCAPTCHA: 2captcha — токен НЕ видно в g-recaptcha-response');
+    return injected > 0;
+}
+
+async function solveCaptcha(page, { maxAttempts = 5, modelPath, solver = 'local', apiKey = '', log } = {}) {
+    const _log = log || console.log;
+
+    if (solver === '2captcha') {
+        if (!apiKey) {
+            _log('reCAPTCHA: обрано 2captcha, але apiKey не задано — пропускаю');
+            return false;
+        }
+        return solveCaptcha2captcha(page, { apiKey, log: _log });
+    }
 
     // 0) Load model
     _log('reCAPTCHA: завантажую модель Vosk...');
@@ -141,7 +266,7 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
     // 4) Find bframe
     let bframe = null;
     for (let i = 0; i < 20; i++) {
-        bframe = findFrame(page, 'recaptcha/api2/bframe');
+        bframe = findFrame(page, 'bframe');
         if (bframe) break;
         await delay(1000);
     }
@@ -157,7 +282,12 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
 
         // Check if already in audio mode (after reload)
         const inAudioMode = await bframe.evaluate(() => {
-            return !!(document.querySelector('#audio-source') || document.querySelector('#audio-response'));
+            return !!(
+                document.querySelector('#audio-source, #audio-response, audio, video') ||
+                document.querySelector('.fbc-audiochallenge') ||
+                document.querySelector('.rc-audiochallenge-play-button, #rc-audiochallenge-play-button') ||
+                document.querySelector('.rc-audiochallenge-tdownload-link, #rc-audiochallenge-tdownload-link')
+            );
         }).catch(() => false);
 
         if (!inAudioMode) {
@@ -193,11 +323,17 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
         let audioSrc = null;
         try {
             audioSrc = await bframe.evaluate(() => {
-                const a = document.querySelector('#audio-source, audio#audio-source, audio');
-                if (a && a.src) return a.src;
-                if (a && a.currentSrc) return a.currentSrc;
-                const lnk = document.querySelector('.rc-audiochallenge-tdownload-link, a[href*="audio"]');
-                if (lnk) return lnk.href;
+                const audio = document.querySelector('audio#audio-source, audio');
+                if (audio && audio.src) return audio.src;
+                if (audio && audio.currentSrc) return audio.currentSrc;
+                const source = document.querySelector('source[src]');
+                if (source && source.src) return source.src;
+                const lnk = document.querySelector('.rc-audiochallenge-tdownload-link, #rc-audiochallenge-tdownload-link, a[href*="audio"]');
+                if (lnk) {
+                    const a = lnk.tagName === 'A' ? lnk : lnk.querySelector('a');
+                    if (a && a.href) return a.href;
+                    if (lnk.href) return lnk.href;
+                }
                 return null;
             });
         } catch (e) {
@@ -206,18 +342,29 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
         _log(`reCAPTCHA: audioSrc = ${audioSrc ? audioSrc.substring(0, 100) : 'NULL'}`);
 
         if (!audioSrc) {
-            _log('reCAPTCHA: audio src не знайдено, чекаю 5с...');
-            await delay(5000);
+            _log('reCAPTCHA: audio src не знайдено, натискаю кнопку відтворення...');
+            const played = await bframe.evaluate(() => {
+                const b = document.querySelector('.rc-audiochallenge-play-button, #rc-audiochallenge-play-button');
+                if (b) { b.click(); return true; }
+                return false;
+            }).catch(() => false);
+            if (played) _log('reCAPTCHA: кнопку відтворення натиснуто');
+            await delay(3000);
             // Retry after wait
             try {
                 audioSrc = await bframe.evaluate(() => {
                     const a = document.querySelector('audio');
-                    return a ? (a.src || a.currentSrc) : null;
+                    if (a) return a.src || a.currentSrc || null;
+                    const source = document.querySelector('source[src]');
+                    if (source) return source.src || null;
+                    const lnk = document.querySelector('.rc-audiochallenge-tdownload-link a, #rc-audiochallenge-tdownload-link a');
+                    return lnk ? (lnk.href || null) : null;
                 });
             } catch (e) { /* ignore */ }
             _log(`reCAPTCHA: audioSrc (retry) = ${audioSrc ? audioSrc.substring(0, 100) : 'NULL'}`);
             if (!audioSrc) {
                 _log('reCAPTCHA: audio src досі null, пропускаю спробу');
+                await dumpBframe(bframe, _log, 'audio-src-missing');
                 try { await bframe.click('#recaptcha-reload-button'); } catch (e) { /* ignore */ }
                 await delay(3000);
                 continue;
@@ -286,9 +433,10 @@ async function solveCaptcha(page, { maxAttempts = 5, modelPath, log } = {}) {
 
         // Type answer
         try {
-            const input = await bframe.$('#audio-response, input[id*="audio-response"]');
+            const input = await bframe.$('#audio-response, input[id*="audio"], .fbc-audiochallenge input, .rc-audiochallenge input, input[type="text"]');
             if (!input) {
-                _log('reCAPTCHA: input #audio-response НЕ ЗНАЙДЕНО');
+                _log('reCAPTCHA: input (audio-response) НЕ ЗНАЙДЕНО');
+                await dumpBframe(bframe, _log, 'input-missing');
                 break;
             }
             await input.click({ clickCount: 3 });

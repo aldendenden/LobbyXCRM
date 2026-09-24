@@ -25,6 +25,8 @@ const DEFAULT_AUTOFILL = {
 const DEFAULT_CAPTCHA = {
     enabled: false,
     maxAttempts: 5,
+    solver: 'local',
+    apiKey: '',
     modelPath: path.join(__dirname, 'vosk_models', 'vosk-model-small-en-us-0.15'),
 };
 
